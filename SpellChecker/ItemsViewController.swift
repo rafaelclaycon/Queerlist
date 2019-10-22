@@ -18,6 +18,7 @@ class ItemsViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         tableView.reloadData()
+        tableView.accessibilityIdentifier = UITestID.spellList
     }
 
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {

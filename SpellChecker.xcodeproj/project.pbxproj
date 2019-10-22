@@ -14,11 +14,17 @@
 		6B80AC8C216663E200A5E0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8A216663E200A5E0C1 /* Main.storyboard */; };
 		6B80AC8E216663E300A5E0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8D216663E300A5E0C1 /* Assets.xcassets */; };
 		6B80AC91216663E300A5E0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */; };
-		6B80ACA7216663E300A5E0C1 /* LootLoggerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACA6216663E300A5E0C1 /* LootLoggerUITests.swift */; };
 		6B80ACB52166644700A5E0C1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */; };
 		6B80ACB7216664F100A5E0C1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB6216664F100A5E0C1 /* Item.swift */; };
 		6B80ACB92166650000A5E0C1 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB82166650000A5E0C1 /* ItemStore.swift */; };
 		D3D65AC3ABDA620C54BD7D69 /* Pods_SpellChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */; };
+		D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D66235E95510041DD12 /* CucumberishTests.m */; };
+		D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */; };
+		D9D40D6F235E95DD0041DD12 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = D9D40D6E235E95DD0041DD12 /* Features */; };
+		D9D40D72235E96C60041DD12 /* CheckingSpellsSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */; };
+		D9D40D74235E97220041DD12 /* CheckingSpellsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */; };
+		D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
+		D9D40D78235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,12 +50,18 @@
 		6B80AC90216663E300A5E0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B80AC92216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B80ACA2216663E300A5E0C1 /* SpellCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B80ACA6216663E300A5E0C1 /* LootLoggerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LootLoggerUITests.swift; sourceTree = "<group>"; };
 		6B80ACA8216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
+		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
+		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
+		D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsSteps.swift; sourceTree = "<group>"; };
+		D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsScreen.swift; sourceTree = "<group>"; };
+		D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpellChecker-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9D40D76235E9CE10041DD12 /* UITestID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestID.swift; sourceTree = "<group>"; };
 		DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F972B4D2A02C50576A4CE37E /* Pods-SpellChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +109,7 @@
 		6B80AC85216663E100A5E0C1 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
+				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
 				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
 				6B80ACB6216664F100A5E0C1 /* Item.swift */,
 				6B45112E216E5F940030F276 /* ItemCell.swift */,
@@ -114,7 +127,12 @@
 		6B80ACA5216663E300A5E0C1 /* SpellCheckerUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6B80ACA6216663E300A5E0C1 /* LootLoggerUITests.swift */,
+				D9D40D76235E9CE10041DD12 /* UITestID.swift */,
+				D9D40D70235E96A30041DD12 /* StepDefinitions */,
+				D9D40D6E235E95DD0041DD12 /* Features */,
+				D9D40D6A235E95AC0041DD12 /* Screens */,
+				D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */,
+				D9D40D66235E95510041DD12 /* CucumberishTests.m */,
 				6B80ACA8216663E300A5E0C1 /* Info.plist */,
 			);
 			path = SpellCheckerUITests;
@@ -129,6 +147,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D9D40D6A235E95AC0041DD12 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		D9D40D70235E96A30041DD12 /* StepDefinitions */ = {
+			isa = PBXGroup;
+			children = (
+				D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */,
+			);
+			path = StepDefinitions;
+			sourceTree = "<group>";
+		};
 		F47DAE16B0F1417FBD70B67E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,7 +171,6 @@
 				1CF91DAD43C40DC064595441 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */,
 				DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -197,6 +230,7 @@
 					};
 					6B80ACA1216663E300A5E0C1 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
 						TestTargetID = 6B80AC82216663E100A5E0C1;
 					};
 				};
@@ -235,6 +269,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9D40D6F235E95DD0041DD12 /* Features in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +353,7 @@
 				6B80ACB52166644700A5E0C1 /* ItemsViewController.swift in Sources */,
 				6B45112F216E5F940030F276 /* ItemCell.swift in Sources */,
 				6B80ACB92166650000A5E0C1 /* ItemStore.swift in Sources */,
+				D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */,
 				6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */,
 				6B45112B216D097B0030F276 /* DetailViewController.swift in Sources */,
 			);
@@ -327,7 +363,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B80ACA7216663E300A5E0C1 /* LootLoggerUITests.swift in Sources */,
+				D9D40D74235E97220041DD12 /* CheckingSpellsScreen.swift in Sources */,
+				D9D40D72235E96C60041DD12 /* CheckingSpellsSteps.swift in Sources */,
+				D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */,
+				D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */,
+				D9D40D78235E9CE10041DD12 /* UITestID.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,18 +560,23 @@
 			baseConfigurationReference = 1CF91DAD43C40DC064595441 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LootLoggerUITests/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = SpellCheckerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.LootLoggerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellCheckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpellChecker/SpellChecker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LootLogger;
+				TEST_TARGET_NAME = SpellChecker;
 			};
 			name = Debug;
 		};
@@ -540,18 +585,22 @@
 			baseConfigurationReference = DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = LootLoggerUITests/Info.plist;
+				DEFINES_MODULE = YES;
+				INFOPLIST_FILE = SpellCheckerUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.bignerdranch.LootLoggerUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellCheckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "SpellChecker/SpellChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = LootLogger;
+				TEST_TARGET_NAME = SpellChecker;
 			};
 			name = Release;
 		};
