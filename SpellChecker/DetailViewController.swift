@@ -20,6 +20,8 @@ class DetailViewController: UIViewController {
         
         spellName.text = item.name
         spellDescription.text = item.description
+        spellName.accessibilityIdentifier = "spell_title"
+        spellDescription.accessibilityIdentifier = "spell_description"
     }
 
     override func viewWillDisappear(_ animated: Bool) {

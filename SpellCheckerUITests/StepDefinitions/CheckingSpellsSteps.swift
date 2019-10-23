@@ -26,5 +26,17 @@ class CheckingSpellsSteps: CheckingSpellsScreen {
             }
             firstCell.tap()
         }
+        
+        Then("I see the spell details") { _,_ in
+            guard self.app.staticTexts["spell_title"].exists else {
+                return XCTFail("Título não existe.")
+            }
+        }
+        
+        And("I see a description of what that spell does") { _,_ in
+            guard self.app.textViews["spell_description"].exists else {
+                return XCTFail("Descrição não existe.")
+            }
+        }
     }
 }
