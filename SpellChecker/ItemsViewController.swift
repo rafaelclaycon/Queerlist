@@ -22,15 +22,20 @@ class ItemsViewController: UITableViewController {
     }
 
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
-        // Create a new Item and add it to the store
-        let newItem = itemStore.createItem()
-
-        if let index = itemStore.allItems.index(of: newItem) {
-            let indexPath = IndexPath(row: index, section: 0)
-
-            // Insert this new row into the table.
-            tableView.insertRows(at: [indexPath], with: .automatic)
-        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let secondVC = storyboard.instantiateViewController(identifier: "NewSpellViewController")
+        secondVC.modalPresentationStyle = .formSheet
+        self.present(secondVC, animated: true, completion: nil)
+        
+//        // Create a new Item and add it to the store
+//        let newItem = itemStore.createItem()
+//
+//        if let index = itemStore.allItems.index(of: newItem) {
+//            let indexPath = IndexPath(row: index, section: 0)
+//
+//            // Insert this new row into the table.
+//            tableView.insertRows(at: [indexPath], with: .automatic)
+//        }
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
