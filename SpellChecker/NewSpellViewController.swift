@@ -30,11 +30,11 @@ class NewSpellViewController: UIViewController {
             return
         }
         guard spellName != "" else {
-            showAlert(title: "Name Field is Empty", message: "Please provide a name for your new spell before saving.")
+            showAlert(title: LocalizableStrings.nameFieldIsEmptyTitle, message: LocalizableStrings.nameFieldIsEmptyMessage)
             return
         }
         guard spellDescription != "" else {
-            showAlert(title: "Description Field is Empty", message: "Please provide a description for your new spell before saving.")
+            showAlert(title: LocalizableStrings.descriptionFieldIsEmptyTitle, message: LocalizableStrings.descriptionFieldIsEmptyMessage)
             return
         }
         
@@ -48,7 +48,7 @@ class NewSpellViewController: UIViewController {
             print("Item created! - Name: \(spellName)")
             self.dismiss(animated: true, completion: nil)
         } else {
-            showAlert(title: "Duplicated Spell", message: "There's already another spell on the list with the same spell name you provided.")
+            showAlert(title: LocalizableStrings.duplicateSpellTitle, message: LocalizableStrings.duplicateSpellMessage)
         }
     }
     
