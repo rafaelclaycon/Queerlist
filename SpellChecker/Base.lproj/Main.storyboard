@@ -67,7 +67,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-Qn-lrE">
-                                <rect key="frame" x="22" y="160" width="370" height="686"/>
+                                <rect key="frame" x="22" y="392" width="370" height="454"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -80,27 +80,37 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O8V-jX-hvL">
+                                <rect key="frame" x="24" y="158" width="366" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="qkD-Qd-eqf"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hM5-Qn-lrE" firstAttribute="top" secondItem="Hg6-8w-UJc" secondAttribute="bottom" constant="16" id="6hn-fu-gmi"/>
+                            <constraint firstItem="hM5-Qn-lrE" firstAttribute="top" secondItem="O8V-jX-hvL" secondAttribute="bottom" constant="14" id="By6-WM-kVD"/>
                             <constraint firstItem="Hg6-8w-UJc" firstAttribute="leading" secondItem="fnk-x5-8vm" secondAttribute="leading" constant="24" id="Gvc-8v-nQS"/>
+                            <constraint firstItem="O8V-jX-hvL" firstAttribute="top" secondItem="Hg6-8w-UJc" secondAttribute="bottom" constant="14" id="HGM-IU-mtN"/>
                             <constraint firstItem="fnk-x5-8vm" firstAttribute="bottom" secondItem="hM5-Qn-lrE" secondAttribute="bottom" constant="16" id="J1F-ZD-UL1"/>
+                            <constraint firstItem="O8V-jX-hvL" firstAttribute="leading" secondItem="fnk-x5-8vm" secondAttribute="leading" constant="24" id="ZVW-Wu-C10"/>
                             <constraint firstItem="hM5-Qn-lrE" firstAttribute="leading" secondItem="fnk-x5-8vm" secondAttribute="leading" constant="22" id="lgn-qh-Met"/>
                             <constraint firstItem="fnk-x5-8vm" firstAttribute="trailing" secondItem="hM5-Qn-lrE" secondAttribute="trailing" constant="22" id="lu9-gm-9sb"/>
+                            <constraint firstItem="fnk-x5-8vm" firstAttribute="trailing" secondItem="O8V-jX-hvL" secondAttribute="trailing" constant="24" id="pzq-bG-rlD"/>
                             <constraint firstItem="Hg6-8w-UJc" firstAttribute="top" secondItem="fnk-x5-8vm" secondAttribute="top" constant="22" id="xXs-Ap-HAY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fnk-x5-8vm"/>
                     </view>
                     <navigationItem key="navigationItem" id="VYx-NV-oc6"/>
                     <connections>
+                        <outlet property="imageView" destination="O8V-jX-hvL" id="sx8-Vu-kI6"/>
                         <outlet property="spellDescription" destination="hM5-Qn-lrE" id="J9G-yP-uW7"/>
                         <outlet property="spellName" destination="Hg6-8w-UJc" id="00P-Og-Cd5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4k-UJ-8DD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2007.2" y="162.3688155922039"/>
+            <point key="canvasLocation" x="2005.7971014492755" y="162.05357142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b64-QY-Sn5">

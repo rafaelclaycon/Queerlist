@@ -6,6 +6,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
     @IBOutlet var spellName: UILabel!
+    @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
     var item: Item! {
@@ -21,6 +22,10 @@ class DetailViewController: UIViewController {
         spellDescription.text = item.description
         spellName.accessibilityIdentifier = "spell_title"
         spellDescription.accessibilityIdentifier = "spell_description"
+        
+        if item.image != nil {
+            imageView.image = item.image
+        }
     }
 
     override func viewWillDisappear(_ animated: Bool) {

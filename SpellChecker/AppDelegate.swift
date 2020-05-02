@@ -16,7 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let itemsController = navController.topViewController as! ItemsViewController
         itemsController.itemStore = itemStore
 
-        itemStore.allItems.append(Item(name: "Accio", description: "Summons an object towards the caster."))
+        itemStore.allItems.append(Item(name: "Accio", description: "Summons an object towards the caster.", image: UIImage(named: "Accio")!))
         itemStore.allItems.append(Item(name: "Aguamenti", description: "Produces a clean, drinkable jet of water from the wand tip."))
         itemStore.allItems.append(Item(name: "Alohomora", description: "Unlocks doors and other objects."))
         itemStore.allItems.append(Item(name: "Aresto Momentum", description: "Decreases the velocity of a moving target."))
