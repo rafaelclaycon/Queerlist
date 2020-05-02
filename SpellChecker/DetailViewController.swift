@@ -1,23 +1,22 @@
-// 
+//
 //  Copyright © 2020 Rafael Claycon Schmitt
 //
 
 import UIKit
 
 class DetailViewController: UIViewController {
-    
     @IBOutlet var spellName: UILabel!
     @IBOutlet var spellDescription: UITextView!
-    
+
     var item: Item! {
         didSet {
             navigationItem.title = item.name
         }
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         spellName.text = item.name
         spellDescription.text = item.description
         spellName.accessibilityIdentifier = "spell_title"
@@ -31,7 +30,7 @@ class DetailViewController: UIViewController {
         view.endEditing(true)
     }
 
-    @IBAction func backgroundTapped(_ sender: UITapGestureRecognizer) {
+    @IBAction func backgroundTapped(_: UITapGestureRecognizer) {
         view.endEditing(true)
     }
 }

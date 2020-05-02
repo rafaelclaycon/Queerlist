@@ -5,7 +5,6 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
-
     var itemStore: ItemStore!
 
     required init?(coder aDecoder: NSCoder) {
@@ -21,11 +20,11 @@ class ItemsViewController: UITableViewController {
         tableView.accessibilityIdentifier = UITestID.spellList
     }
 
-    @IBAction func addNewItem(_ sender: UIBarButtonItem) {
+    @IBAction func addNewItem(_: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "NewSpellViewController") as! NewSpellViewController
         secondVC.modalPresentationStyle = .formSheet
-        secondVC.completionHandler = { add,item in
+        secondVC.completionHandler = { add, item in
             guard add else {
                 return false
             }
@@ -35,7 +34,7 @@ class ItemsViewController: UITableViewController {
             guard !self.itemStore.spellAlreadyExists(newItem.name) else {
                 return false
             }
-            
+
             self.itemStore.insertItem(newItem)
             if let index = self.itemStore.allItems.index(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
@@ -43,10 +42,10 @@ class ItemsViewController: UITableViewController {
             }
             return true
         }
-        self.present(secondVC, animated: true, completion: nil)
+        present(secondVC, animated: true, completion: nil)
     }
 
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    override func prepare(for segue: UIStoryboardSegue, sender _: Any?) {
         // If the triggered segue is the "showItem" segue
         switch segue.identifier {
         case "showItem"?:
@@ -62,14 +61,14 @@ class ItemsViewController: UITableViewController {
         }
     }
 
-    override func tableView(_ tableView: UITableView,
+    override func tableView(_: UITableView,
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         // Update the model
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
 
-    override func tableView(_ tableView: UITableView,
+    override func tableView(_: UITableView,
                             commit editingStyle: UITableViewCell.EditingStyle,
                             forRowAt indexPath: IndexPath) {
         // If the table view is asking to commit a delete command...
@@ -77,14 +76,14 @@ class ItemsViewController: UITableViewController {
             let item = itemStore.allItems[indexPath.row]
 
             // Remove the item from the store
-            self.itemStore.removeItem(item)
+            itemStore.removeItem(item)
 
             // Also remove that row from the table view with an animation
-            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
         return itemStore.allItems.count
     }
 
@@ -103,8 +102,8 @@ class ItemsViewController: UITableViewController {
 
         return cell
     }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+
+    override func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
         return 72
     }
 }
