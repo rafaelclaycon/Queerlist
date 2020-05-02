@@ -56,6 +56,7 @@
 		6B80ACB6216664F100A5E0C1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BB449B2430190C00BD4103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
 		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
@@ -111,6 +112,7 @@
 		6B80AC85216663E100A5E0C1 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
+				D9BB449B2430190C00BD4103 /* Info.plist */,
 				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
 				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
 				6B80ACB6216664F100A5E0C1 /* Item.swift */,
@@ -527,12 +529,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = SpellChecker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellChecker;
 				PRODUCT_NAME = SpellChecker;
 				SWIFT_VERSION = 4.2;
@@ -546,12 +550,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = SpellChecker/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellChecker;
 				PRODUCT_NAME = SpellChecker;
 				SWIFT_VERSION = 4.2;
