@@ -15,18 +15,41 @@ class NewSpellViewController: UIViewController {
     @IBOutlet weak var addButton: UIButton!
     
     var item: Item? = nil
-    var completionHandler: ((Item) -> Item)?
+    var completionHandler: ((Bool,Item?) -> Bool)?
     
     @IBAction func closeModal(_ sender: UIButton) {
+        let _ = completionHandler?(false,nil)
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addNewSpell(_ sender: UIButton) {
-        item?.name = nameTextField.text!
-        item?.description = descriptionTextView.text
-        let result = completionHandler?(item!)
-        print("Item created! - Name: \(result?.name ?? "")")
-        self.dismiss(animated: true, completion: nil)
+        guard let spellName = nameTextField.text else {
+            return
+        }
+        guard let spellDescription = descriptionTextView.text else {
+            return
+        }
+        guard spellName != "" else {
+            showAlert(title: "Name Field is Empty", message: "Please provide a name for your new spell before saving.")
+            return
+        }
+        guard spellDescription != "" else {
+            showAlert(title: "Description Field is Empty", message: "Please provide a description for your new spell before saving.")
+            return
+        }
+        
+        self.item = Item(name: spellName, description: spellDescription)
+        let result = completionHandler?(true, item!)
+        
+        guard let saved = result else {
+            return
+        }
+        if saved {
+            print("Item created! - Name: \(spellName)")
+            self.dismiss(animated: true, completion: nil)
+        } else {
+            showAlert(title: "Duplicated Spell", message: "There's already another spell on the list with the spell name you provided. Please check.")
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -39,5 +62,13 @@ class NewSpellViewController: UIViewController {
         descriptionTextView.layer.borderWidth = 1
         descriptionTextView.layer.cornerRadius = 6
         descriptionTextView.clipsToBounds = true
+    }
+    
+    private func showAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        self.present(alert, animated: true, completion: nil)
     }
 }

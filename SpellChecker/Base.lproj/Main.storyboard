@@ -149,7 +149,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh">
-                                                <rect key="frame" x="172.5" y="342.5" width="30" height="30"/>
+                                                <rect key="frame" x="172" y="342.5" width="31" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Add"/>
                                                 <connections>
                                                     <action selector="addNewSpell:" destination="sbD-8C-ZoZ" eventType="touchUpInside" id="LX6-7f-WNn"/>
@@ -162,17 +163,18 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Y8-XZ-SFt">
-                                                <rect key="frame" x="8" y="8" width="48" height="30"/>
+                                                <rect key="frame" x="17" y="0.0" width="53" height="33"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <state key="normal" title="Cancel"/>
                                                 <connections>
                                                     <action selector="closeModal:" destination="sbD-8C-ZoZ" eventType="touchUpInside" id="BI4-5t-SOj"/>
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="733" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nuZ-6y-Iej">
-                                                <rect key="frame" x="27.5" y="207.5" width="320" height="120"/>
+                                                <rect key="frame" x="17.5" y="207.5" width="340" height="120"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="320" id="W9p-HU-fqd"/>
+                                                    <constraint firstAttribute="width" constant="340" id="W9p-HU-fqd"/>
                                                     <constraint firstAttribute="height" constant="120" id="fGC-8A-7EV"/>
                                                 </constraints>
                                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -184,9 +186,9 @@
                                         <constraints>
                                             <constraint firstItem="s8a-Zt-GvB" firstAttribute="top" secondItem="1Wu-lw-CrO" secondAttribute="bottom" constant="4" id="7Si-RL-iDa"/>
                                             <constraint firstItem="u0i-bn-tEp" firstAttribute="top" secondItem="s8a-Zt-GvB" secondAttribute="bottom" constant="15" id="Eb5-mI-tsm"/>
-                                            <constraint firstItem="1Y8-XZ-SFt" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="8" id="FAx-zc-JaD"/>
+                                            <constraint firstItem="1Y8-XZ-SFt" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="17" id="FAx-zc-JaD"/>
                                             <constraint firstItem="nuZ-6y-Iej" firstAttribute="top" secondItem="u0i-bn-tEp" secondAttribute="bottom" constant="15" id="I3a-yz-FiY"/>
-                                            <constraint firstItem="1Y8-XZ-SFt" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" constant="8" id="Lc4-Co-bLx"/>
+                                            <constraint firstItem="1Y8-XZ-SFt" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" id="Lc4-Co-bLx"/>
                                             <constraint firstItem="u0i-bn-tEp" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="Nra-aq-MWX"/>
                                             <constraint firstItem="1Wu-lw-CrO" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="O06-Ev-1h0"/>
                                             <constraint firstItem="s8a-Zt-GvB" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="ODn-yb-K8P"/>

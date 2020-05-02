@@ -37,4 +37,7 @@ class ItemStore {
         }
     }
     
+    func insertItem(_ item: Item) {
+        allItems.append(item)
+    }
 }

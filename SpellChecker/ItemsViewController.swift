@@ -25,15 +25,17 @@ class ItemsViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "NewSpellViewController") as! NewSpellViewController
         secondVC.modalPresentationStyle = .formSheet
-        secondVC.item = itemStore.createItem()
-        secondVC.completionHandler = { item in
+        secondVC.completionHandler = { add,item in
+            guard add else {
+                return false
+            }
+            self.itemStore.insertItem(item!)
             if let index = self.itemStore.allItems.index(of: secondVC.item!) {
                 let indexPath = IndexPath(row: index, section: 0)
-
                 // Insert this new row into the table.
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
-            return item
+            return true
         }
         self.present(secondVC, animated: true, completion: nil)
     }
