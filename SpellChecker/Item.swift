@@ -7,7 +7,7 @@ import Foundation
 class Item: Equatable {
     
     var name: String
-    let description: String
+    var description: String
     
     init(name: String, description: String) {
         self.name = name

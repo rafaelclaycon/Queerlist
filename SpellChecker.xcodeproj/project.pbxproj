@@ -56,7 +56,6 @@
 		6B80ACB6216664F100A5E0C1 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 		7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9BB449B2430190C00BD4103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
 		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
@@ -112,19 +111,18 @@
 		6B80AC85216663E100A5E0C1 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
-				D9BB449B2430190C00BD4103 /* Info.plist */,
-				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
 				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
 				6B80ACB6216664F100A5E0C1 /* Item.swift */,
 				6B45112E216E5F940030F276 /* ItemCell.swift */,
 				6B80ACB82166650000A5E0C1 /* ItemStore.swift */,
 				6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */,
 				6B45112A216D097B0030F276 /* DetailViewController.swift */,
-				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
-				6B80AC8D216663E300A5E0C1 /* Assets.xcassets */,
-				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
-				6B80AC92216663E300A5E0C1 /* Info.plist */,
 				D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */,
+				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
+				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
+				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
+				6B80AC8D216663E300A5E0C1 /* Assets.xcassets */,
+				6B80AC92216663E300A5E0C1 /* Info.plist */,
 			);
 			path = SpellChecker;
 			sourceTree = "<group>";

@@ -14,12 +14,19 @@ class NewSpellViewController: UIViewController {
     @IBOutlet weak var descriptionTextView: UITextView!
     @IBOutlet weak var addButton: UIButton!
     
+    var item: Item? = nil
+    var completionHandler: ((Item) -> Item)?
+    
     @IBAction func closeModal(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func addNewSpell(_ sender: UIButton) {
-        
+        item?.name = nameTextField.text!
+        item?.description = descriptionTextView.text
+        let result = completionHandler?(item!)
+        print("Item created! - Name: \(result?.name ?? "")")
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewWillAppear(_ animated: Bool) {
