@@ -151,10 +151,12 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh">
-                                                <rect key="frame" x="191.5" y="423.5" width="31" height="33"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="Add"/>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh" customClass="CustomButton" customModule="SpellChecker" customModuleProvider="target">
+                                                <rect key="frame" x="25" y="428.5" width="364" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="kfg-jf-szF"/>
+                                                </constraints>
+                                                <state key="normal" title="Add Spell" image="Spell magic wand"/>
                                                 <connections>
                                                     <action selector="addNewSpell:" destination="sbD-8C-ZoZ" eventType="touchUpInside" id="LX6-7f-WNn"/>
                                                 </connections>
@@ -187,20 +189,21 @@
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
                                             <constraint firstItem="s8a-Zt-GvB" firstAttribute="top" secondItem="1Wu-lw-CrO" secondAttribute="bottom" constant="10" id="7Si-RL-iDa"/>
+                                            <constraint firstAttribute="trailing" secondItem="hk8-fl-1vh" secondAttribute="trailing" constant="25" id="8HZ-Eb-jdZ"/>
                                             <constraint firstAttribute="trailing" secondItem="nuZ-6y-Iej" secondAttribute="trailing" constant="25" id="A2z-Fe-p4r"/>
                                             <constraint firstItem="u0i-bn-tEp" firstAttribute="top" secondItem="s8a-Zt-GvB" secondAttribute="bottom" constant="15" id="Eb5-mI-tsm"/>
                                             <constraint firstItem="1Y8-XZ-SFt" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="17" id="FAx-zc-JaD"/>
                                             <constraint firstItem="nuZ-6y-Iej" firstAttribute="top" secondItem="u0i-bn-tEp" secondAttribute="bottom" constant="10" id="I3a-yz-FiY"/>
                                             <constraint firstItem="1Y8-XZ-SFt" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" id="Lc4-Co-bLx"/>
+                                            <constraint firstItem="hk8-fl-1vh" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="NG2-yi-q4L"/>
                                             <constraint firstItem="u0i-bn-tEp" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="Nra-aq-MWX"/>
                                             <constraint firstItem="1Wu-lw-CrO" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="O06-Ev-1h0"/>
                                             <constraint firstItem="s8a-Zt-GvB" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="ODn-yb-K8P"/>
                                             <constraint firstItem="f37-ON-yil" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="SrP-Hc-RHm"/>
-                                            <constraint firstItem="hk8-fl-1vh" firstAttribute="top" secondItem="nuZ-6y-Iej" secondAttribute="bottom" constant="15" id="TQG-2l-fv1"/>
+                                            <constraint firstItem="hk8-fl-1vh" firstAttribute="top" secondItem="nuZ-6y-Iej" secondAttribute="bottom" constant="20" id="TQG-2l-fv1"/>
                                             <constraint firstAttribute="trailing" secondItem="s8a-Zt-GvB" secondAttribute="trailing" constant="25" id="VMh-1e-Yi9"/>
                                             <constraint firstItem="1Wu-lw-CrO" firstAttribute="top" secondItem="f37-ON-yil" secondAttribute="bottom" constant="20" id="Z29-vO-gt3"/>
                                             <constraint firstItem="f37-ON-yil" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" constant="46" id="aH5-hH-V1d"/>
-                                            <constraint firstItem="hk8-fl-1vh" firstAttribute="centerX" secondItem="VFk-MI-z2q" secondAttribute="centerX" id="cNG-Y9-KQm"/>
                                             <constraint firstItem="nuZ-6y-Iej" firstAttribute="leading" secondItem="u0i-bn-tEp" secondAttribute="leading" id="rZq-Hq-qO2"/>
                                         </constraints>
                                     </view>
@@ -238,4 +241,7 @@
             <point key="canvasLocation" x="2005.5999999999999" y="884.70764617691157"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Spell magic wand" width="25" height="25"/>
+    </resources>
 </document>
