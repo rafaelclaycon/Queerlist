@@ -1,0 +1,7 @@
+"NameFieldIsEmptyTitle" = "Campo Nome está Vazio";
+"NameFieldIsEmptyMessage" = "Informe um nome para o feitiço antes de salvá-lo.";
+"OK" = "OK";
+"DuplicatedSpellTitle" = "Feitiço Já Existe";
+"DuplicatedSpellMessage" = "Já existe um feitiço cadastrado com o nome informado.";
+"DescriptionFieldIsEmptyTitle" = "Campo Descrição está Vazio";
+"DescriptionFieldIsEmptyTitle" = "Informe um descrição para o feitiço antes de salvá-lo.";
