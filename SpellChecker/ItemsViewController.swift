@@ -29,10 +29,16 @@ class ItemsViewController: UITableViewController {
             guard add else {
                 return false
             }
-            self.itemStore.insertItem(item!)
-            if let index = self.itemStore.allItems.index(of: secondVC.item!) {
+            guard let newItem = item else {
+                return false
+            }
+            guard !self.itemStore.spellAlreadyExists(newItem.name) else {
+                return false
+            }
+            
+            self.itemStore.insertItem(newItem)
+            if let index = self.itemStore.allItems.index(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
-                // Insert this new row into the table.
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
             return true
