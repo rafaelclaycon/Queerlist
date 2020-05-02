@@ -24,7 +24,7 @@ class ItemsViewController: UITableViewController {
     @IBAction func addNewItem(_ sender: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let secondVC = storyboard.instantiateViewController(identifier: "NewSpellViewController") as! NewSpellViewController
-        secondVC.modalPresentationStyle = .formSheeta
+        secondVC.modalPresentationStyle = .formSheet
         secondVC.completionHandler = { add,item in
             guard add else {
                 return false
