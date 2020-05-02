@@ -58,7 +58,7 @@ class NewSpellViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        descriptionTextView.layer.borderColor = UIColor.lightGray.cgColor
+        descriptionTextView.layer.borderColor = UIColor(red: 0.80, green: 0.80, blue: 0.80, alpha: 1.00).cgColor
         descriptionTextView.layer.borderWidth = 1
         descriptionTextView.layer.cornerRadius = 6
         descriptionTextView.clipsToBounds = true
