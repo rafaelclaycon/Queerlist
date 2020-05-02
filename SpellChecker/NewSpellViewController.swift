@@ -48,7 +48,7 @@ class NewSpellViewController: UIViewController {
             print("Item created! - Name: \(spellName)")
             self.dismiss(animated: true, completion: nil)
         } else {
-            showAlert(title: "Duplicated Spell", message: "There's already another spell on the list with the spell name you provided. Please check.")
+            showAlert(title: "Duplicated Spell", message: "There's already another spell on the list with the same spell name you provided.")
         }
     }
     

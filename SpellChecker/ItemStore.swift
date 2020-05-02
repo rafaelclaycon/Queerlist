@@ -40,4 +40,13 @@ class ItemStore {
     func insertItem(_ item: Item) {
         allItems.append(item)
     }
+    
+    func spellAlreadyExists(_ spellName: String) -> Bool {
+        for spell in allItems {
+            if spell.name == spellName {
+                return true
+            }
+        }
+        return false
+    }
 }
