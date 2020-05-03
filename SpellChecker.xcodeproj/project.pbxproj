@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		485FACD625C2313FF4D88BC1 /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */; };
 		6B45112B216D097B0030F276 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112A216D097B0030F276 /* DetailViewController.swift */; };
-		6B45112F216E5F940030F276 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112E216E5F940030F276 /* ItemCell.swift */; };
+		6B45112F216E5F940030F276 /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112E216E5F940030F276 /* SpellCell.swift */; };
 		6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80AC86216663E100A5E0C1 /* AppDelegate.swift */; };
 		6B80AC8C216663E200A5E0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8A216663E200A5E0C1 /* Main.storyboard */; };
 		6B80AC8E216663E300A5E0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8D216663E300A5E0C1 /* Assets.xcassets */; };
@@ -48,7 +48,7 @@
 		5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker_SpellCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F6A089A72AD239B525F838 /* Pods-SpellChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.release.xcconfig"; sourceTree = "<group>"; };
 		6B45112A216D097B0030F276 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		6B45112E216E5F940030F276 /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		6B45112E216E5F940030F276 /* SpellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
 		6B80AC83216663E100A5E0C1 /* SpellChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B80AC86216663E100A5E0C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B80AC8B216663E200A5E0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -129,7 +129,7 @@
 				D97AFCD7245E61E2008265CF /* MockData.swift */,
 				D987E592245DD8B6006FE232 /* Localizable.strings */,
 				6B80ACB6216664F100A5E0C1 /* Spell.swift */,
-				6B45112E216E5F940030F276 /* ItemCell.swift */,
+				6B45112E216E5F940030F276 /* SpellCell.swift */,
 				6B80ACB82166650000A5E0C1 /* ItemStore.swift */,
 				6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */,
 				6B45112A216D097B0030F276 /* DetailViewController.swift */,
@@ -381,7 +381,7 @@
 				6B80ACB52166644700A5E0C1 /* ItemsViewController.swift in Sources */,
 				D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */,
 				D987E599245DFCD7006FE232 /* CustomButton.swift in Sources */,
-				6B45112F216E5F940030F276 /* ItemCell.swift in Sources */,
+				6B45112F216E5F940030F276 /* SpellCell.swift in Sources */,
 				6B80ACB92166650000A5E0C1 /* ItemStore.swift in Sources */,
 				D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */,
 				6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */,

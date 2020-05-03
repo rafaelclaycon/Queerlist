@@ -4,6 +4,6 @@
 
 import UIKit
 
-class ItemCell: UITableViewCell {
+class SpellCell: UITableViewCell {
     @IBOutlet var nameLabel: UILabel!
 }
