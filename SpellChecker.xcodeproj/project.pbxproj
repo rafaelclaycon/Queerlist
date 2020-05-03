@@ -14,7 +14,7 @@
 		6B80AC8C216663E200A5E0C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8A216663E200A5E0C1 /* Main.storyboard */; };
 		6B80AC8E216663E300A5E0C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8D216663E300A5E0C1 /* Assets.xcassets */; };
 		6B80AC91216663E300A5E0C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */; };
-		6B80ACB52166644700A5E0C1 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */; };
+		6B80ACB52166644700A5E0C1 /* SpellListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */; };
 		6B80ACB7216664F100A5E0C1 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB6216664F100A5E0C1 /* Spell.swift */; };
 		6B80ACB92166650000A5E0C1 /* SpellStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB82166650000A5E0C1 /* SpellStore.swift */; };
 		D3D65AC3ABDA620C54BD7D69 /* Pods_SpellChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */; };
@@ -57,7 +57,7 @@
 		6B80AC92216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B80ACA2216663E300A5E0C1 /* SpellCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B80ACA8216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* SpellStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellStore.swift; sourceTree = "<group>"; };
 		7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,7 +131,7 @@
 				6B80ACB6216664F100A5E0C1 /* Spell.swift */,
 				6B45112E216E5F940030F276 /* SpellCell.swift */,
 				6B80ACB82166650000A5E0C1 /* SpellStore.swift */,
-				6B80ACB42166644700A5E0C1 /* ItemsViewController.swift */,
+				6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */,
 				6B45112A216D097B0030F276 /* DetailViewController.swift */,
 				D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */,
 				D987E598245DFCD7006FE232 /* CustomButton.swift */,
@@ -378,7 +378,7 @@
 				D97AFCD8245E61E2008265CF /* MockData.swift in Sources */,
 				D987E595245DDB4F006FE232 /* Strings.swift in Sources */,
 				6B80ACB7216664F100A5E0C1 /* Spell.swift in Sources */,
-				6B80ACB52166644700A5E0C1 /* ItemsViewController.swift in Sources */,
+				6B80ACB52166644700A5E0C1 /* SpellListViewController.swift in Sources */,
 				D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */,
 				D987E599245DFCD7006FE232 /* CustomButton.swift in Sources */,
 				6B45112F216E5F940030F276 /* SpellCell.swift in Sources */,

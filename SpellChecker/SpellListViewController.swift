@@ -4,7 +4,7 @@
 
 import UIKit
 
-class ItemsViewController: UITableViewController {
+class SpellListViewController: UITableViewController {
     var spellStore: SpellStore!
 
     required init?(coder aDecoder: NSCoder) {

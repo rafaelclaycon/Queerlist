@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let tabBarController = window!.rootViewController as! UITabBarController
         let navController = tabBarController.viewControllers?.first as! UINavigationController
-        let itemsController = navController.topViewController as! ItemsViewController
+        let itemsController = navController.topViewController as! SpellListViewController
         itemsController.spellStore = spellStore
 
         MockData.insertSpells(into: itemsController.spellStore)
