@@ -101,8 +101,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fnk-x5-8vm"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VYx-NV-oc6"/>
+                    <navigationItem key="navigationItem" id="VYx-NV-oc6">
+                        <barButtonItem key="rightBarButtonItem" image="star" catalog="system" id="ciu-iw-bOg">
+                            <connections>
+                                <action selector="markFavorite:" destination="z32-gT-y2M" id="FyI-wN-6BW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="favoriteButton" destination="ciu-iw-bOg" id="cFD-bn-abQ"/>
                         <outlet property="imageView" destination="O8V-jX-hvL" id="sx8-Vu-kI6"/>
                         <outlet property="spellDescription" destination="hM5-Qn-lrE" id="J9G-yP-uW7"/>
                         <outlet property="spellName" destination="Hg6-8w-UJc" id="00P-Og-Cd5"/>
@@ -367,5 +374,6 @@
         <image name="Spell magic wand" width="25" height="25"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>
