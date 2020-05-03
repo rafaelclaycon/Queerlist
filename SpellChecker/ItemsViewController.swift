@@ -98,12 +98,25 @@ class ItemsViewController: UITableViewController {
         // will appear in on the tableview
         let item = itemStore.allItems[indexPath.row]
 
-        cell.nameLabel.text = item.name
+        if item.isFavorite {
+            let imageAttachment = NSTextAttachment()
+            imageAttachment.image = UIImage(systemName: "star.fill")
+
+            let fullString = NSMutableAttributedString(string: item.name + " ")
+            fullString.append(NSAttributedString(attachment: imageAttachment))
+            cell.nameLabel.attributedText = fullString
+        } else {
+            cell.nameLabel.text = item.name
+        }
 
         return cell
     }
 
     override func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
         return 72
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "Section \(section)"
     }
 }

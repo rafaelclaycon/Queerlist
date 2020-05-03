@@ -9,12 +9,14 @@ class Item: Equatable {
     var description: String
     var image: UIImage?
     var isFavorite: Bool
+    var dateAdded: Date
 
-    init(name: String, description: String, image: UIImage? = nil, favorite: Bool = false) {
+    init(name: String, description: String, image: UIImage? = nil, date: Date) {
         self.name = name
         self.description = description
         self.image = image
-        self.isFavorite = favorite
+        isFavorite = false
+        dateAdded = date
     }
 
     static func == (lhs: Item, rhs: Item) -> Bool {

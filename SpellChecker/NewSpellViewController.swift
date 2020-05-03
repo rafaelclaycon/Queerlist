@@ -38,7 +38,7 @@ class NewSpellViewController: UIViewController {
             return
         }
 
-        item = Item(name: spellName, description: spellDescription)
+        item = Item(name: spellName, description: spellDescription, date: Date())
         let result = completionHandler?(true, item!)
 
         guard let saved = result else {
