@@ -3,7 +3,7 @@
 //  bluemmUITests
 //
 //  Created by Rafael Schmitt on 21/02/19.
-//  Copyright © 2019 SLB. All rights reserved.
+//  Copyright © 2020 SLB. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

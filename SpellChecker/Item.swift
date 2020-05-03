@@ -1,45 +1,26 @@
-// 
-//  Copyright © 2018 Big Nerd Ranch
+//
+//  Copyright © 2020 Rafael Claycon Schmitt
 //
 
-import Foundation
+import UIKit
 
 class Item: Equatable {
-    
     var name: String
     var description: String
-    
-    init(name: String, description: String) {
+    var image: UIImage?
+    var isFavorite: Bool
+    var dateAdded: Date
+
+    init(name: String, description: String, image: UIImage? = nil, date: Date) {
         self.name = name
         self.description = description
-    }
-    
-    convenience init(random: Bool = false) {
-        if random {
-            let adjectives = ["Fluffy", "Rusty", "Shiny"]
-            let nouns = ["Bear", "Spork", "Mac"]
-            
-            var index = Int.random(in: 0..<adjectives.count)
-            let randomAdjective = adjectives[index]
-            
-            index = Int.random(in: 0..<nouns.count)
-            let randomNoun = nouns[index]
-            
-            let randomName = "\(randomAdjective) \(randomNoun)"
-            //let randomValue = Int.random(in: 0..<100)
-            let randomSerialNumber = UUID().uuidString.components(separatedBy: "-").first!
-            
-            self.init(name: randomName,
-                description: randomSerialNumber)
-        }
-        else {
-            self.init(name: "", description: "")
-        }
+        self.image = image
+        isFavorite = false
+        dateAdded = date
     }
 
-    static func ==(lhs: Item, rhs: Item) -> Bool {
+    static func == (lhs: Item, rhs: Item) -> Bool {
         return lhs.name == rhs.name
             && lhs.description == rhs.description
     }
-
 }

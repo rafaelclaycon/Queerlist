@@ -3,7 +3,7 @@
 //  SpellCheckerUITests
 //
 //  Created by Rafael Schmitt on 21/10/19.
-//  Copyright © 2019 Big Nerd Ranch. All rights reserved.
+//  Copyright © 2020 Rafael Claycon Schmitt. All rights reserved.
 //
 
 import Foundation
