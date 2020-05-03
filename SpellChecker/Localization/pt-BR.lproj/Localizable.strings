@@ -5,3 +5,9 @@
 "DuplicatedSpellMessage" = "Já existe um feitiço cadastrado com o nome informado.";
 "DescriptionFieldIsEmptyTitle" = "Campo Descrição está Vazio";
 "DescriptionFieldIsEmptyTitle" = "Informe um descrição para o feitiço antes de salvá-lo.";
+"SortByPopupTitle" = "Ordenar por";
+"AToZSortOption" = "🔠  A → Z";
+"FavoritesAtTheTopSortOption" = "🌟  Favoritos no Topo";
+"DateAddedSortOption" = "📆  Data de Adição";
+"CustomSortOption" = "🧙‍♂️  Personalizado";
+"Cancel" = "Cancelar";

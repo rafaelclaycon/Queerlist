@@ -21,21 +21,21 @@ class SpellListViewController: UITableViewController {
     }
     
     @IBAction func sortSpells(_: UIBarButtonItem) {
-        let alert = UIAlertController(title: "Sort By", message: nil, preferredStyle: .actionSheet)
-        alert.addAction(UIAlertAction(title: "Alphabetical Order", style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+        let alert = UIAlertController(title: LocalizableStrings.sortByPopupTitle, message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: LocalizableStrings.aToZSortOption, style: .default, handler: { _ in
+            NSLog("The \"A to Z\" option was picked.")
         }))
-        alert.addAction(UIAlertAction(title: "Favorites First", style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+        alert.addAction(UIAlertAction(title: LocalizableStrings.favoritesAtTheTopSortOption, style: .default, handler: { _ in
+            NSLog("The \"Favorites At the Top\" option was picked.")
         }))
-        alert.addAction(UIAlertAction(title: "Date Added", style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+        alert.addAction(UIAlertAction(title: LocalizableStrings.dateAddedSortOption, style: .default, handler: { _ in
+            NSLog("The \"Date Added\" option was picked.")
         }))
-        alert.addAction(UIAlertAction(title: "Custom", style: .default, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+        alert.addAction(UIAlertAction(title: LocalizableStrings.customSortOption, style: .default, handler: { _ in
+            NSLog("The \"Custom\" option was picked.")
         }))
-        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
-            NSLog("The \"OK\" alert occured.")
+        alert.addAction(UIAlertAction(title: LocalizableStrings.cancel, style: .cancel, handler: { _ in
+            NSLog("The \"Cancel\" option was picked.")
         }))
         present(alert, animated: true, completion: nil)
     }
@@ -120,7 +120,9 @@ class SpellListViewController: UITableViewController {
 
         if item.isFavorite {
             let imageAttachment = NSTextAttachment()
-            imageAttachment.image = UIImage(systemName: "star.fill")
+            let star = UIImage(systemName: "star.fill")
+            let orangeStar = star?.withTintColor(UIColor.orange, renderingMode: .alwaysOriginal)
+            imageAttachment.image = orangeStar
 
             let fullString = NSMutableAttributedString(string: item.name + " ")
             fullString.append(NSAttributedString(attachment: imageAttachment))

@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Spells-->
+        <!--Spells (Alphabetical)-->
         <scene sceneID="f2J-PF-79p">
             <objects>
                 <tableViewController id="Dq1-zB-R57" customClass="SpellListViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                             <outlet property="delegate" destination="Dq1-zB-R57" id="Jao-2v-dKC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Spells" id="dS8-bt-QdA">
+                    <navigationItem key="navigationItem" title="Spells (Alphabetical)" id="dS8-bt-QdA">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="gno-SD-tnq">
                                 <connections>
@@ -297,8 +297,8 @@
                                                     <action selector="addNewSpell:" destination="sbD-8C-ZoZ" eventType="touchUpInside" id="LX6-7f-WNn"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Spell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f37-ON-yil">
-                                                <rect key="frame" x="25" y="46" width="125.5" height="32.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Spell ✨" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f37-ON-yil">
+                                                <rect key="frame" x="25" y="46" width="162" height="32.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
