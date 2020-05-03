@@ -113,7 +113,7 @@ class ItemsViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, heightForRowAt _: IndexPath) -> CGFloat {
-        return 72
+        return 54
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {

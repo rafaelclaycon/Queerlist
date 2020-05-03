@@ -24,8 +24,8 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VET-dr-EvM">
-                                            <rect key="frame" x="20" y="24.5" width="49" height="23.5"/>
-                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                            <rect key="frame" x="20" y="25.5" width="44.5" height="21"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -142,7 +142,7 @@
         <scene sceneID="b64-QY-Sn5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hLS-Y2-pYr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Spells" image="square.and.pencil" catalog="system" id="SZ2-hL-Zgz"/>
+                    <tabBarItem key="tabBarItem" title="Spells" image="Spell 50" id="SZ2-hL-Zgz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rod-Tm-FcM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -219,7 +219,7 @@
         <scene sceneID="LeX-HZ-eG6">
             <objects>
                 <navigationController id="Vai-2e-dtL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wizard" image="person.fill" catalog="system" id="ncl-TT-lOQ"/>
+                    <tabBarItem key="tabBarItem" title="Wizard" image="Wizard hat 60" id="ncl-TT-lOQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yW3-NB-TKV">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -371,9 +371,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Spell 50" width="25" height="25"/>
         <image name="Spell magic wand" width="25" height="25"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
-        <image name="square.and.pencil" catalog="system" width="128" height="118"/>
+        <image name="Wizard hat 60" width="30" height="30"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>
