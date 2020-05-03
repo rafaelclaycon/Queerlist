@@ -47,11 +47,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Spells" id="dS8-bt-QdA">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="gno-SD-tnq">
-                            <connections>
-                                <action selector="addNewItem:" destination="Dq1-zB-R57" id="Abm-cL-3vn"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="gno-SD-tnq">
+                                <connections>
+                                    <action selector="addNewItem:" destination="Dq1-zB-R57" id="Abm-cL-3vn"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Sort" image="arrow.up.arrow.down" catalog="system" id="9AU-gW-kHU">
+                                <connections>
+                                    <action selector="sortSpells:" destination="Dq1-zB-R57" id="JuN-e6-D19"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwv-oO-665" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -374,6 +381,7 @@
         <image name="Spell 50" width="25" height="25"/>
         <image name="Spell magic wand" width="25" height="25"/>
         <image name="Wizard hat 60" width="30" height="30"/>
+        <image name="arrow.up.arrow.down" catalog="system" width="128" height="96"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>

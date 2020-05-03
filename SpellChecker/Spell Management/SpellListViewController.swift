@@ -19,6 +19,26 @@ class SpellListViewController: UITableViewController {
         tableView.reloadData()
         tableView.accessibilityIdentifier = UITestID.spellList
     }
+    
+    @IBAction func sortSpells(_: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Sort By", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Alphabetical Order", style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: "Favorites First", style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: "Date Added", style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: "Custom", style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+        }))
+        present(alert, animated: true, completion: nil)
+    }
 
     @IBAction func addNewItem(_: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
