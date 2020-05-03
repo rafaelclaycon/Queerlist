@@ -10,7 +10,7 @@ class DetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
-    var item: Item! {
+    var item: Spell! {
         didSet {
             navigationItem.title = item.name
             if item.isFavorite {

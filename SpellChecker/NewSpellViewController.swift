@@ -14,8 +14,8 @@ class NewSpellViewController: UIViewController {
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var addButton: UIButton!
 
-    var item: Item?
-    var completionHandler: ((Bool, Item?) -> Bool)?
+    var item: Spell?
+    var completionHandler: ((Bool, Spell?) -> Bool)?
 
     @IBAction func closeModal(_: UIButton) {
         _ = completionHandler?(false, nil)
@@ -38,7 +38,7 @@ class NewSpellViewController: UIViewController {
             return
         }
 
-        item = Item(name: spellName, description: spellDescription, date: Date())
+        item = Spell(name: spellName, description: spellDescription, date: Date())
         let result = completionHandler?(true, item!)
 
         guard let saved = result else {

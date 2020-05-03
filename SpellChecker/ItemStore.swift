@@ -5,7 +5,7 @@
 import Foundation
 
 class ItemStore {
-    var allItems: [Item] = []
+    var allItems: [Spell] = []
 
     func moveItem(from fromIndex: Int, to toIndex: Int) {
         if fromIndex == toIndex {
@@ -22,13 +22,13 @@ class ItemStore {
         allItems.insert(movedItem, at: toIndex)
     }
 
-    func removeItem(_ item: Item) {
+    func removeItem(_ item: Spell) {
         if let index = allItems.index(of: item) {
             allItems.remove(at: index)
         }
     }
 
-    func insertItem(_ item: Item) {
+    func insertItem(_ item: Spell) {
         allItems.append(item)
     }
 

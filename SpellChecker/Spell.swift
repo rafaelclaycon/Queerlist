@@ -4,7 +4,7 @@
 
 import UIKit
 
-class Item: Equatable {
+class Spell: Equatable {
     var name: String
     var description: String
     var image: UIImage?
@@ -19,7 +19,7 @@ class Item: Equatable {
         dateAdded = date
     }
 
-    static func == (lhs: Item, rhs: Item) -> Bool {
+    static func == (lhs: Spell, rhs: Spell) -> Bool {
         return lhs.name == rhs.name
             && lhs.description == rhs.description
     }
