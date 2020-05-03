@@ -10,14 +10,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_: UIApplication, didFinishLaunchingWithOptions _: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        let itemStore = ItemStore()
+        let spellStore = SpellStore()
 
         let tabBarController = window!.rootViewController as! UITabBarController
         let navController = tabBarController.viewControllers?.first as! UINavigationController
         let itemsController = navController.topViewController as! ItemsViewController
-        itemsController.itemStore = itemStore
+        itemsController.spellStore = spellStore
 
-        MockData.insertSpells(into: itemsController.itemStore)
+        MockData.insertSpells(into: itemsController.spellStore)
 
         return true
     }

@@ -5,7 +5,7 @@
 import UIKit
 
 class ItemsViewController: UITableViewController {
-    var itemStore: ItemStore!
+    var spellStore: SpellStore!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -31,12 +31,12 @@ class ItemsViewController: UITableViewController {
             guard let newItem = item else {
                 return false
             }
-            guard !self.itemStore.spellAlreadyExists(newItem.name) else {
+            guard !self.spellStore.spellAlreadyExists(newItem.name) else {
                 return false
             }
 
-            self.itemStore.insertItem(newItem)
-            if let index = self.itemStore.allItems.index(of: newItem) {
+            self.spellStore.insertItem(newItem)
+            if let index = self.spellStore.allItems.index(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
@@ -52,7 +52,7 @@ class ItemsViewController: UITableViewController {
             // Figure out which row was just tapped
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
-                let item = itemStore.allItems[row]
+                let item = spellStore.allItems[row]
                 let detailViewController = segue.destination as! DetailViewController
                 detailViewController.item = item
             }
@@ -65,7 +65,7 @@ class ItemsViewController: UITableViewController {
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         // Update the model
-        itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+        spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
 
     override func tableView(_: UITableView,
@@ -73,10 +73,10 @@ class ItemsViewController: UITableViewController {
                             forRowAt indexPath: IndexPath) {
         // If the table view is asking to commit a delete command...
         if editingStyle == .delete {
-            let item = itemStore.allItems[indexPath.row]
+            let item = spellStore.allItems[indexPath.row]
 
             // Remove the item from the store
-            itemStore.removeItem(item)
+            spellStore.removeItem(item)
 
             // Also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
@@ -84,7 +84,7 @@ class ItemsViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return itemStore.allItems.count
+        return spellStore.allItems.count
     }
 
     override func tableView(_ tableView: UITableView,
@@ -96,7 +96,7 @@ class ItemsViewController: UITableViewController {
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
-        let item = itemStore.allItems[indexPath.row]
+        let item = spellStore.allItems[indexPath.row]
 
         if item.isFavorite {
             let imageAttachment = NSTextAttachment()

@@ -4,7 +4,7 @@
 
 import Foundation
 
-class ItemStore {
+class SpellStore {
     var allItems: [Spell] = []
 
     func moveItem(from fromIndex: Int, to toIndex: Int) {
