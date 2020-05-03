@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="1063.2" y="163.30049261083744"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Spell Detail View Controller-->
         <scene sceneID="2uT-pV-M6C">
             <objects>
-                <viewController id="z32-gT-y2M" customClass="DetailViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z32-gT-y2M" customClass="SpellDetailViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XRH-uT-Zt0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

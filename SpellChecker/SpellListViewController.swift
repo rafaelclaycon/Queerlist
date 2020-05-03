@@ -53,7 +53,7 @@ class SpellListViewController: UITableViewController {
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
                 let item = spellStore.allItems[row]
-                let detailViewController = segue.destination as! DetailViewController
+                let detailViewController = segue.destination as! SpellDetailViewController
                 detailViewController.item = item
             }
         default:

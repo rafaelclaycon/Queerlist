@@ -4,7 +4,7 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class SpellDetailViewController: UIViewController {
     @IBOutlet var favoriteButton: UIBarButtonItem!
     @IBOutlet var spellName: UILabel!
     @IBOutlet var imageView: UIImageView!
