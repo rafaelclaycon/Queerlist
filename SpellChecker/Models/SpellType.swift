@@ -7,3 +7,13 @@
 //
 
 import Foundation
+
+enum SpellType {         // PT-BR               // FR-CA
+    case transfiguration // Transfiguração      // Métamorphose
+    case charm           // Encantamento        // Enchantement ou charme
+    case jinx            // Azaração            //
+    case hex             // Feitiço             // Maléfice
+    case curse           // Maldição            // Malédiction
+    case counterSpell    // Contra-azaração     // 
+    case healingSpell    // Feitiço de cura     //
+}

@@ -53,7 +53,7 @@
                                     <action selector="addNewItem:" destination="Dq1-zB-R57" id="Abm-cL-3vn"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem title="Sort" image="arrow.up.arrow.down" catalog="system" id="9AU-gW-kHU">
+                            <barButtonItem title="Sort" image="arrow.up.arrow.down.circle" catalog="system" id="9AU-gW-kHU">
                                 <connections>
                                     <action selector="sortSpells:" destination="Dq1-zB-R57" id="JuN-e6-D19"/>
                                 </connections>
@@ -193,35 +193,6 @@
             </objects>
             <point key="canvasLocation" x="1062" y="885"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="Veo-Uv-ngA">
-            <objects>
-                <tableViewController id="mTq-bq-lBP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jVG-zA-fPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="nBW-Qi-a6s">
-                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nBW-Qi-a6s" id="3d2-9F-RZ5">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="mTq-bq-lBP" id="jeT-5G-hR4"/>
-                            <outlet property="delegate" destination="mTq-bq-lBP" id="vQX-xe-RYe"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="vxC-rL-lOZ"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oRJ-dE-5qR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1038" y="1600"/>
-        </scene>
         <!--Wizard-->
         <scene sceneID="LeX-HZ-eG6">
             <objects>
@@ -232,7 +203,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="mTq-bq-lBP" kind="relationship" relationship="rootViewController" id="2GJ-Nt-zBE"/>
+                        <segue destination="eCe-sZ-PyO" kind="relationship" relationship="rootViewController" id="FeK-rp-7Pm"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fse-te-mOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -376,12 +347,47 @@
             </objects>
             <point key="canvasLocation" x="1061" y="-558"/>
         </scene>
+        <!--Welcome back, Ron-->
+        <scene sceneID="hdU-4E-5se">
+            <objects>
+                <viewController id="eCe-sZ-PyO" customClass="WizardViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s1E-Ua-HVZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wq1-RW-EqL">
+                                <rect key="frame" x="107" y="118" width="200" height="204"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="Eao-GA-IZV"/>
+                                    <constraint firstAttribute="width" constant="200" id="x2n-Kv-KEZ"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wq1-RW-EqL" firstAttribute="top" secondItem="2aH-6U-80k" secondAttribute="top" constant="32" id="mDx-Rl-R1R"/>
+                            <constraint firstItem="wq1-RW-EqL" firstAttribute="centerX" secondItem="s1E-Ua-HVZ" secondAttribute="centerX" id="t1w-BV-E66"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2aH-6U-80k"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome back, Ron" id="5Nw-k8-QvA">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="eyeglasses" catalog="system" id="ck2-zx-Vj7"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEB-U6-bgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="1600"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Spell 50" width="25" height="25"/>
         <image name="Spell magic wand" width="25" height="25"/>
         <image name="Wizard hat 60" width="30" height="30"/>
-        <image name="arrow.up.arrow.down" catalog="system" width="128" height="96"/>
+        <image name="arrow.up.arrow.down.circle" catalog="system" width="128" height="121"/>
+        <image name="eyeglasses" catalog="system" width="128" height="54"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
     </resources>
 </document>

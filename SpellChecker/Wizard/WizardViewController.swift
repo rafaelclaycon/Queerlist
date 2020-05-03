@@ -6,4 +6,8 @@
 //  Copyright © 2020 Rafael Claycon Schmitt. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class WizardViewController: UIViewController {
+    
+}
