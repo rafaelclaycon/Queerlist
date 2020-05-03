@@ -125,18 +125,12 @@
 		6B80AC85216663E100A5E0C1 /* SpellChecker */ = {
 			isa = PBXGroup;
 			children = (
+				D97AFCDD245E851E008265CF /* Spell Management */,
+				D97AFCDC245E84C0008265CF /* Models */,
+				D97AFCDB245E849B008265CF /* Custom UI Components */,
+				D97AFCDA245E8480008265CF /* Data */,
+				D97AFCD9245E8448008265CF /* Localization */,
 				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
-				D97AFCD7245E61E2008265CF /* MockData.swift */,
-				D987E592245DD8B6006FE232 /* Localizable.strings */,
-				6B80ACB6216664F100A5E0C1 /* Spell.swift */,
-				6B45112E216E5F940030F276 /* SpellCell.swift */,
-				6B80ACB82166650000A5E0C1 /* SpellStore.swift */,
-				6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */,
-				6B45112A216D097B0030F276 /* SpellDetailViewController.swift */,
-				D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */,
-				D987E598245DFCD7006FE232 /* CustomButton.swift */,
-				D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */,
-				D987E594245DDB4F006FE232 /* Strings.swift */,
 				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
 				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
 				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
@@ -150,11 +144,11 @@
 			isa = PBXGroup;
 			children = (
 				D9D40D76235E9CE10041DD12 /* UITestID.swift */,
-				D9D40D70235E96A30041DD12 /* StepDefinitions */,
-				D9D40D6E235E95DD0041DD12 /* Features */,
 				D9D40D6A235E95AC0041DD12 /* Screens */,
-				D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */,
+				D9D40D70235E96A30041DD12 /* StepDefinitions */,
 				D9D40D66235E95510041DD12 /* CucumberishTests.m */,
+				D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */,
+				D9D40D6E235E95DD0041DD12 /* Features */,
 				6B80ACA8216663E300A5E0C1 /* Info.plist */,
 			);
 			path = SpellCheckerUITests;
@@ -167,6 +161,52 @@
 				5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D97AFCD9245E8448008265CF /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				D987E592245DD8B6006FE232 /* Localizable.strings */,
+				D987E594245DDB4F006FE232 /* Strings.swift */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		D97AFCDA245E8480008265CF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D97AFCD7245E61E2008265CF /* MockData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D97AFCDB245E849B008265CF /* Custom UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				D987E598245DFCD7006FE232 /* CustomButton.swift */,
+				D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */,
+			);
+			path = "Custom UI Components";
+			sourceTree = "<group>";
+		};
+		D97AFCDC245E84C0008265CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6B80ACB6216664F100A5E0C1 /* Spell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D97AFCDD245E851E008265CF /* Spell Management */ = {
+			isa = PBXGroup;
+			children = (
+				6B45112E216E5F940030F276 /* SpellCell.swift */,
+				6B80ACB82166650000A5E0C1 /* SpellStore.swift */,
+				6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */,
+				6B45112A216D097B0030F276 /* SpellDetailViewController.swift */,
+				D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */,
+			);
+			path = "Spell Management";
 			sourceTree = "<group>";
 		};
 		D9D40D6A235E95AC0041DD12 /* Screens */ = {
