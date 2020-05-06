@@ -18,7 +18,7 @@ class Spell: Equatable {
         self.name = name
         self.nickname = nickname
         self.type = type
-        self.pronunciation = nil
+        self.pronunciation = pronunciation
         self.description = description
         self.image = image
         isFavorite = false
