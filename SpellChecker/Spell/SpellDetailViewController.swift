@@ -4,13 +4,17 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class SpellDetailViewController: UIViewController {
     @IBOutlet var favoriteButton: UIBarButtonItem!
+    
+    @IBOutlet var spellType: UILabel!
     @IBOutlet var spellName: UILabel!
+    @IBOutlet var spellNickname: UILabel!
+    @IBOutlet var spellPronunciation: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
-    var item: Item! {
+    var item: Spell! {
         didSet {
             navigationItem.title = item.name
             if item.isFavorite {
@@ -22,8 +26,12 @@ class DetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        spellType.text = SpellType.getTypeNameForTinyHeader(item.type)
         spellName.text = item.name
+        spellNickname.text = item.nickname
+        spellPronunciation.text = item.pronunciation
         spellDescription.text = item.description
+        
         spellName.accessibilityIdentifier = "spell_title"
         spellDescription.accessibilityIdentifier = "spell_description"
         
