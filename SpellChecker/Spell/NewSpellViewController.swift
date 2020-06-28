@@ -13,7 +13,7 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var descriptionTextView: UITextView!
     @IBOutlet var addButton: UIButton!
-    @IBOutlet var typeButton: UIButton!
+    @IBOutlet var typeTextField: UITextField!
 
     var item: Spell?
     var completionHandler: ((Bool, Spell?) -> Bool)?
@@ -28,39 +28,6 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBAction func closeModal(_: UIButton) {
         _ = completionHandler?(false, nil)
         dismiss(animated: true, completion: nil)
-    }
-    
-    @IBAction func pickSpellType(_: UIButton) {
-        let picker = UIPickerView()
-        picker.translatesAutoresizingMaskIntoConstraints = false
-        view.addSubview(picker)
-
-        picker.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor).isActive = true
-        picker.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor).isActive = true
-        picker.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor).isActive = true
-        
-        picker.backgroundColor = UIColor.systemBackground
-        //picker.layer.borderColor = UIColor.systemFill.cgColor
-        //picker.layer.borderWidth = 1
-        picker.delegate = self
-        picker.dataSource = self
-        
-        let toolBar = UIToolbar()
-        toolBar.barStyle = UIBarStyle.default
-        toolBar.isTranslucent = true
-        toolBar.tintColor = UIColor(red: 76/255, green: 217/255, blue: 100/255, alpha: 1)
-        toolBar.sizeToFit()
-
-        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.didTapDoneOnSpellTypePicker))
-        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.didTapDoneOnSpellTypePicker))
-
-        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
-        toolBar.isUserInteractionEnabled = true
-        
-        //typeButton.inputView = picker
-        //typeButton.inputAccessoryView = toolBar
-        view.addSubview(toolBar)
     }
     
     @objc func didTapDoneOnSpellTypePicker() {
@@ -80,7 +47,7 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        typeButton.setTitle(pickerData[row], for: .normal)
+        typeTextField.text = pickerData[row]
     }
 
     @IBAction func addNewSpell(_: UIButton) {
@@ -125,7 +92,40 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
         descriptionTextView.layer.cornerRadius = 6
         descriptionTextView.clipsToBounds = true
         
-        typeButton.setTitle(pickerData[0], for: .normal)
+        self.setUpSpellTypeField()
+    }
+    
+    private func setUpSpellTypeField() {
+        let picker: UIPickerView
+        picker = UIPickerView(frame: CGRect(x: 0, y: 200, width: view.frame.width, height: 300))
+        picker.backgroundColor = .systemBackground
+
+        //picker.showsSelectionIndicator = true
+        picker.delegate = self
+        picker.dataSource = self
+
+        let toolBar = UIToolbar()
+        toolBar.barStyle = UIBarStyle.default
+        toolBar.isTranslucent = true
+        toolBar.tintColor = .systemBlue
+        toolBar.sizeToFit()
+
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(self.donePicker))
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: #selector(self.donePicker))
+
+        toolBar.setItems([cancelButton, spaceButton, doneButton], animated: false)
+        toolBar.isUserInteractionEnabled = true
+
+        typeTextField.inputView = picker
+        typeTextField.inputAccessoryView = toolBar
+        typeTextField.tintColor = .clear
+        
+        typeTextField.text = pickerData[0]
+    }
+    
+    @objc private func donePicker(_: UIButton) {
+        self.view.endEditing(true)
     }
 
     private func showAlert(title: String, message: String) {

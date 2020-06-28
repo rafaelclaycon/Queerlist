@@ -391,13 +391,13 @@
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0i-bn-tEp">
-                                                <rect key="frame" x="25" y="378" width="92.5" height="20.5"/>
+                                                <rect key="frame" x="25" y="379" width="92.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh" customClass="CustomButton" customModule="SpellChecker" customModuleProvider="target">
-                                                <rect key="frame" x="25" y="628.5" width="364" height="48"/>
+                                                <rect key="frame" x="25" y="629.5" width="364" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="kfg-jf-szF"/>
                                                 </constraints>
@@ -421,7 +421,7 @@
                                                 </connections>
                                             </button>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="733" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="nuZ-6y-Iej">
-                                                <rect key="frame" x="25" y="408.5" width="364" height="200"/>
+                                                <rect key="frame" x="25" y="409.5" width="364" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="7mA-hO-7wl"/>
@@ -430,26 +430,23 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes"/>
                                             </textView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfH-s7-Yfk">
-                                                <rect key="frame" x="77.5" y="247" width="160" height="40"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="160" id="Jw7-qq-KwH"/>
-                                                    <constraint firstAttribute="height" constant="40" id="ma7-r5-d9T"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <state key="normal" title="🐮  Transfiguration"/>
-                                                <connections>
-                                                    <action selector="pickSpellType:" destination="sbD-8C-ZoZ" eventType="touchUpInside" id="ZhV-GM-26c"/>
-                                                </connections>
-                                            </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Pronunciation:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90n-J7-8iC">
-                                                <rect key="frame" x="25" y="295" width="110" height="21"/>
+                                                <rect key="frame" x="25" y="296" width="110" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="755" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9QC-X8-KdE">
-                                                <rect key="frame" x="25" y="326" width="364" height="34"/>
+                                                <rect key="frame" x="25" y="327" width="364" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="755" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aX-px-NIP">
+                                                <rect key="frame" x="77.5" y="250" width="180" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="6Gq-e0-JC6"/>
+                                                    <constraint firstAttribute="width" constant="180" id="rz2-rn-Qta"/>
+                                                </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                                             </textField>
@@ -463,6 +460,7 @@
                                             <constraint firstAttribute="trailing" secondItem="nuZ-6y-Iej" secondAttribute="trailing" constant="25" id="A2z-Fe-p4r"/>
                                             <constraint firstItem="9QC-X8-KdE" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="AgC-aL-2oN"/>
                                             <constraint firstItem="1Y8-XZ-SFt" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="17" id="FAx-zc-JaD"/>
+                                            <constraint firstItem="90n-J7-8iC" firstAttribute="top" secondItem="4aX-px-NIP" secondAttribute="bottom" constant="12" id="Fra-bL-ADX"/>
                                             <constraint firstItem="nuZ-6y-Iej" firstAttribute="top" secondItem="u0i-bn-tEp" secondAttribute="bottom" constant="10" id="I3a-yz-FiY"/>
                                             <constraint firstItem="TJf-ab-KUL" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="LWF-bh-vz2"/>
                                             <constraint firstItem="1Y8-XZ-SFt" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" id="Lc4-Co-bLx"/>
@@ -476,14 +474,13 @@
                                             <constraint firstItem="f37-ON-yil" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="SrP-Hc-RHm"/>
                                             <constraint firstItem="hk8-fl-1vh" firstAttribute="top" secondItem="nuZ-6y-Iej" secondAttribute="bottom" constant="20" id="TQG-2l-fv1"/>
                                             <constraint firstAttribute="trailing" secondItem="s8a-Zt-GvB" secondAttribute="trailing" constant="25" id="VMh-1e-Yi9"/>
-                                            <constraint firstItem="wfH-s7-Yfk" firstAttribute="top" secondItem="1OO-W4-EfM" secondAttribute="bottom" constant="8" id="Vib-22-igb"/>
                                             <constraint firstItem="1Wu-lw-CrO" firstAttribute="top" secondItem="f37-ON-yil" secondAttribute="bottom" constant="20" id="Z29-vO-gt3"/>
                                             <constraint firstItem="f37-ON-yil" firstAttribute="top" secondItem="VFk-MI-z2q" secondAttribute="top" constant="46" id="aH5-hH-V1d"/>
                                             <constraint firstItem="90n-J7-8iC" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="aPA-rd-Hov"/>
-                                            <constraint firstItem="wfH-s7-Yfk" firstAttribute="leading" secondItem="9Nu-jQ-Cel" secondAttribute="trailing" constant="10" id="aQW-uP-Qum"/>
+                                            <constraint firstItem="4aX-px-NIP" firstAttribute="top" secondItem="1OO-W4-EfM" secondAttribute="bottom" constant="11" id="eUe-xd-NIs"/>
                                             <constraint firstItem="1OO-W4-EfM" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="eve-QT-dB7"/>
+                                            <constraint firstItem="4aX-px-NIP" firstAttribute="leading" secondItem="9Nu-jQ-Cel" secondAttribute="trailing" constant="10" id="gJ7-vS-XLg"/>
                                             <constraint firstItem="1OO-W4-EfM" firstAttribute="top" secondItem="TJf-ab-KUL" secondAttribute="bottom" constant="10" id="qRX-UL-bes"/>
-                                            <constraint firstItem="90n-J7-8iC" firstAttribute="top" secondItem="wfH-s7-Yfk" secondAttribute="bottom" constant="8" id="qke-V7-Pxx"/>
                                             <constraint firstItem="nuZ-6y-Iej" firstAttribute="leading" secondItem="u0i-bn-tEp" secondAttribute="leading" id="rZq-Hq-qO2"/>
                                             <constraint firstItem="9Nu-jQ-Cel" firstAttribute="leading" secondItem="VFk-MI-z2q" secondAttribute="leading" constant="25" id="udE-gl-Dgg"/>
                                             <constraint firstItem="9QC-X8-KdE" firstAttribute="top" secondItem="90n-J7-8iC" secondAttribute="bottom" constant="10" id="vJH-Ow-8yC"/>
@@ -516,7 +513,7 @@
                         <outlet property="cancelButton" destination="1Y8-XZ-SFt" id="sB4-d7-t1R"/>
                         <outlet property="descriptionTextView" destination="nuZ-6y-Iej" id="e1p-u3-t7d"/>
                         <outlet property="nameTextField" destination="s8a-Zt-GvB" id="2ef-Tg-pCc"/>
-                        <outlet property="typeButton" destination="wfH-s7-Yfk" id="otO-Ty-v5r"/>
+                        <outlet property="typeTextField" destination="4aX-px-NIP" id="Rzv-ke-5jH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uYd-h4-bYQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
