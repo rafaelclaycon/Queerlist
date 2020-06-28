@@ -35,8 +35,14 @@ class SpellDetailViewController: UIViewController {
         spellName.accessibilityIdentifier = "spell_title"
         spellDescription.accessibilityIdentifier = "spell_description"
         
+        // If there's an image for the spell, assign it.
         if item.image != nil {
             imageView.image = item.image
+        }
+        
+        // If there's no image for the spell, hide the UIImageView.
+        if item.image == nil {
+            imageView.isHidden = true
         }
     }
 

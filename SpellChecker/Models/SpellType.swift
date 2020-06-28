@@ -20,19 +20,19 @@ enum SpellType: String {                         // PT-BR               // FR-CA
     static func getTypeNameForTinyHeader(_ type: SpellType) -> String {
         switch type {
         case .transfiguration:
-            return "🦉  TRANSFIGURATION"
+            return self.transfiguration.rawValue.uppercased()
         case .charm:
-            return "✨  CHARM"
+            return self.charm.rawValue.uppercased()
         case .jinx:
-            return "🌀  JINX"
+            return self.jinx.rawValue.uppercased()
         case .hex:
-            return "💥  HEX"
+            return self.hex.rawValue.uppercased()
         case .curse:
-            return "💀  CURSE"
+            return self.curse.rawValue.uppercased()
         case .counterSpell:
-            return "🛡  COUNTER-SPELL"
+            return self.counterSpell.rawValue.uppercased()
         case .healingSpell:
-            return "👩🏽‍⚕️  TRANSFIGURATION"
+            return self.healingSpell.rawValue.uppercased()
         }
     }
 }

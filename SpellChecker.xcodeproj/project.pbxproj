@@ -22,6 +22,7 @@
 		D987E590245DD8B6006FE232 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D987E592245DD8B6006FE232 /* Localizable.strings */; };
 		D987E595245DDB4F006FE232 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E594245DDB4F006FE232 /* Strings.swift */; };
 		D987E599245DFCD7006FE232 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E598245DFCD7006FE232 /* CustomButton.swift */; };
+		D9CFB5BE24A93C9600C7603A /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFB5BD24A93C9600C7603A /* UITextViewFixed.swift */; };
 		D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D66235E95510041DD12 /* CucumberishTests.m */; };
 		D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */; };
 		D9D40D6F235E95DD0041DD12 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = D9D40D6E235E95DD0041DD12 /* Features */; };
@@ -71,6 +72,7 @@
 		D987E596245DDD1E006FE232 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		D987E597245DDD1E006FE232 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D987E598245DFCD7006FE232 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D9CFB5BD24A93C9600C7603A /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
 		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
 		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			children = (
 				D987E598245DFCD7006FE232 /* CustomButton.swift */,
 				D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */,
+				D9CFB5BD24A93C9600C7603A /* UITextViewFixed.swift */,
 			);
 			path = "Custom UI Components";
 			sourceTree = "<group>";
@@ -437,6 +440,7 @@
 				D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */,
 				D987E599245DFCD7006FE232 /* CustomButton.swift in Sources */,
 				6B45112F216E5F940030F276 /* SpellCell.swift in Sources */,
+				D9CFB5BE24A93C9600C7603A /* UITextViewFixed.swift in Sources */,
 				D9D8DCE3245F47590013104C /* WizardViewController.swift in Sources */,
 				6B80ACB92166650000A5E0C1 /* SpellStore.swift in Sources */,
 				D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */,
