@@ -56,7 +56,12 @@ class SpellListViewController: UITableViewController {
             }
 
             self.spellStore.insertItem(newItem)
-            if let index = self.spellStore.allItems.index(of: newItem) {
+            
+            let firstLetter = newItem.name.prefix(1)
+            guard let subArrayIndex = SpellStore.getSubArrayIndex(for: firstLetter) else {
+                fatalError("getSubArrayIndex() is not prepared for the first letter of \(newItem.name).")
+            }
+            if let index = self.spellStore.allItems[subArrayIndex].index(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
@@ -72,7 +77,8 @@ class SpellListViewController: UITableViewController {
             // Figure out which row was just tapped
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
-                let item = spellStore.allItems[row]
+                // TODO: Prepare New Spell for alphabetical section headers
+                let item = spellStore.allItems[tableView.indexPathForSelectedRow!.section][row]
                 let detailViewController = segue.destination as! SpellDetailViewController
                 detailViewController.item = item
             }
@@ -85,7 +91,7 @@ class SpellListViewController: UITableViewController {
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         // Update the model
-        spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+        //spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row, item: spellStore.allItems[])
     }
 
     override func tableView(_: UITableView,
@@ -96,14 +102,18 @@ class SpellListViewController: UITableViewController {
             let item = spellStore.allItems[indexPath.row]
 
             // Remove the item from the store
-            spellStore.removeItem(item)
+            //spellStore.removeItem(item)
 
             // Also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 
-    override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
+    override func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return spellStore.allItems[section].count
+    }
+    
+    override func numberOfSections(in tableView: UITableView) -> Int {
         return spellStore.allItems.count
     }
 
@@ -116,7 +126,7 @@ class SpellListViewController: UITableViewController {
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
-        let item = spellStore.allItems[indexPath.row]
+        let item = spellStore.allItems[indexPath.section][indexPath.row]
 
         if item.isFavorite {
             let imageAttachment = NSTextAttachment()
@@ -139,6 +149,6 @@ class SpellListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Section \(section)"
+        return SpellStore.getLetter(for: section)
     }
 }
