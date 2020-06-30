@@ -10,4 +10,7 @@ import Foundation
 
 struct UITestID {
     static let spellList = "list_of_spells"
+    static let newSpellButton = "new_spell_button"
+    static let newSpellScreen = "new_spell_screen"
+    static let spellNameField = "spell_name_field"
 }

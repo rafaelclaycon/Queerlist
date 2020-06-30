@@ -93,6 +93,9 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
         descriptionTextView.clipsToBounds = true
         
         self.setUpSpellTypeField()
+        
+        self.view.accessibilityIdentifier = UITestID.newSpellScreen
+        self.nameTextField.accessibilityIdentifier = UITestID.spellNameField
     }
     
     private func setUpSpellTypeField() {

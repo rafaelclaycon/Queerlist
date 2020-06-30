@@ -13,6 +13,7 @@ import Foundation
     @objc public class func CucumberishSwiftInit() {
         beforeStart { () -> Void in
             CheckingSpellsSteps().CheckingSpellsStepsImplementation()
+            CreatingSpellsSteps().CreatingSpellsStepsImplementation()
         }
 
         let bundle = Bundle(for: CucumberishInitializer.self)

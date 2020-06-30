@@ -60,6 +60,9 @@
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
+                    <connections>
+                        <outlet property="newSpellButton" destination="gno-SD-tnq" id="FMF-pj-yaE"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lwv-oO-665" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

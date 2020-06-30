@@ -6,6 +6,7 @@ import UIKit
 
 class SpellListViewController: UITableViewController {
     var spellStore: SpellStore!
+    @IBOutlet weak var newSpellButton: UIBarButtonItem!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -18,6 +19,7 @@ class SpellListViewController: UITableViewController {
 
         tableView.reloadData()
         tableView.accessibilityIdentifier = UITestID.spellList
+        newSpellButton.accessibilityIdentifier = UITestID.newSpellButton
     }
     
     @IBAction func sortSpells(_: UIBarButtonItem) {
