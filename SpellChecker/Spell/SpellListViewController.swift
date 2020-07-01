@@ -59,14 +59,8 @@ class SpellListViewController: UITableViewController {
 
             self.spellStore.insertItem(newItem)
             
-            let firstLetter = newItem.name.prefix(1)
-            guard let subArrayIndex = SpellStore.getSubArrayIndex(for: firstLetter) else {
-                fatalError("getSubArrayIndex() is not prepared for the first letter of \(newItem.name).")
-            }
-            if let index = self.spellStore.allItems[subArrayIndex].index(of: newItem) {
-                let indexPath = IndexPath(row: index, section: 0)
-                self.tableView.insertRows(at: [indexPath], with: .automatic)
-            }
+            self.tableView.reloadData()
+            
             return true
         }
         present(secondVC, animated: true, completion: nil)
@@ -80,7 +74,7 @@ class SpellListViewController: UITableViewController {
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
                 // TODO: Prepare New Spell for alphabetical section headers
-                let item = spellStore.allItems[tableView.indexPathForSelectedRow!.section][row]
+                let item = spellStore.spells[spellStore.letters[tableView.indexPathForSelectedRow!.section]]![row]
                 let detailViewController = segue.destination as! SpellDetailViewController
                 detailViewController.item = item
             }
@@ -93,7 +87,7 @@ class SpellListViewController: UITableViewController {
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         // Update the model
-        //spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row, item: spellStore.allItems[])
+        //spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row, item: spellStore.spells[])
     }
 
     override func tableView(_: UITableView,
@@ -101,7 +95,7 @@ class SpellListViewController: UITableViewController {
                             forRowAt indexPath: IndexPath) {
         // If the table view is asking to commit a delete command...
         if editingStyle == .delete {
-            let item = spellStore.allItems[indexPath.row]
+            //let item = spellStore.spells[indexPath.row]
 
             // Remove the item from the store
             //spellStore.removeItem(item)
@@ -112,11 +106,11 @@ class SpellListViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return spellStore.allItems[section].count
+        return spellStore.spells[spellStore.letters[section]]!.count
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return spellStore.allItems.count
+        return spellStore.letters.count
     }
 
     override func tableView(_ tableView: UITableView,
@@ -128,7 +122,7 @@ class SpellListViewController: UITableViewController {
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
-        let item = spellStore.allItems[indexPath.section][indexPath.row]
+        let item = spellStore.spells[spellStore.letters[indexPath.section]]![indexPath.row]
 
         if item.isFavorite {
             let imageAttachment = NSTextAttachment()
@@ -151,6 +145,6 @@ class SpellListViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return SpellStore.getLetter(for: section)
+        return spellStore.letters[section]
     }
 }

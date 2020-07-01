@@ -5,67 +5,11 @@
 import Foundation
 
 class SpellStore {
-    var allItems = [[Spell]]()
-
-    static func getSubArrayIndex(for firstLetter: Substring) -> Int? {
-        switch firstLetter {
-        case "A":
-            return 0
-        case "B":
-            return 1
-        case "C":
-            return 2
-        case "D":
-            return 3
-        case "E":
-            return 4
-        case "F":
-            return 5
-        case "G":
-            return 6
-        case "H":
-            return 7
-        case "I":
-            return 8
-        case "J":
-            return 9
-        case "K":
-            return 10
-        default:
-            return nil
-        }
-    }
+    var spells = [String: [Spell]]()
     
-    static func getLetter(for subArrayIndex: Int) -> String {
-        switch subArrayIndex {
-        case 0:
-            return "A"
-        case 1:
-            return "B"
-        case 2:
-            return "C"
-        case 3:
-            return "D"
-        case 4:
-            return "E"
-        case 5:
-            return "F"
-        case 6:
-            return "G"
-        case 7:
-            return "H"
-        case 8:
-            return "I"
-        case 9:
-            return "J"
-        case 10:
-            return "K"
-        default:
-            return " "
-        }
-    }
+    var letters = [String]()
     
-    func moveItem(from fromIndex: Int, to toIndex: Int, item: Spell) {
+    /*func moveItem(from fromIndex: Int, to toIndex: Int, item: Spell) {
         if fromIndex == toIndex {
             return
         }
@@ -93,22 +37,30 @@ class SpellStore {
         if let index = allItems[subArrayIndex].index(of: item) {
             allItems.remove(at: index)
         }
-    }
+    }*/
 
     func insertItem(_ item: Spell) {
-        let firstLetter = item.name.prefix(1)
-        guard let index = SpellStore.getSubArrayIndex(for: firstLetter) else {
-            fatalError("getSubArrayIndex() is not prepared for the first letter of \(item.name).")
+        let firstLetter = String(item.name.prefix(1))
+        
+        if spells[firstLetter] == nil {
+            spells[firstLetter] = [Spell]()
         }
-        allItems[index].append(item)
+        spells[firstLetter]!.append(item)
+        
+        letters.append(firstLetter)
+        letters = letters.sorted()
     }
 
     func spellAlreadyExists(_ spellName: String) -> Bool {
-        for subArray in allItems {
-            for spell in subArray {
-                if spell.name == spellName {
-                    return true
-                }
+        let firstLetter = String(spellName.prefix(1))
+        
+        guard let subListOfSpells = spells[firstLetter] else {
+            return false
+        }
+                
+        for spell in subListOfSpells {
+            if spell.name == spellName {
+                return true
             }
         }
         return false
