@@ -12,7 +12,7 @@
 "VET-dr-EvM.text" = "Label";
 
 /* Class = "UINavigationItem"; title = "Spells"; ObjectID = "dS8-bt-QdA"; */
-"dS8-bt-QdA.title" = "Sorts (Alphabétique)";
+"dS8-bt-QdA.title" = "Sorts (A → Z)";
 
 /* Class = "UILabel"; text = "New Spell"; ObjectID = "f37-ON-yil"; */
 "f37-ON-yil.text" = "Nouveau Sort ✨";
