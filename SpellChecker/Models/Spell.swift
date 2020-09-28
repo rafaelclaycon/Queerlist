@@ -4,7 +4,7 @@
 
 import UIKit
 
-class Spell: Equatable {
+class Spell: Equatable, Decodable {
     var name: String
     var nickname: String?
     var type: SpellType

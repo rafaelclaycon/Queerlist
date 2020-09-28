@@ -26,7 +26,12 @@ class SpellDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        spellType.text = SpellType.getTypeNameForTinyHeader(item.type)
+        if let typeString = SpellType.getTypeName(item.type) {
+            spellType.text = typeString.uppercased()
+        } else {
+            spellType.text = ""
+        }
+        
         spellName.text = item.name
         spellNickname.text = item.nickname
         spellPronunciation.text = item.pronunciation

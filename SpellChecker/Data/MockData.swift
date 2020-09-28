@@ -12,8 +12,12 @@ class MockData {
     static func insertSpells(into spellStore: SpellStore) {
         var data = [Spell]()
         
+        let jsonData = jsonString.data(using: .utf8)!
+        let decoder = JSONDecoder()
+        let myStruct = try! decoder.decode(myStruct.self, from: jsonData)
+        
         // A
-        data.append(Spell(name: "Accio", nickname: "Summoning Charm", type: .charm, pronunciation: "AH-kee-oh", description: "Summons an object towards the caster.", image: UIImage(named: "Accio")!, date: Date()))
+        /*data.append(Spell(name: "Accio", nickname: "Summoning Charm", type: .charm, pronunciation: "AH-kee-oh", description: "Summons an object towards the caster.", image: UIImage(named: "Accio")!, date: Date()))
         data.append(Spell(name: "Aguamenti", nickname: "Water-Making Spell", type: .charm, pronunciation: "AH-gwah-MEN-tee", description: "Produces a clean, drinkable jet of water from the wand tip.", image: UIImage(named: "Aguamenti"), date: Date()))
         data.append(Spell(name: "Alohomora", nickname: "Unlocking Charm", type: .charm, pronunciation: "ah-LOH-ho-MOR-ah", description: "Unlocks doors and other objects.", image: nil, date: Date()))
         data.append(Spell(name: "Anapneo", nickname: nil, type: .healingSpell, pronunciation: "ah-NAP-nee-oh", description: "Clears the target's airway if they are choking on something.", image: nil, date: Date()))
@@ -42,7 +46,7 @@ class MockData {
         
         // E
         data.append(Spell(name: "Engorgio", nickname: "Engorgement Charm", type: .charm, pronunciation: "en-GOR-jee-oh", description: "Causes the target to swell in physical size. Its counter-charm is the Shrinking Charm.", image: nil, date: Date()))
-        data.append(Spell(name: "Episkey", nickname: nil, type: .healingSpell, pronunciation: "ee-PIS-key", description: "Used to heal relatively minor injuries, such as broken bones and cartilage.", image: nil, date: Date()))
+        data.append(Spell(name: "Episkey", nickname: nil, type: .healingSpell, pronunciation: "ee-PIS-key", description: "Used to heal relatively minor injuries, such as broken bones and cartilage.", image: nil, date: Date()))*/
         
         // Build letter array
         

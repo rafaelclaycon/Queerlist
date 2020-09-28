@@ -8,31 +8,33 @@
 
 import Foundation
 
-enum SpellType: String {                         // PT-BR               // FR-CA
-    case transfiguration = "🦉  Transfiguration" // Transfiguração      // Métamorphose
-    case charm = "✨  Charm"                     // Encantamento        // Enchantement ou charme
-    case jinx = "🌀  Jinx"                       // Azaração            //
-    case hex = "💥  Hex"                         // Feitiço             // Maléfice
-    case curse = "💀  Curse"                     // Maldição            // Malédiction
-    case counterSpell = "🛡  Counter-spell"      // Contra-azaração     //
-    case healingSpell = "👩🏽‍⚕️  Healing spell"      // Feitiço de cura     //
+enum SpellType: Int, Decodable {
+    case transfiguration
+    case charm
+    case jinx
+    case hex
+    case curse
+    case counterSpell
+    case healingSpell
     
-    static func getTypeNameForTinyHeader(_ type: SpellType) -> String {
-        switch type {
-        case .transfiguration:
-            return self.transfiguration.rawValue.uppercased()
-        case .charm:
-            return self.charm.rawValue.uppercased()
-        case .jinx:
-            return self.jinx.rawValue.uppercased()
-        case .hex:
-            return self.hex.rawValue.uppercased()
-        case .curse:
-            return self.curse.rawValue.uppercased()
-        case .counterSpell:
-            return self.counterSpell.rawValue.uppercased()
-        case .healingSpell:
-            return self.healingSpell.rawValue.uppercased()
+    static func getTypeName(_ type: SpellType) -> String? {
+        switch type.rawValue {
+        case 0:                          // PT-BR               // FR-CA
+            return "🦉  Transfiguration" // Transfiguração      // Métamorphose
+        case 1:
+            return "✨  Charm"           // Encantamento        // Enchantement ou charme
+        case 2:
+            return "🌀  Jinx"            // Azaração            //
+        case 3:
+            return "💥  Hex"             // Feitiço             // Maléfice
+        case 4:
+            return "💀  Curse"           // Maldição            // Malédiction
+        case 5:
+            return "🛡  Counter-spell"   // Contra-azaração     //
+        case 6:
+            return "👩🏽‍⚕️  Healing spell"   // Feitiço de cura     //
+        default:
+            return nil
         }
     }
 }
