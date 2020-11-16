@@ -22,4 +22,5 @@ struct LocalizableStrings {
     static let dateAddedSortOption = NSLocalizedString("DateAddedSortOption", comment: "Sort option. Sort by the date the spell was added to the list.")
     static let customSortOption = NSLocalizedString("CustomSortOption", comment: "Sort option. Display the order of spells the user picked manually.")
     static let cancel = NSLocalizedString("Cancel", comment: "Cancel action.")
+    static let sectionTitle = NSLocalizedString("SectionTitle", comment: "The text that appears at the header of a section.")
 }
