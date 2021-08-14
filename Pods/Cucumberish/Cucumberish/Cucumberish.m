@@ -477,7 +477,7 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
         if ([s.name isEqualToString:scenarioName]){
             [Cucumberish instance].scenarioCount++;
             NSInvocation * inv = [Cucumberish invocationForScenario:s feature:feature featureClass:[self class]];
-            invocationTest =  [[self alloc] initWithInvocation:inv];
+            invocationTest =  [[XCTestCase alloc] initWithInvocation:inv];
             break;
         }else if([s.keyword isEqualToString:(NSString *)kScenarioOutlineKeyword]){
           NSRange range = [scenarioName rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet] options:NSBackwardsSearch];
@@ -486,7 +486,7 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
             if([scenarioName isEqualToString:scenarioOutlineName]){
                 CCIExample * example = s.examples.firstObject;
                 NSInvocation * inv = [Cucumberish invocationForScenarioOutline:s example:example exampleIndex:exampleIndex feature:feature featureClass:[self class]];
-                invocationTest =  [[self alloc] initWithInvocation:inv];
+                invocationTest =  [[XCTestCase alloc] initWithInvocation:inv];
                 break;
             }
         }

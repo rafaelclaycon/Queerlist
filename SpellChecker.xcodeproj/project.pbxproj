@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		485FACD625C2313FF4D88BC1 /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */; };
+		406B27F3D789EDA5CA0E530F /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */; };
 		6B45112B216D097B0030F276 /* SpellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112A216D097B0030F276 /* SpellDetailViewController.swift */; };
 		6B45112F216E5F940030F276 /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112E216E5F940030F276 /* SpellCell.swift */; };
 		6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80AC86216663E100A5E0C1 /* AppDelegate.swift */; };
@@ -17,7 +17,7 @@
 		6B80ACB52166644700A5E0C1 /* SpellListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */; };
 		6B80ACB7216664F100A5E0C1 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB6216664F100A5E0C1 /* Spell.swift */; };
 		6B80ACB92166650000A5E0C1 /* SpellStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB82166650000A5E0C1 /* SpellStore.swift */; };
-		D3D65AC3ABDA620C54BD7D69 /* Pods_SpellChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */; };
+		A0E3154ED45590A8A86ED952 /* Pods_SpellChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */; };
 		D97AFCD8245E61E2008265CF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AFCD7245E61E2008265CF /* MockData.swift */; };
 		D987E590245DD8B6006FE232 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D987E592245DD8B6006FE232 /* Localizable.strings */; };
 		D987E595245DDB4F006FE232 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E594245DDB4F006FE232 /* Strings.swift */; };
@@ -47,9 +47,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1CF91DAD43C40DC064595441 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker_SpellCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		67F6A089A72AD239B525F838 /* Pods-SpellChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.release.xcconfig"; sourceTree = "<group>"; };
+		209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker_SpellCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B45112A216D097B0030F276 /* SpellDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellDetailViewController.swift; sourceTree = "<group>"; };
 		6B45112E216E5F940030F276 /* SpellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
 		6B80AC83216663E100A5E0C1 /* SpellChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +64,8 @@
 		6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* SpellStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellStore.swift; sourceTree = "<group>"; };
-		7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.release.xcconfig"; sourceTree = "<group>"; };
+		8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97AFCD7245E61E2008265CF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D987E58D245DD6D5006FE232 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		D987E591245DD8B6006FE232 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -84,8 +86,6 @@
 		D9D8DCE4245F73170013104C /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
 		D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
 		D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellViewController.swift; sourceTree = "<group>"; };
-		DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		F972B4D2A02C50576A4CE37E /* Pods-SpellChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D65AC3ABDA620C54BD7D69 /* Pods_SpellChecker.framework in Frameworks */,
+				A0E3154ED45590A8A86ED952 /* Pods_SpellChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,13 +101,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				485FACD625C2313FF4D88BC1 /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */,
+				406B27F3D789EDA5CA0E530F /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CA2DA62AFEBE0F7A73273A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */,
+				564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6B80AC7A216663E100A5E0C1 = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +124,7 @@
 				6B80ACA5216663E300A5E0C1 /* SpellCheckerUITests */,
 				6B80AC84216663E100A5E0C1 /* Products */,
 				F47DAE16B0F1417FBD70B67E /* Pods */,
-				71444AB8290374E1C24827AD /* Frameworks */,
+				5CA2DA62AFEBE0F7A73273A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,15 +168,6 @@
 				6B80ACA8216663E300A5E0C1 /* Info.plist */,
 			);
 			path = SpellCheckerUITests;
-			sourceTree = "<group>";
-		};
-		71444AB8290374E1C24827AD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				7DB00EE36991BDFB759882E7 /* Pods_SpellChecker.framework */,
-				5BCC43598CD4702600A13059 /* Pods_SpellChecker_SpellCheckerUITests.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D97AFCD9245E8448008265CF /* Localization */ = {
@@ -245,10 +245,10 @@
 		F47DAE16B0F1417FBD70B67E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F972B4D2A02C50576A4CE37E /* Pods-SpellChecker.debug.xcconfig */,
-				67F6A089A72AD239B525F838 /* Pods-SpellChecker.release.xcconfig */,
-				1CF91DAD43C40DC064595441 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */,
-				DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */,
+				209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */,
+				8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */,
+				242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */,
+				3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellChecker" */;
 			buildPhases = (
-				293299B904C55BAC506648EE /* [CP] Check Pods Manifest.lock */,
+				962D498403E256BC8A9204F4 /* [CP] Check Pods Manifest.lock */,
 				6B80AC7F216663E100A5E0C1 /* Sources */,
 				6B80AC80216663E100A5E0C1 /* Frameworks */,
 				6B80AC81216663E100A5E0C1 /* Resources */,
@@ -278,11 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellCheckerUITests" */;
 			buildPhases = (
-				778D6E038CD32C3E4EC53C3B /* [CP] Check Pods Manifest.lock */,
+				1FCF6E0C63C2F9F04D5B3B94 /* [CP] Check Pods Manifest.lock */,
 				6B80AC9E216663E300A5E0C1 /* Sources */,
 				6B80AC9F216663E300A5E0C1 /* Frameworks */,
 				6B80ACA0216663E300A5E0C1 /* Resources */,
-				55875F9D8EECCC332503740A /* [CP] Embed Pods Frameworks */,
+				D900911DF0E69ED8BD124B5A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,7 +358,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		293299B904C55BAC506648EE /* [CP] Check Pods Manifest.lock */ = {
+		1FCF6E0C63C2F9F04D5B3B94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpellChecker-SpellCheckerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		962D498403E256BC8A9204F4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -380,7 +402,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		55875F9D8EECCC332503740A /* [CP] Embed Pods Frameworks */ = {
+		D900911DF0E69ED8BD124B5A /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -395,28 +417,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		778D6E038CD32C3E4EC53C3B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpellChecker-SpellCheckerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -618,7 +618,7 @@
 		};
 		6B80ACAC216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F972B4D2A02C50576A4CE37E /* Pods-SpellChecker.debug.xcconfig */;
+			baseConfigurationReference = 209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -640,7 +640,7 @@
 		};
 		6B80ACAD216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 67F6A089A72AD239B525F838 /* Pods-SpellChecker.release.xcconfig */;
+			baseConfigurationReference = 8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -662,7 +662,7 @@
 		};
 		6B80ACB2216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CF91DAD43C40DC064595441 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */;
+			baseConfigurationReference = 242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -687,7 +687,7 @@
 		};
 		6B80ACB3216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE69BCF1D2A960FA058A6EA7 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */;
+			baseConfigurationReference = 3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
