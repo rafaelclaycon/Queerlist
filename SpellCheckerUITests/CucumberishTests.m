@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SpellCheckerUITests-Swift.h"
+#import "QueerlistUITests-Swift.h"
 
 void CucumberishInit(void);
 

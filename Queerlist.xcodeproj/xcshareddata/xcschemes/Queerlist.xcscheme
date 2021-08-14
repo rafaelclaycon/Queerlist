@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6B80AC82216663E100A5E0C1"
                BuildableName = "SpellChecker.app"
-               BlueprintName = "SpellChecker"
-               ReferencedContainer = "container:SpellChecker.xcodeproj">
+               BlueprintName = "Queerlist"
+               ReferencedContainer = "container:Queerlist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6B80ACA1216663E300A5E0C1"
-               BuildableName = "SpellCheckerUITests.xctest"
-               BlueprintName = "SpellCheckerUITests"
-               ReferencedContainer = "container:SpellChecker.xcodeproj">
+               BuildableName = "QueerlistUITests.xctest"
+               BlueprintName = "QueerlistUITests"
+               ReferencedContainer = "container:Queerlist.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -56,8 +56,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6B80AC82216663E100A5E0C1"
             BuildableName = "SpellChecker.app"
-            BlueprintName = "SpellChecker"
-            ReferencedContainer = "container:SpellChecker.xcodeproj">
+            BlueprintName = "Queerlist"
+            ReferencedContainer = "container:Queerlist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -73,8 +73,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6B80AC82216663E100A5E0C1"
             BuildableName = "SpellChecker.app"
-            BlueprintName = "SpellChecker"
-            ReferencedContainer = "container:SpellChecker.xcodeproj">
+            BlueprintName = "Queerlist"
+            ReferencedContainer = "container:Queerlist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

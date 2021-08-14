@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -53,13 +53,13 @@
 		564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker_SpellCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B45112A216D097B0030F276 /* SpellDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellDetailViewController.swift; sourceTree = "<group>"; };
 		6B45112E216E5F940030F276 /* SpellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
-		6B80AC83216663E100A5E0C1 /* SpellChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpellChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B80AC83216663E100A5E0C1 /* Queerlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Queerlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B80AC86216663E100A5E0C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B80AC8B216663E200A5E0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B80AC8D216663E300A5E0C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B80AC90216663E300A5E0C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B80AC92216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B80ACA2216663E300A5E0C1 /* SpellCheckerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpellCheckerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B80ACA2216663E300A5E0C1 /* QueerlistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueerlistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B80ACA8216663E300A5E0C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 		6B80AC84216663E100A5E0C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6B80AC83216663E100A5E0C1 /* SpellChecker.app */,
-				6B80ACA2216663E300A5E0C1 /* SpellCheckerUITests.xctest */,
+				6B80AC83216663E100A5E0C1 /* Queerlist.app */,
+				6B80ACA2216663E300A5E0C1 /* QueerlistUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -256,9 +256,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B80AC82216663E100A5E0C1 /* SpellChecker */ = {
+		6B80AC82216663E100A5E0C1 /* Queerlist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellChecker" */;
+			buildConfigurationList = 6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "Queerlist" */;
 			buildPhases = (
 				962D498403E256BC8A9204F4 /* [CP] Check Pods Manifest.lock */,
 				6B80AC7F216663E100A5E0C1 /* Sources */,
@@ -269,14 +269,14 @@
 			);
 			dependencies = (
 			);
-			name = SpellChecker;
+			name = Queerlist;
 			productName = LootLogger;
-			productReference = 6B80AC83216663E100A5E0C1 /* SpellChecker.app */;
+			productReference = 6B80AC83216663E100A5E0C1 /* Queerlist.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6B80ACA1216663E300A5E0C1 /* SpellCheckerUITests */ = {
+		6B80ACA1216663E300A5E0C1 /* QueerlistUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellCheckerUITests" */;
+			buildConfigurationList = 6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "QueerlistUITests" */;
 			buildPhases = (
 				1FCF6E0C63C2F9F04D5B3B94 /* [CP] Check Pods Manifest.lock */,
 				6B80AC9E216663E300A5E0C1 /* Sources */,
@@ -289,9 +289,9 @@
 			dependencies = (
 				6B80ACA4216663E300A5E0C1 /* PBXTargetDependency */,
 			);
-			name = SpellCheckerUITests;
+			name = QueerlistUITests;
 			productName = LootLoggerUITests;
-			productReference = 6B80ACA2216663E300A5E0C1 /* SpellCheckerUITests.xctest */;
+			productReference = 6B80ACA2216663E300A5E0C1 /* QueerlistUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -314,7 +314,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 6B80AC7E216663E100A5E0C1 /* Build configuration list for PBXProject "SpellChecker" */;
+			buildConfigurationList = 6B80AC7E216663E100A5E0C1 /* Build configuration list for PBXProject "Queerlist" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -329,8 +329,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6B80AC82216663E100A5E0C1 /* SpellChecker */,
-				6B80ACA1216663E300A5E0C1 /* SpellCheckerUITests */,
+				6B80AC82216663E100A5E0C1 /* Queerlist */,
+				6B80ACA1216663E300A5E0C1 /* QueerlistUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -461,7 +461,7 @@
 /* Begin PBXTargetDependency section */
 		6B80ACA4216663E300A5E0C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6B80AC82216663E100A5E0C1 /* SpellChecker */;
+			target = 6B80AC82216663E100A5E0C1 /* Queerlist */;
 			targetProxy = 6B80ACA3216663E300A5E0C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -631,8 +631,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellChecker;
-				PRODUCT_NAME = SpellChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.Queerlist;
+				PRODUCT_NAME = Queerlist;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -653,8 +653,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellChecker;
-				PRODUCT_NAME = SpellChecker;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.Queerlist;
+				PRODUCT_NAME = Queerlist;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -681,7 +681,7 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpellChecker;
+				TEST_TARGET_NAME = Queerlist;
 			};
 			name = Debug;
 		};
@@ -705,14 +705,14 @@
 				SWIFT_OBJC_BRIDGING_HEADER = "SpellChecker/SpellChecker-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SpellChecker;
+				TEST_TARGET_NAME = Queerlist;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B80AC7E216663E100A5E0C1 /* Build configuration list for PBXProject "SpellChecker" */ = {
+		6B80AC7E216663E100A5E0C1 /* Build configuration list for PBXProject "Queerlist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B80ACA9216663E300A5E0C1 /* Debug */,
@@ -721,7 +721,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellChecker" */ = {
+		6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "Queerlist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B80ACAC216663E300A5E0C1 /* Debug */,
@@ -730,7 +730,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "SpellCheckerUITests" */ = {
+		6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "QueerlistUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B80ACB2216663E300A5E0C1 /* Debug */,
