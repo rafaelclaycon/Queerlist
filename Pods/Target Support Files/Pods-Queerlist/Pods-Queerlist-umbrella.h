@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_SpellCheckerVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_SpellCheckerVersionString[];
+FOUNDATION_EXPORT double Pods_QueerlistVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_QueerlistVersionString[];
 

@@ -1,13 +1,13 @@
 # Uncomment the next line to define a global platform for your project
 # platform :ios, '9.0'
 
-target 'SpellChecker' do
+target 'Queerlist' do
   
   use_frameworks!
   
   # Pods for SpellChecker
 
-  target 'SpellCheckerUITests' do
+  target 'QueerlistUITests' do
     pod 'Cucumberish'
   end
   

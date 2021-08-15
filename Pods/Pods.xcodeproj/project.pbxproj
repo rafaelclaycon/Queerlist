@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -34,17 +34,19 @@
 		42DFDB6CB56F20D3DAE7F334EE37C83D /* GHParserException.h in Headers */ = {isa = PBXBuildFile; fileRef = 93C95069E5654BFA026EFD35CCD37CBF /* GHParserException.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		443A5334049531965D8891D11A1E2281 /* GHTokenMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = AC938E7E449588A3B8AA48EA98E72674 /* GHTokenMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		451BEA1507A22DA33575FDC0E16585EF /* GHExamples.h in Headers */ = {isa = PBXBuildFile; fileRef = 68673BE13B2F9A5D0D609B3ACFEB832A /* GHExamples.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B17DF5FD5C9047FD7ED1BC8EB528854 /* Pods-Queerlist-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E701B73CAD2BF5D0AA965CB2949B6D1 /* Pods-Queerlist-dummy.m */; };
 		4C888D370A6AE234BEC1C0A3B4D41EDD /* NSString+Formatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E7F2BA66F6757BD168F9A823437DDF3 /* NSString+Formatter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4E4538D716D6A4B423D4FA429B6AD077 /* CCIBlockDefinitions.h in Headers */ = {isa = PBXBuildFile; fileRef = C9F87D5E982A05C69D98BA49ABDB72C2 /* CCIBlockDefinitions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52E2A9AAEAA92864F4E1861D50C3EB39 /* Pods-Queerlist-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF031F5D32A4F766CAA279D5CA9216A2 /* Pods-Queerlist-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		532113B20CA5625205E775FBFDC66D16 /* CCIAroundHock.m in Sources */ = {isa = PBXBuildFile; fileRef = B18C7F51C725F9D0B861DA61BC5A9587 /* CCIAroundHock.m */; };
 		544BF7785CD0E076A8D0CC9DAF403E7B /* GHHasRowsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 93697DF73EC495CA7A68F01FFDA64DBA /* GHHasRowsProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		591EA8D4BE97676E7AB586335EE42CD4 /* GHComment.m in Sources */ = {isa = PBXBuildFile; fileRef = F4AE3DD0621073C03ABE8869014DEB79 /* GHComment.m */; };
+		6115A27D95E48388B1E3E7971923C341 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		61F2B96C4AA08C617711169CF14EB75A /* GHScenarioDefinition.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E99D40A4578E31F0153B75C7580186E /* GHScenarioDefinition.m */; };
 		6337A16942F4B128C256C47B511B5270 /* GHLocation.h in Headers */ = {isa = PBXBuildFile; fileRef = 820EDCCA0C4083A08EED5C3F30D04D97 /* GHLocation.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		66AF22868BC9A6F0DADF04E007B96B73 /* CCIFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 77CA34FCDA7567156C82A185247B9E3D /* CCIFeature.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F4D899C9B1DD2B03E5CFA584442C4B /* CCIExample.m in Sources */ = {isa = PBXBuildFile; fileRef = 10F27C95CE5C76121AAD841AECF15CA3 /* CCIExample.m */; };
 		6CEF337EEF4CD71EF351360CF732BF47 /* Cucumberish.h in Headers */ = {isa = PBXBuildFile; fileRef = 96E8062CD4AE249CA288EEEE73D9D172 /* Cucumberish.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E0DAE1AE8589E876544459D2D44A157 /* Pods-SpellChecker-SpellCheckerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A60F65756C4E362188C9E8D00BEF4558 /* Pods-SpellChecker-SpellCheckerUITests-dummy.m */; };
 		6E7FC5D4E11F3DE7E18EAF921729656A /* GHExamples.m in Sources */ = {isa = PBXBuildFile; fileRef = 08C9EF1285FE879BB8349219244FBD93 /* GHExamples.m */; };
 		6F66961D6C8C5F4B41FD967F5CE6C4BE /* GHDocString.h in Headers */ = {isa = PBXBuildFile; fileRef = A14A0427F1A9DA820436C4FD65F84AE8 /* GHDocString.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7073E55EC1019F43F3686FA0D89D0259 /* CCIAroundHock.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FB8B40F2D272317894C2848C6B77BD5 /* CCIAroundHock.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -65,7 +67,6 @@
 		857158738BD3C0E541841584A95E42E0 /* GHGherkinDialectProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AEF4768441890C53D095B480625EB4 /* GHGherkinDialectProvider.m */; };
 		882DEFF55E4B5CBAE5BBA68678BA6425 /* GHFeature.h in Headers */ = {isa = PBXBuildFile; fileRef = 697E280E1FD28ED6BFEB17AFBFE69917 /* GHFeature.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		887257CB35B99BE164B24F57F6421EDA /* CCILocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 12B48B95A156243EF7CF695B587737DA /* CCILocation.m */; };
-		89D9202BE4C4413A5F7B19F79223C69A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		8D1DA2A625605FB1EBC9E37D03267B9D /* NSString+Trim.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A031D86DA808D39D133C4E94348B99C /* NSString+Trim.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8D31A437F59E8651818963E0F2BB26B7 /* GHScenarioOutline.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF80C343F6ECAB9CD44CDEB8725D449 /* GHScenarioOutline.m */; };
 		8D7FD65E9706C89137997DC8C8941D1B /* GHStep.m in Sources */ = {isa = PBXBuildFile; fileRef = AFE5E6B1F929B0CA8C8F28C4A350529A /* GHStep.m */; };
@@ -78,6 +79,7 @@
 		9F5AB7EC771FF7679E82F3F5398303CF /* Cucumberish-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 987713458BA8B929FDD810A2FDBFBAF9 /* Cucumberish-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9F6B258A8FAD11747BD0AEA0D67F5D60 /* GHGherkinLineSpan.h in Headers */ = {isa = PBXBuildFile; fileRef = 324CC0CD6977474E7AB49AE4E5535611 /* GHGherkinLineSpan.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A019038B80E9833F6DB6284D43B32718 /* GHToken.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BEEB8FBDBE0941DA9D5D355AD2DD989 /* GHToken.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A082A41B941672DA1F9991BBA84970AD /* Pods-Queerlist-QueerlistUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03216852C5D32ED5D0ADEFEE800C77B5 /* Pods-Queerlist-QueerlistUITests-dummy.m */; };
 		A0CEF346213849912B2BB775BB75A289 /* CCIStepDefinition.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F2BE69579334068619C3703F7C8BE08 /* CCIStepDefinition.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A47AF316CAAB21ADBEFA0E81739D17F5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */; };
 		A7DEB9D41FF38323DD8A87856FD9D57C /* NSString+Formatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 659E0F288621ECD7770107673B89A733 /* NSString+Formatter.m */; };
@@ -87,6 +89,7 @@
 		AA542C41F5B85E6F4BFD46B1A0D1E4E2 /* CCIStep.h in Headers */ = {isa = PBXBuildFile; fileRef = 7505D9DC744FD97173FD8C2D16836EB1 /* CCIStep.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD128D4392FF5BF4D1C0371E04B2A208 /* GHParser+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = BB9E8196C3CE38EE589CFED578A77504 /* GHParser+Extensions.m */; };
 		ADA5944B3A4E9CCA9A28808CC99AC36F /* Cucumberish-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9887CBFCD4CAF9BCFAD4EB1C984219BB /* Cucumberish-dummy.m */; };
+		B2975E380FA77F3A4BFE25B91787FCA2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
 		B5A16A8CAE334E6E494DA159424735A3 /* GHNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D2589C9290B5A779B24901EE68A65C /* GHNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B70C376E95D856D15B7C02A401E7A0FA /* NSObject+Dictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CB57CE3D75B3C15365AE7542E593C61 /* NSObject+Dictionary.m */; };
 		BCA9D9DC8CDA7D216FF721D37297A7DD /* CCIJSONDumper.m in Sources */ = {isa = PBXBuildFile; fileRef = CA09F79B6CEAC306E5DDA2276EFBB482 /* CCIJSONDumper.m */; };
@@ -103,18 +106,14 @@
 		CC469A241A6503172A560B22BECDAFB2 /* GHLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3268A05779223E5DD06DB0099886DEAD /* GHLocation.m */; };
 		CC8AE903592C4820BE1549C4C8A122DD /* gherkin-languages.json in Resources */ = {isa = PBXBuildFile; fileRef = F467425D6A55DCE5E4DC19DF5DDF8F1F /* gherkin-languages.json */; };
 		CD4D075C102F38633A006477AA8CF0A6 /* GHScenarioOutline.h in Headers */ = {isa = PBXBuildFile; fileRef = 703ED984A8120DC85079AD5F4802B8CB /* GHScenarioOutline.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D38E3C8C6353A6521155662363254049 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA8B94E9D3B433157168D1EECCEC11CD /* Foundation.framework */; };
-		D3A0C95F95A5F34C465B4882C8044495 /* Pods-SpellChecker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 78C71EE53CD433C36D907B0EC4062AAC /* Pods-SpellChecker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D409DAB8D326C841C583963E2D2C5C03 /* GHAstBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A0A0C813FEE658E6D5C1EAD56BEEE6 /* GHAstBuilder.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D54CA70C162E14B68B0A2EEDAF99576F /* GHTableRow.h in Headers */ = {isa = PBXBuildFile; fileRef = C1D234CB357B6244BCFAF3C104B18B0C /* GHTableRow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D8332D9C5CD787ABD64E0231AAA140B7 /* GHAstNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 45738E829DF8D0DA455C565FE2003C04 /* GHAstNode.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		DC4F4211AD17CFC40228C92A35FE722F /* GHTableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E5A2F509E2FB8A7CAF714B0253C1F7C3 /* GHTableCell.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E54CA055795550895663F15D386F7AF7 /* GHParser+Extensions.h in Headers */ = {isa = PBXBuildFile; fileRef = C13CC8FB1E44B4DEE2F38C95FA421701 /* GHParser+Extensions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E59E5C1D74631E24FD9B2443F0627C53 /* GHTokenScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = CC54EEE362A2A100DFC1E037B3C0C885 /* GHTokenScanner.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E61BF532711B70145A89D6E6AFE5709E /* Pods-SpellChecker-SpellCheckerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DD43120B81DC308AEF1D4C1A809C0BD6 /* Pods-SpellChecker-SpellCheckerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E9B2D3DD039C55224DB343298C83BB8B /* GHDataTable.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9D452088CE277BBDC950A6697FF4 /* GHDataTable.m */; };
 		EA76F12429A6CC41FDE5E7C598EF8D02 /* GHParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F3C0E3FC4E110C325C2133AEF2A9F59 /* GHParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EB514B3E668BB68F8E47D2786C676D76 /* Pods-SpellChecker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 86779F6E8792F917482624AD90D3351A /* Pods-SpellChecker-dummy.m */; };
 		EC37CF99B5BBBB5DDDFC6DEC85DD0F33 /* GHGherkinLanguageSetting.m in Sources */ = {isa = PBXBuildFile; fileRef = B3B4E9AF105A3F457B7F5D3C8395FB31 /* GHGherkinLanguageSetting.m */; };
 		ED8F42257A74B13376C176FF45C7770C /* GHAstBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EFFC2ABD22AE6D3A7AF42B28A5ECCDF /* GHAstBuilder.m */; };
 		EDE53F97A6A3555647CBA7E3495A0607 /* GHGherkinLine.m in Sources */ = {isa = PBXBuildFile; fileRef = DAF60BAF0C345636AFFAE3664F7CF28A /* GHGherkinLine.m */; };
@@ -123,13 +122,14 @@
 		F756DB1C377C893BEED8AE13EFB038CD /* GHToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 4452573009427BEF88468CB48CC009ED /* GHToken.m */; };
 		F892CA278609B77D91D109922F250A4F /* GHHasTagsProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F0BFE213308548EFC494CE1836B99D2 /* GHHasTagsProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FA61F0143B1560FF398F1F0BAF47DFC7 /* CCIArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = BDD2F3AD55B1A84CE1BE99AFBBCFA9D5 /* CCIArgument.m */; };
+		FC5D8A2039EAB2D9B14F8F38F2D46EED /* Pods-Queerlist-QueerlistUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47B2027155B577A03EDDF6F0D1AF5218 /* Pods-Queerlist-QueerlistUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDD8FEA172EC60928C7964FBCA3CE822 /* GHNode.m in Sources */ = {isa = PBXBuildFile; fileRef = F3B6893399D03CFC00FA2D6D26E16E43 /* GHNode.m */; };
 		FE18D01BF822516C1FD7BC53CD17C67D /* GHAstNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2813AFFCB1F8FE231EDC7EBC510B8644 /* GHAstNode.m */; };
 		FFF832D60D91DE87DCA527EDC4D6CA71 /* Cucumberish.m in Sources */ = {isa = PBXBuildFile; fileRef = 33B79EA3B08E7504A6442165F640E97D /* Cucumberish.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		BEF09CECD160E37BEA5303C71C2470F0 /* PBXContainerItemProxy */ = {
+		CD4E4FBFAA7BEE711D3E96320781DFE9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -148,19 +148,19 @@
 /* Begin PBXFileReference section */
 		01ECCB9B255A0FD148502F54094633EF /* CCIFeaturesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIFeaturesManager.h; path = Cucumberish/Core/Managers/CCIFeaturesManager.h; sourceTree = "<group>"; };
 		022109451555B115BDCE6721F27AF68B /* CCIStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIStep.m; path = Cucumberish/Core/Models/CCIStep.m; sourceTree = "<group>"; };
+		03216852C5D32ED5D0ADEFEE800C77B5 /* Pods-Queerlist-QueerlistUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Queerlist-QueerlistUITests-dummy.m"; sourceTree = "<group>"; };
+		04744EE234FC0EED179A956C061E2B46 /* Pods-Queerlist-QueerlistUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Queerlist-QueerlistUITests.modulemap"; sourceTree = "<group>"; };
 		05438041845BA0C4FBD59B1728A9482D /* GHStepArgument.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHStepArgument.m; path = Cucumberish/Dependencies/Gherkin/GHStepArgument.m; sourceTree = "<group>"; };
 		08C9EF1285FE879BB8349219244FBD93 /* GHExamples.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHExamples.m; path = Cucumberish/Dependencies/Gherkin/GHExamples.m; sourceTree = "<group>"; };
-		09E3C679EB2830FFE81AF16106B7BECC /* Pods-SpellChecker-SpellCheckerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpellChecker-SpellCheckerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		0AC7AD2472EDCB4EDE257AC7C2BDF6AE /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		0D8607E8912F3D17AC3F42569BC1BCC1 /* GHComment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHComment.h; path = Cucumberish/Dependencies/Gherkin/GHComment.h; sourceTree = "<group>"; };
+		109D56EED253BD33D65F554DB1B35573 /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
 		10F27C95CE5C76121AAD841AECF15CA3 /* CCIExample.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIExample.m; path = Cucumberish/Core/Models/CCIExample.m; sourceTree = "<group>"; };
 		12B48B95A156243EF7CF695B587737DA /* CCILocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCILocation.m; path = Cucumberish/Core/Models/CCILocation.m; sourceTree = "<group>"; };
-		1AA2C9675484B8126192C9EE0C2F67AD /* Pods-SpellChecker-SpellCheckerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpellChecker-SpellCheckerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1E7740A6EFFF16A909C246C8C8FED1EB /* GHTag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTag.h; path = Cucumberish/Dependencies/Gherkin/GHTag.h; sourceTree = "<group>"; };
 		20F4421F99454E7AAEA2B99B9DC3051C /* CCILocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCILocation.h; path = Cucumberish/Core/Models/CCILocation.h; sourceTree = "<group>"; };
-		23D5768E8765A8F7A8EE57315D0BA429 /* Pods-SpellChecker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpellChecker-Info.plist"; sourceTree = "<group>"; };
 		2471F7F15B3577FDA176017784CF02C4 /* CCIHock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIHock.h; path = Cucumberish/Core/Models/CCIHock.h; sourceTree = "<group>"; };
 		24B7912F4F7872D30D227324E3CC801F /* NSObject+Dictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+Dictionary.h"; path = "Cucumberish/Utils/NSObject+Dictionary.h"; sourceTree = "<group>"; };
+		24CF58636BB705E2D79B4947F0A22090 /* Pods-Queerlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Queerlist.release.xcconfig"; sourceTree = "<group>"; };
 		277DAAF94C60860CA39E492820F1214F /* GHGherkinLanguageConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHGherkinLanguageConstants.h; path = Cucumberish/Dependencies/Gherkin/GHGherkinLanguageConstants.h; sourceTree = "<group>"; };
 		2813AFFCB1F8FE231EDC7EBC510B8644 /* GHAstNode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHAstNode.m; path = Cucumberish/Dependencies/Gherkin/GHAstNode.m; sourceTree = "<group>"; };
 		288FE49C1B8EA98AA37D68D0651B5605 /* GHScenario.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHScenario.h; path = Cucumberish/Dependencies/Gherkin/GHScenario.h; sourceTree = "<group>"; };
@@ -171,61 +171,63 @@
 		3268A05779223E5DD06DB0099886DEAD /* GHLocation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHLocation.m; path = Cucumberish/Dependencies/Gherkin/GHLocation.m; sourceTree = "<group>"; };
 		338A66279D8E59DA7E43572A160886B4 /* GHGherkinLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHGherkinLine.h; path = Cucumberish/Dependencies/Gherkin/GHGherkinLine.h; sourceTree = "<group>"; };
 		33B79EA3B08E7504A6442165F640E97D /* Cucumberish.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Cucumberish.m; path = Cucumberish/Cucumberish.m; sourceTree = "<group>"; };
-		37C98B0E670CFED11C4B72325FB46AF3 /* Pods-SpellChecker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpellChecker-acknowledgements.plist"; sourceTree = "<group>"; };
 		3ACF55BE74F415B981E0A875D56575EC /* CCIArgument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIArgument.h; path = Cucumberish/Core/Models/CCIArgument.h; sourceTree = "<group>"; };
 		3BDC9D452088CE277BBDC950A6697FF4 /* GHDataTable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHDataTable.m; path = Cucumberish/Dependencies/Gherkin/GHDataTable.m; sourceTree = "<group>"; };
-		3D47E729ADDE0829213C46C7BAEBB235 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F2BE69579334068619C3703F7C8BE08 /* CCIStepDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIStepDefinition.h; path = Cucumberish/Core/Models/CCIStepDefinition.h; sourceTree = "<group>"; };
 		3FBE4298D8E8AA531B092AAD812E16F8 /* Cucumberish.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cucumberish.modulemap; sourceTree = "<group>"; };
-		417A409CFCE959BF2924C1E8E1FDE7BE /* Pods-SpellChecker-SpellCheckerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SpellChecker-SpellCheckerUITests-Info.plist"; sourceTree = "<group>"; };
+		40E79D83925D0773AEBEB0591C9A1A15 /* Pods_Queerlist_QueerlistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Queerlist_QueerlistUITests.framework; path = "Pods-Queerlist-QueerlistUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4452573009427BEF88468CB48CC009ED /* GHToken.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHToken.m; path = Cucumberish/Dependencies/Gherkin/GHToken.m; sourceTree = "<group>"; };
 		446DE175BE52840388C59F46A1260572 /* GHParserException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHParserException.m; path = Cucumberish/Dependencies/Gherkin/GHParserException.m; sourceTree = "<group>"; };
 		44FB2E7C943891F9C6F6C6CD8BE94B32 /* CCIFeaturesManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIFeaturesManager.m; path = Cucumberish/Core/Managers/CCIFeaturesManager.m; sourceTree = "<group>"; };
 		45738E829DF8D0DA455C565FE2003C04 /* GHAstNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHAstNode.h; path = Cucumberish/Dependencies/Gherkin/GHAstNode.h; sourceTree = "<group>"; };
 		45B7514665939597F5B268145FA69843 /* CCIBackground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIBackground.m; path = Cucumberish/Core/Models/CCIBackground.m; sourceTree = "<group>"; };
+		47B2027155B577A03EDDF6F0D1AF5218 /* Pods-Queerlist-QueerlistUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Queerlist-QueerlistUITests-umbrella.h"; sourceTree = "<group>"; };
+		4A123E0C6E57610B779A3B4AAEE351E5 /* Pods-Queerlist-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Queerlist-Info.plist"; sourceTree = "<group>"; };
 		4AACA6B604E05A5695B6F35A90C12E12 /* GHGherkinLanguageConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHGherkinLanguageConstants.m; path = Cucumberish/Dependencies/Gherkin/GHGherkinLanguageConstants.m; sourceTree = "<group>"; };
 		4B2DD824A68CF37B6AC072C86FAF8BBB /* CCIHock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIHock.m; path = Cucumberish/Core/Models/CCIHock.m; sourceTree = "<group>"; };
 		4BDBECAEDBD9ABB9FFF111533AEB70F8 /* CCIScenarioDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIScenarioDefinition.h; path = Cucumberish/Core/Models/CCIScenarioDefinition.h; sourceTree = "<group>"; };
 		4C5D5FA59DE811CD3A43AA43AD61C55B /* GHHasDescriptionProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHHasDescriptionProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHHasDescriptionProtocol.h; sourceTree = "<group>"; };
+		4E701B73CAD2BF5D0AA965CB2949B6D1 /* Pods-Queerlist-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Queerlist-dummy.m"; sourceTree = "<group>"; };
 		4F3C0E3FC4E110C325C2133AEF2A9F59 /* GHParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHParser.h; path = Cucumberish/Dependencies/Gherkin/GHParser.h; sourceTree = "<group>"; };
 		517BE3A48F3436354B2377C406F01892 /* GHScenarioDefinition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHScenarioDefinition.h; path = Cucumberish/Dependencies/Gherkin/GHScenarioDefinition.h; sourceTree = "<group>"; };
-		5322466A34341A2339DE20DEA425FECD /* Pods-SpellChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellChecker.debug.xcconfig"; sourceTree = "<group>"; };
-		5443019CC0BD725B13F678874DBBD62C /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpellChecker.framework; path = "Pods-SpellChecker.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		556BB34B4975A894D86CB257AA8D5C1F /* Pods-SpellChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SpellChecker.release.xcconfig"; sourceTree = "<group>"; };
 		55D1791ADA76551A71FE98BB112A4CB8 /* GHGherkinDialect.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHGherkinDialect.m; path = Cucumberish/Dependencies/Gherkin/GHGherkinDialect.m; sourceTree = "<group>"; };
 		5C1211488DBC0C59E21217129AEFE380 /* Cucumberish.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cucumberish.debug.xcconfig; sourceTree = "<group>"; };
 		5CDD3469F5907607F39392858CC16C23 /* Cucumberish-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cucumberish-prefix.pch"; sourceTree = "<group>"; };
 		5EBC8F300895E39EA0DF6D6B2B5E6BCD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5F6736414B27C652B0F70D0E8E7F0068 /* Pods-Queerlist-QueerlistUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Queerlist-QueerlistUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6349B0676E612E26E4ED3F34CE6B00D7 /* Pods-Queerlist-QueerlistUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Queerlist-QueerlistUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		642EB2F784FE9452103B50102BF32103 /* Cucumberish.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cucumberish.release.xcconfig; sourceTree = "<group>"; };
 		64732C20DE3C29543B16DBCD2EA81EE4 /* GHDataTable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHDataTable.h; path = Cucumberish/Dependencies/Gherkin/GHDataTable.h; sourceTree = "<group>"; };
 		650FA38E25004B59E15E412DF3F30D05 /* GHScenario.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHScenario.m; path = Cucumberish/Dependencies/Gherkin/GHScenario.m; sourceTree = "<group>"; };
 		659E0F288621ECD7770107673B89A733 /* NSString+Formatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Formatter.m"; path = "Cucumberish/Utils/NSString+Formatter.m"; sourceTree = "<group>"; };
+		65CAE178D1AEAA11983525A490B059AC /* Pods-Queerlist-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Queerlist-acknowledgements.markdown"; sourceTree = "<group>"; };
 		676078003F5317266454D0674FAB9019 /* GHScenarioDefinition_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHScenarioDefinition_Private.h; path = Cucumberish/Dependencies/Gherkin/GHScenarioDefinition_Private.h; sourceTree = "<group>"; };
 		685D8FFD0D4285A10EEFF85E3B9F4852 /* CCIStepsManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIStepsManager.h; path = Cucumberish/Core/Managers/CCIStepsManager.h; sourceTree = "<group>"; };
 		68673BE13B2F9A5D0D609B3ACFEB832A /* GHExamples.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHExamples.h; path = Cucumberish/Dependencies/Gherkin/GHExamples.h; sourceTree = "<group>"; };
 		697E280E1FD28ED6BFEB17AFBFE69917 /* GHFeature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHFeature.h; path = Cucumberish/Dependencies/Gherkin/GHFeature.h; sourceTree = "<group>"; };
+		6A7730132C734C556C0A098981CCC467 /* Pods_Queerlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Queerlist.framework; path = "Pods-Queerlist.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BEEB8FBDBE0941DA9D5D355AD2DD989 /* GHToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHToken.h; path = Cucumberish/Dependencies/Gherkin/GHToken.h; sourceTree = "<group>"; };
 		6C38508C41FBEB3EA8B8BEFAC0925835 /* GHGherkinLineSpan.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHGherkinLineSpan.m; path = Cucumberish/Dependencies/Gherkin/GHGherkinLineSpan.m; sourceTree = "<group>"; };
 		6DF3D420681CC54B5FB09846866A0590 /* CCILoggingManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCILoggingManager.m; path = Cucumberish/Core/Managers/CCILoggingManager.m; sourceTree = "<group>"; };
 		6F0BFE213308548EFC494CE1836B99D2 /* GHHasTagsProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHHasTagsProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHHasTagsProtocol.h; sourceTree = "<group>"; };
 		703ED984A8120DC85079AD5F4802B8CB /* GHScenarioOutline.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHScenarioOutline.h; path = Cucumberish/Dependencies/Gherkin/GHScenarioOutline.h; sourceTree = "<group>"; };
 		7204EF899846EE00EE8BEA9A45909CE9 /* CCIStepsManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIStepsManager.m; path = Cucumberish/Core/Managers/CCIStepsManager.m; sourceTree = "<group>"; };
-		724ECFADC875408D541DD06EE6524511 /* Pods-SpellChecker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpellChecker.modulemap"; sourceTree = "<group>"; };
+		72E84FB97CD6B8A70A411007916C20E6 /* Pods-Queerlist-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Queerlist-acknowledgements.plist"; sourceTree = "<group>"; };
 		7505D9DC744FD97173FD8C2D16836EB1 /* CCIStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIStep.h; path = Cucumberish/Core/Models/CCIStep.h; sourceTree = "<group>"; };
 		777A726A890AFCA8A2B80CDC7F466E54 /* GHBackground.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHBackground.m; path = Cucumberish/Dependencies/Gherkin/GHBackground.m; sourceTree = "<group>"; };
 		77CA34FCDA7567156C82A185247B9E3D /* CCIFeature.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIFeature.h; path = Cucumberish/Core/Models/CCIFeature.h; sourceTree = "<group>"; };
-		78C71EE53CD433C36D907B0EC4062AAC /* Pods-SpellChecker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpellChecker-umbrella.h"; sourceTree = "<group>"; };
 		7E7F2BA66F6757BD168F9A823437DDF3 /* NSString+Formatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Formatter.h"; path = "Cucumberish/Utils/NSString+Formatter.h"; sourceTree = "<group>"; };
 		7EFFC2ABD22AE6D3A7AF42B28A5ECCDF /* GHAstBuilder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHAstBuilder.m; path = Cucumberish/Dependencies/Gherkin/GHAstBuilder.m; sourceTree = "<group>"; };
 		7F0F8E84553EFBA9FF120A824878B490 /* GHDocString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHDocString.m; path = Cucumberish/Dependencies/Gherkin/GHDocString.m; sourceTree = "<group>"; };
 		8189575E6A8E4A136D84D8BFCF6739A9 /* GHStepArgument.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHStepArgument.h; path = Cucumberish/Dependencies/Gherkin/GHStepArgument.h; sourceTree = "<group>"; };
 		820EDCCA0C4083A08EED5C3F30D04D97 /* GHLocation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHLocation.h; path = Cucumberish/Dependencies/Gherkin/GHLocation.h; sourceTree = "<group>"; };
-		86779F6E8792F917482624AD90D3351A /* Pods-SpellChecker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpellChecker-dummy.m"; sourceTree = "<group>"; };
 		8A031D86DA808D39D133C4E94348B99C /* NSString+Trim.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+Trim.h"; path = "Cucumberish/Dependencies/Gherkin/NSString+Trim.h"; sourceTree = "<group>"; };
 		8CB57CE3D75B3C15365AE7542E593C61 /* NSObject+Dictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Dictionary.m"; path = "Cucumberish/Utils/NSObject+Dictionary.m"; sourceTree = "<group>"; };
 		8E99D40A4578E31F0153B75C7580186E /* GHScenarioDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHScenarioDefinition.m; path = Cucumberish/Dependencies/Gherkin/GHScenarioDefinition.m; sourceTree = "<group>"; };
+		9156131EA4175347310475DDF1AF5D9E /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Queerlist-QueerlistUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		93697DF73EC495CA7A68F01FFDA64DBA /* GHHasRowsProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHHasRowsProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHHasRowsProtocol.h; sourceTree = "<group>"; };
 		93C95069E5654BFA026EFD35CCD37CBF /* GHParserException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHParserException.h; path = Cucumberish/Dependencies/Gherkin/GHParserException.h; sourceTree = "<group>"; };
+		94F96BCA85C4977D166E6BCD90532BE8 /* Pods-Queerlist-QueerlistUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Queerlist-QueerlistUITests-frameworks.sh"; sourceTree = "<group>"; };
 		95598AC0CF76C664F2030F4963BFDB04 /* GHGherkinDialectProviderProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHGherkinDialectProviderProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHGherkinDialectProviderProtocol.h; sourceTree = "<group>"; };
 		96E8062CD4AE249CA288EEEE73D9D172 /* Cucumberish.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Cucumberish.h; path = Cucumberish/Cucumberish.h; sourceTree = "<group>"; };
 		987713458BA8B929FDD810A2FDBFBAF9 /* Cucumberish-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cucumberish-umbrella.h"; sourceTree = "<group>"; };
@@ -234,13 +236,12 @@
 		9C9CCA480FEFD20968E0C89CC76F4517 /* GHHasLocationProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHHasLocationProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHHasLocationProtocol.h; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EE128ADAEF4FF5386ADED07E4EE0EE2 /* CCIScenarioDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIScenarioDefinition.m; path = Cucumberish/Core/Models/CCIScenarioDefinition.m; sourceTree = "<group>"; };
-		9F554FC0590A2737E8630D5EA871B093 /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SpellChecker_SpellCheckerUITests.framework; path = "Pods-SpellChecker-SpellCheckerUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A14A0427F1A9DA820436C4FD65F84AE8 /* GHDocString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHDocString.h; path = Cucumberish/Dependencies/Gherkin/GHDocString.h; sourceTree = "<group>"; };
-		A5240F7E86A770C5BC0E4C37EAB0E07C /* Pods-SpellChecker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SpellChecker-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A60F65756C4E362188C9E8D00BEF4558 /* Pods-SpellChecker-SpellCheckerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SpellChecker-SpellCheckerUITests-dummy.m"; sourceTree = "<group>"; };
 		A720BFA9C6F84BF4AE224661CF9FDDDB /* GHGherkinLanguageSetting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHGherkinLanguageSetting.h; path = Cucumberish/Dependencies/Gherkin/GHGherkinLanguageSetting.h; sourceTree = "<group>"; };
 		ABF80C343F6ECAB9CD44CDEB8725D449 /* GHScenarioOutline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHScenarioOutline.m; path = Cucumberish/Dependencies/Gherkin/GHScenarioOutline.m; sourceTree = "<group>"; };
 		AC938E7E449588A3B8AA48EA98E72674 /* GHTokenMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTokenMatcher.h; path = Cucumberish/Dependencies/Gherkin/GHTokenMatcher.h; sourceTree = "<group>"; };
+		AD84A8364C16465A67433F7C924FA913 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Queerlist-QueerlistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		AF031F5D32A4F766CAA279D5CA9216A2 /* Pods-Queerlist-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Queerlist-umbrella.h"; sourceTree = "<group>"; };
 		AFE5E6B1F929B0CA8C8F28C4A350529A /* GHStep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHStep.m; path = Cucumberish/Dependencies/Gherkin/GHStep.m; sourceTree = "<group>"; };
 		B0656C19F8637D18EC1790747FF974A0 /* NSString+Trim.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+Trim.m"; path = "Cucumberish/Dependencies/Gherkin/NSString+Trim.m"; sourceTree = "<group>"; };
 		B18C7F51C725F9D0B861DA61BC5A9587 /* CCIAroundHock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIAroundHock.m; path = Cucumberish/Core/Models/CCIAroundHock.m; sourceTree = "<group>"; };
@@ -260,7 +261,7 @@
 		C2AEF4768441890C53D095B480625EB4 /* GHGherkinDialectProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHGherkinDialectProvider.m; path = Cucumberish/Dependencies/Gherkin/GHGherkinDialectProvider.m; sourceTree = "<group>"; };
 		C391A90AEB1FECA50EFA4D9013535BC8 /* GHFeature.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHFeature.m; path = Cucumberish/Dependencies/Gherkin/GHFeature.m; sourceTree = "<group>"; };
 		C3EB32214963AF75DC1E519ACB1FC41B /* NSArray+Hashes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+Hashes.h"; path = "Cucumberish/Utils/NSArray+Hashes.h"; sourceTree = "<group>"; };
-		C7E26457001D454CF355CA7AE0DD4A77 /* Pods-SpellChecker-SpellCheckerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SpellChecker-SpellCheckerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		C6666E86B938AA88C803F3DB05F41213 /* Pods-Queerlist-QueerlistUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Queerlist-QueerlistUITests-Info.plist"; sourceTree = "<group>"; };
 		C88FFEA95F3F7FFF82985F7494EB025C /* ResourceBundle-GherkinLanguages-Cucumberish-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-GherkinLanguages-Cucumberish-Info.plist"; sourceTree = "<group>"; };
 		C9510BC643350C8A72076078C9C0DAAD /* Cucumberish.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cucumberish.framework; path = Cucumberish.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9F87D5E982A05C69D98BA49ABDB72C2 /* CCIBlockDefinitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIBlockDefinitions.h; path = Cucumberish/Core/CCIBlockDefinitions.h; sourceTree = "<group>"; };
@@ -272,10 +273,8 @@
 		D8B2F95F4AA51F08C8B3E857A619A93D /* NSArray+Hashes.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+Hashes.m"; path = "Cucumberish/Utils/NSArray+Hashes.m"; sourceTree = "<group>"; };
 		D91A280B9CB9EA5B327C476C683AC6E4 /* GHGherkinLineProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHGherkinLineProtocol.h; path = Cucumberish/Dependencies/Gherkin/GHGherkinLineProtocol.h; sourceTree = "<group>"; };
 		DAF60BAF0C345636AFFAE3664F7CF28A /* GHGherkinLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHGherkinLine.m; path = Cucumberish/Dependencies/Gherkin/GHGherkinLine.m; sourceTree = "<group>"; };
-		DD43120B81DC308AEF1D4C1A809C0BD6 /* Pods-SpellChecker-SpellCheckerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SpellChecker-SpellCheckerUITests-umbrella.h"; sourceTree = "<group>"; };
 		DD74E32AE1868CE3E7B17DF195556B70 /* GHStep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHStep.h; path = Cucumberish/Dependencies/Gherkin/GHStep.h; sourceTree = "<group>"; };
 		E5A2F509E2FB8A7CAF714B0253C1F7C3 /* GHTableCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHTableCell.h; path = Cucumberish/Dependencies/Gherkin/GHTableCell.h; sourceTree = "<group>"; };
-		E7A7A358A2A99E4EE5CF6DCF0A438BA7 /* Pods-SpellChecker-SpellCheckerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SpellChecker-SpellCheckerUITests.modulemap"; sourceTree = "<group>"; };
 		ECBC85E1B4594527088FCB8D3986742E /* GHTableCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHTableCell.m; path = Cucumberish/Dependencies/Gherkin/GHTableCell.m; sourceTree = "<group>"; };
 		F00D577B0E35BA7DBE03A6DF602086E0 /* Cucumberish-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cucumberish-Info.plist"; sourceTree = "<group>"; };
 		F0129EF6F825CF3691CC16C5B23A3CB4 /* CCIJSONDumper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CCIJSONDumper.h; path = Cucumberish/Core/Models/CCIJSONDumper.h; sourceTree = "<group>"; };
@@ -285,24 +284,33 @@
 		F4AE3DD0621073C03ABE8869014DEB79 /* GHComment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GHComment.m; path = Cucumberish/Dependencies/Gherkin/GHComment.m; sourceTree = "<group>"; };
 		F5F0E2648A0225A680D9DA04D583F1A4 /* GherkinLanguages.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = GherkinLanguages.bundle; path = "Cucumberish-GherkinLanguages.bundle"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F87DF4AB53AA5A5A6BEA40AD32768746 /* GHBackground.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GHBackground.h; path = Cucumberish/Dependencies/Gherkin/GHBackground.h; sourceTree = "<group>"; };
+		FB4952BBB4D53CFEE60FFCD33B74F438 /* Pods-Queerlist.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Queerlist.modulemap"; sourceTree = "<group>"; };
 		FEB252731837BBC285601350889D0045 /* CCIStepDefinition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CCIStepDefinition.m; path = Cucumberish/Core/Models/CCIStepDefinition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05D502EDFEDB9B76099D53078FD44167 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D38E3C8C6353A6521155662363254049 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		62669C2367B0517D41BE1D299EAE520C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1F335556C118B8E61ECE919132F7A76C /* Foundation.framework in Frameworks */,
 				A47AF316CAAB21ADBEFA0E81739D17F5 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D69962C88D477C35D7385B0AA755901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2975E380FA77F3A4BFE25B91787FCA2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC827DE7CB064486E60892751CC1E226 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6115A27D95E48388B1E3E7971923C341 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,17 +321,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4A19E4E4F00F79DA1791600ABC5DB7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89D9202BE4C4413A5F7B19F79223C69A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03291F6A2BAA9223C13667BA7ACCF5F5 /* Pods-Queerlist-QueerlistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				04744EE234FC0EED179A956C061E2B46 /* Pods-Queerlist-QueerlistUITests.modulemap */,
+				6349B0676E612E26E4ED3F34CE6B00D7 /* Pods-Queerlist-QueerlistUITests-acknowledgements.markdown */,
+				5F6736414B27C652B0F70D0E8E7F0068 /* Pods-Queerlist-QueerlistUITests-acknowledgements.plist */,
+				03216852C5D32ED5D0ADEFEE800C77B5 /* Pods-Queerlist-QueerlistUITests-dummy.m */,
+				94F96BCA85C4977D166E6BCD90532BE8 /* Pods-Queerlist-QueerlistUITests-frameworks.sh */,
+				C6666E86B938AA88C803F3DB05F41213 /* Pods-Queerlist-QueerlistUITests-Info.plist */,
+				47B2027155B577A03EDDF6F0D1AF5218 /* Pods-Queerlist-QueerlistUITests-umbrella.h */,
+				9156131EA4175347310475DDF1AF5D9E /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */,
+				AD84A8364C16465A67433F7C924FA913 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */,
+			);
+			name = "Pods-Queerlist-QueerlistUITests";
+			path = "Target Support Files/Pods-Queerlist-QueerlistUITests";
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,29 +373,40 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		3182ACDE160B5ECE34985E2E8F58D584 /* Targets Support Files */ = {
+		532AFF2F7A517DC7557BF657BCC570F7 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6F2DC9F034198E9E4A67B4F2D7D41709 /* Pods-SpellChecker */,
-				B8980399ED2AE18168F71954EACF43E4 /* Pods-SpellChecker-SpellCheckerUITests */,
+				784EE6910094FDA8EB0E1B880FAB4CB3 /* Pods-Queerlist */,
+				03291F6A2BAA9223C13667BA7ACCF5F5 /* Pods-Queerlist-QueerlistUITests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6F2DC9F034198E9E4A67B4F2D7D41709 /* Pods-SpellChecker */ = {
+		748D824730C3BE7D8B19724A25E4ED58 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				724ECFADC875408D541DD06EE6524511 /* Pods-SpellChecker.modulemap */,
-				A5240F7E86A770C5BC0E4C37EAB0E07C /* Pods-SpellChecker-acknowledgements.markdown */,
-				37C98B0E670CFED11C4B72325FB46AF3 /* Pods-SpellChecker-acknowledgements.plist */,
-				86779F6E8792F917482624AD90D3351A /* Pods-SpellChecker-dummy.m */,
-				23D5768E8765A8F7A8EE57315D0BA429 /* Pods-SpellChecker-Info.plist */,
-				78C71EE53CD433C36D907B0EC4062AAC /* Pods-SpellChecker-umbrella.h */,
-				5322466A34341A2339DE20DEA425FECD /* Pods-SpellChecker.debug.xcconfig */,
-				556BB34B4975A894D86CB257AA8D5C1F /* Pods-SpellChecker.release.xcconfig */,
+				C9510BC643350C8A72076078C9C0DAAD /* Cucumberish.framework */,
+				F5F0E2648A0225A680D9DA04D583F1A4 /* GherkinLanguages.bundle */,
+				6A7730132C734C556C0A098981CCC467 /* Pods_Queerlist.framework */,
+				40E79D83925D0773AEBEB0591C9A1A15 /* Pods_Queerlist_QueerlistUITests.framework */,
 			);
-			name = "Pods-SpellChecker";
-			path = "Target Support Files/Pods-SpellChecker";
+			name = Products;
+			sourceTree = "<group>";
+		};
+		784EE6910094FDA8EB0E1B880FAB4CB3 /* Pods-Queerlist */ = {
+			isa = PBXGroup;
+			children = (
+				FB4952BBB4D53CFEE60FFCD33B74F438 /* Pods-Queerlist.modulemap */,
+				65CAE178D1AEAA11983525A490B059AC /* Pods-Queerlist-acknowledgements.markdown */,
+				72E84FB97CD6B8A70A411007916C20E6 /* Pods-Queerlist-acknowledgements.plist */,
+				4E701B73CAD2BF5D0AA965CB2949B6D1 /* Pods-Queerlist-dummy.m */,
+				4A123E0C6E57610B779A3B4AAEE351E5 /* Pods-Queerlist-Info.plist */,
+				AF031F5D32A4F766CAA279D5CA9216A2 /* Pods-Queerlist-umbrella.h */,
+				109D56EED253BD33D65F554DB1B35573 /* Pods-Queerlist.debug.xcconfig */,
+				24CF58636BB705E2D79B4947F0A22090 /* Pods-Queerlist.release.xcconfig */,
+			);
+			name = "Pods-Queerlist";
+			path = "Target Support Files/Pods-Queerlist";
 			sourceTree = "<group>";
 		};
 		974814B39C0012DECD183BBB91B32103 /* iOS */ = {
@@ -507,42 +535,14 @@
 			path = Cucumberish;
 			sourceTree = "<group>";
 		};
-		B8980399ED2AE18168F71954EACF43E4 /* Pods-SpellChecker-SpellCheckerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E7A7A358A2A99E4EE5CF6DCF0A438BA7 /* Pods-SpellChecker-SpellCheckerUITests.modulemap */,
-				1AA2C9675484B8126192C9EE0C2F67AD /* Pods-SpellChecker-SpellCheckerUITests-acknowledgements.markdown */,
-				09E3C679EB2830FFE81AF16106B7BECC /* Pods-SpellChecker-SpellCheckerUITests-acknowledgements.plist */,
-				A60F65756C4E362188C9E8D00BEF4558 /* Pods-SpellChecker-SpellCheckerUITests-dummy.m */,
-				C7E26457001D454CF355CA7AE0DD4A77 /* Pods-SpellChecker-SpellCheckerUITests-frameworks.sh */,
-				417A409CFCE959BF2924C1E8E1FDE7BE /* Pods-SpellChecker-SpellCheckerUITests-Info.plist */,
-				DD43120B81DC308AEF1D4C1A809C0BD6 /* Pods-SpellChecker-SpellCheckerUITests-umbrella.h */,
-				0AC7AD2472EDCB4EDE257AC7C2BDF6AE /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */,
-				3D47E729ADDE0829213C46C7BAEBB235 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */,
-			);
-			name = "Pods-SpellChecker-SpellCheckerUITests";
-			path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests";
-			sourceTree = "<group>";
-		};
-		CCEFF7A19B35F00C31A120E5BBC2DEB2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C9510BC643350C8A72076078C9C0DAAD /* Cucumberish.framework */,
-				F5F0E2648A0225A680D9DA04D583F1A4 /* GherkinLanguages.bundle */,
-				5443019CC0BD725B13F678874DBBD62C /* Pods_SpellChecker.framework */,
-				9F554FC0590A2737E8630D5EA871B093 /* Pods_SpellChecker_SpellCheckerUITests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				E67E91E70C2F7D20840B43418485E58E /* Pods */,
-				CCEFF7A19B35F00C31A120E5BBC2DEB2 /* Products */,
-				3182ACDE160B5ECE34985E2E8F58D584 /* Targets Support Files */,
+				748D824730C3BE7D8B19724A25E4ED58 /* Products */,
+				532AFF2F7A517DC7557BF657BCC570F7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -557,19 +557,11 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		74C57E8DF92F38075166B9DCE290E0FC /* Headers */ = {
+		A4852DB1DCE22AE0AC43E944C2935533 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A0C95F95A5F34C465B4882C8044495 /* Pods-SpellChecker-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A187E910EFD5DA1CD3C2E530DC1145D1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E61BF532711B70145A89D6E6AFE5709E /* Pods-SpellChecker-SpellCheckerUITests-umbrella.h in Headers */,
+				52E2A9AAEAA92864F4E1861D50C3EB39 /* Pods-Queerlist-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,26 +631,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D09FF0352C34D1B13080A263A82C817E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC5D8A2039EAB2D9B14F8F38F2D46EED /* Pods-Queerlist-QueerlistUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		432E8166D4514B42F374C9505FDBBE4B /* Pods-SpellChecker-SpellCheckerUITests */ = {
+		2DAEE114F82771AAF3617B493FB1E1D6 /* Pods-Queerlist */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 75E7CD0FC1BF73A4E8FE935F0CAD8EC7 /* Build configuration list for PBXNativeTarget "Pods-SpellChecker-SpellCheckerUITests" */;
+			buildConfigurationList = 188ACB205AA9AB163E332F7154DB21C3 /* Build configuration list for PBXNativeTarget "Pods-Queerlist" */;
 			buildPhases = (
-				A187E910EFD5DA1CD3C2E530DC1145D1 /* Headers */,
-				D88C846084D1569A05E5923313C3C805 /* Sources */,
-				F4A19E4E4F00F79DA1791600ABC5DB7C /* Frameworks */,
-				2BAAB638D200C6D1B7C65A6BA3EDC12C /* Resources */,
+				A4852DB1DCE22AE0AC43E944C2935533 /* Headers */,
+				674EE5AA0795D21BE9369289193CB16B /* Sources */,
+				7D69962C88D477C35D7385B0AA755901 /* Frameworks */,
+				6EB9389E4AA814617B7CF31E10AB11EF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				AC042F8FDCF4156E642305CCBF3C7EF6 /* PBXTargetDependency */,
 			);
-			name = "Pods-SpellChecker-SpellCheckerUITests";
-			productName = "Pods-SpellChecker-SpellCheckerUITests";
-			productReference = 9F554FC0590A2737E8630D5EA871B093 /* Pods_SpellChecker_SpellCheckerUITests.framework */;
+			name = "Pods-Queerlist";
+			productName = "Pods-Queerlist";
+			productReference = 6A7730132C734C556C0A098981CCC467 /* Pods_Queerlist.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		6B9476F01BF5369F5A1F27E14B49901D /* Cucumberish-GherkinLanguages */ = {
@@ -677,6 +676,25 @@
 			productName = "Cucumberish-GherkinLanguages";
 			productReference = F5F0E2648A0225A680D9DA04D583F1A4 /* GherkinLanguages.bundle */;
 			productType = "com.apple.product-type.bundle";
+		};
+		CF93D1441494B2B49E86FAB7186B7E19 /* Pods-Queerlist-QueerlistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E94D91E87B369D58A12B0ECEA726C8F2 /* Build configuration list for PBXNativeTarget "Pods-Queerlist-QueerlistUITests" */;
+			buildPhases = (
+				D09FF0352C34D1B13080A263A82C817E /* Headers */,
+				3E41FB086ADDA7C5264EFCC8E8818C6D /* Sources */,
+				AC827DE7CB064486E60892751CC1E226 /* Frameworks */,
+				0FB22487B49BB92DDF0E3CA1FDDADBDC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C6E84426606F44DA4FEB7A9E5F55C68 /* PBXTargetDependency */,
+			);
+			name = "Pods-Queerlist-QueerlistUITests";
+			productName = "Pods-Queerlist-QueerlistUITests";
+			productReference = 40E79D83925D0773AEBEB0591C9A1A15 /* Pods_Queerlist_QueerlistUITests.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 		E9023FEC10B3ABBA3DA6D590AE39248B /* Cucumberish */ = {
 			isa = PBXNativeTarget;
@@ -697,24 +715,6 @@
 			productReference = C9510BC643350C8A72076078C9C0DAAD /* Cucumberish.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FCF4046C8C3B2F409B37F2D4D5253B46 /* Pods-SpellChecker */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44B23C29BC3F4658FE10061F1686274D /* Build configuration list for PBXNativeTarget "Pods-SpellChecker" */;
-			buildPhases = (
-				74C57E8DF92F38075166B9DCE290E0FC /* Headers */,
-				64B4E3EDE638491E2C582CE7673510E1 /* Sources */,
-				05D502EDFEDB9B76099D53078FD44167 /* Frameworks */,
-				1ACD41820E1AE0A2D557392F86A7AD85 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Pods-SpellChecker";
-			productName = "Pods-SpellChecker";
-			productReference = 5443019CC0BD725B13F678874DBBD62C /* Pods_SpellChecker.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -725,7 +725,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -733,27 +733,20 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = CCEFF7A19B35F00C31A120E5BBC2DEB2 /* Products */;
+			productRefGroup = 748D824730C3BE7D8B19724A25E4ED58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9023FEC10B3ABBA3DA6D590AE39248B /* Cucumberish */,
 				6B9476F01BF5369F5A1F27E14B49901D /* Cucumberish-GherkinLanguages */,
-				FCF4046C8C3B2F409B37F2D4D5253B46 /* Pods-SpellChecker */,
-				432E8166D4514B42F374C9505FDBBE4B /* Pods-SpellChecker-SpellCheckerUITests */,
+				2DAEE114F82771AAF3617B493FB1E1D6 /* Pods-Queerlist */,
+				CF93D1441494B2B49E86FAB7186B7E19 /* Pods-Queerlist-QueerlistUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1ACD41820E1AE0A2D557392F86A7AD85 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BAAB638D200C6D1B7C65A6BA3EDC12C /* Resources */ = {
+		0FB22487B49BB92DDF0E3CA1FDDADBDC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -776,6 +769,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6EB9389E4AA814617B7CF31E10AB11EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -786,11 +786,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64B4E3EDE638491E2C582CE7673510E1 /* Sources */ = {
+		3E41FB086ADDA7C5264EFCC8E8818C6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB514B3E668BB68F8E47D2786C676D76 /* Pods-SpellChecker-dummy.m in Sources */,
+				A082A41B941672DA1F9991BBA84970AD /* Pods-Queerlist-QueerlistUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		674EE5AA0795D21BE9369289193CB16B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B17DF5FD5C9047FD7ED1BC8EB528854 /* Pods-Queerlist-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,22 +859,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D88C846084D1569A05E5923313C3C805 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6E0DAE1AE8589E876544459D2D44A157 /* Pods-SpellChecker-SpellCheckerUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		AC042F8FDCF4156E642305CCBF3C7EF6 /* PBXTargetDependency */ = {
+		3C6E84426606F44DA4FEB7A9E5F55C68 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cucumberish;
 			target = E9023FEC10B3ABBA3DA6D590AE39248B /* Cucumberish */;
-			targetProxy = BEF09CECD160E37BEA5303C71C2470F0 /* PBXContainerItemProxy */;
+			targetProxy = CD4E4FBFAA7BEE711D3E96320781DFE9 /* PBXContainerItemProxy */;
 		};
 		C4FC995A7D0EE5D293878EF74EA9D62E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -877,9 +877,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		01D383222578C1CD7EC50E614F8B921F /* Release */ = {
+		03C50E70E41B0F6D6983EE4C20028EB7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 556BB34B4975A894D86CB257AA8D5C1F /* Pods-SpellChecker.release.xcconfig */;
+			baseConfigurationReference = AD84A8364C16465A67433F7C924FA913 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -891,7 +891,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -900,7 +900,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -915,43 +915,6 @@
 			};
 			name = Release;
 		};
-		0676A49C4C70D0834A7687C2A61EA3FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5322466A34341A2339DE20DEA425FECD /* Pods-SpellChecker.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		1AEF8334A238566DE161486976B59FF5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5C1211488DBC0C59E21217129AEFE380 /* Cucumberish.debug.xcconfig */;
@@ -965,6 +928,43 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		70963DFDF9705D794640F66EAD710F8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9156131EA4175347310475DDF1AF5D9E /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
@@ -1102,44 +1102,6 @@
 			};
 			name = Release;
 		};
-		A1CC1778F1F1473F49B54EE2978FC235 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D47E729ADDE0829213C46C7BAEBB235 /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		A9953A1BDB5925AFF23EF15A4A10DDF9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 642EB2F784FE9452103B50102BF32103 /* Cucumberish.release.xcconfig */;
@@ -1153,6 +1115,44 @@
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		C44A220311AE5106DB84917D4D4BF5C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CF58636BB705E2D79B4947F0A22090 /* Pods-Queerlist.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Queerlist/Pods-Queerlist-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Queerlist/Pods-Queerlist.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -1191,9 +1191,9 @@
 			};
 			name = Release;
 		};
-		DB62D58F74567706A95713816B20E880 /* Debug */ = {
+		EDA79502650EBD2ACCACB9D968809EF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0AC7AD2472EDCB4EDE257AC7C2BDF6AE /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */;
+			baseConfigurationReference = 109D56EED253BD33D65F554DB1B35573 /* Pods-Queerlist.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1205,7 +1205,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-Queerlist/Pods-Queerlist-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1214,7 +1214,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-Queerlist/Pods-Queerlist.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -1265,11 +1265,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		44B23C29BC3F4658FE10061F1686274D /* Build configuration list for PBXNativeTarget "Pods-SpellChecker" */ = {
+		188ACB205AA9AB163E332F7154DB21C3 /* Build configuration list for PBXNativeTarget "Pods-Queerlist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0676A49C4C70D0834A7687C2A61EA3FE /* Debug */,
-				01D383222578C1CD7EC50E614F8B921F /* Release */,
+				EDA79502650EBD2ACCACB9D968809EF7 /* Debug */,
+				C44A220311AE5106DB84917D4D4BF5C5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1292,11 +1292,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		75E7CD0FC1BF73A4E8FE935F0CAD8EC7 /* Build configuration list for PBXNativeTarget "Pods-SpellChecker-SpellCheckerUITests" */ = {
+		E94D91E87B369D58A12B0ECEA726C8F2 /* Build configuration list for PBXNativeTarget "Pods-Queerlist-QueerlistUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DB62D58F74567706A95713816B20E880 /* Debug */,
-				A1CC1778F1F1473F49B54EE2978FC235 /* Release */,
+				70963DFDF9705D794640F66EAD710F8E /* Debug */,
+				03C50E70E41B0F6D6983EE4C20028EB7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

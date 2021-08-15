@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		406B27F3D789EDA5CA0E530F /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */; };
 		6B45112B216D097B0030F276 /* SpellDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112A216D097B0030F276 /* SpellDetailViewController.swift */; };
 		6B45112F216E5F940030F276 /* SpellCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B45112E216E5F940030F276 /* SpellCell.swift */; };
 		6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80AC86216663E100A5E0C1 /* AppDelegate.swift */; };
@@ -17,7 +16,8 @@
 		6B80ACB52166644700A5E0C1 /* SpellListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */; };
 		6B80ACB7216664F100A5E0C1 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB6216664F100A5E0C1 /* Spell.swift */; };
 		6B80ACB92166650000A5E0C1 /* SpellStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB82166650000A5E0C1 /* SpellStore.swift */; };
-		A0E3154ED45590A8A86ED952 /* Pods_SpellChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */; };
+		8D2B798AFDBB294E40C3478C /* Pods_Queerlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */; };
+		BDE0362BC8AD643F19651C7E /* Pods_Queerlist_QueerlistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */; };
 		D97AFCD8245E61E2008265CF /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D97AFCD7245E61E2008265CF /* MockData.swift */; };
 		D987E590245DD8B6006FE232 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D987E592245DD8B6006FE232 /* Localizable.strings */; };
 		D987E595245DDB4F006FE232 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E594245DDB4F006FE232 /* Strings.swift */; };
@@ -47,10 +47,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.debug.xcconfig"; sourceTree = "<group>"; };
-		242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests.release.xcconfig"; sourceTree = "<group>"; };
-		564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker_SpellCheckerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist-QueerlistUITests.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist-QueerlistUITests.release.xcconfig"; path = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B45112A216D097B0030F276 /* SpellDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellDetailViewController.swift; sourceTree = "<group>"; };
 		6B45112E216E5F940030F276 /* SpellCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellCell.swift; sourceTree = "<group>"; };
 		6B80AC83216663E100A5E0C1 /* Queerlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Queerlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +62,9 @@
 		6B80ACB42166644700A5E0C1 /* SpellListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellListViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* SpellStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpellStore.swift; sourceTree = "<group>"; };
-		8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpellChecker.release.xcconfig"; path = "Target Support Files/Pods-SpellChecker/Pods-SpellChecker.release.xcconfig"; sourceTree = "<group>"; };
-		8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpellChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queerlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.release.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.release.xcconfig"; sourceTree = "<group>"; };
+		85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queerlist_QueerlistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D97AFCD7245E61E2008265CF /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D987E58D245DD6D5006FE232 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Main.strings"; sourceTree = "<group>"; };
 		D987E591245DD8B6006FE232 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -80,12 +79,13 @@
 		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
 		D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsSteps.swift; sourceTree = "<group>"; };
 		D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsScreen.swift; sourceTree = "<group>"; };
-		D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpellChecker-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Queerlist-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9D40D76235E9CE10041DD12 /* UITestID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestID.swift; sourceTree = "<group>"; };
 		D9D8DCE2245F47590013104C /* WizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardViewController.swift; sourceTree = "<group>"; };
 		D9D8DCE4245F73170013104C /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
 		D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
 		D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellViewController.swift; sourceTree = "<group>"; };
+		E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E3154ED45590A8A86ED952 /* Pods_SpellChecker.framework in Frameworks */,
+				8D2B798AFDBB294E40C3478C /* Pods_Queerlist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,30 +101,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				406B27F3D789EDA5CA0E530F /* Pods_SpellChecker_SpellCheckerUITests.framework in Frameworks */,
+				BDE0362BC8AD643F19651C7E /* Pods_Queerlist_QueerlistUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5CA2DA62AFEBE0F7A73273A8 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				8B45E1CF700CB0BDA623B848 /* Pods_SpellChecker.framework */,
-				564C9D312FD1FCE6458EFDAC /* Pods_SpellChecker_SpellCheckerUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		6B80AC7A216663E100A5E0C1 = {
 			isa = PBXGroup;
 			children = (
-				6B80AC85216663E100A5E0C1 /* SpellChecker */,
-				6B80ACA5216663E300A5E0C1 /* SpellCheckerUITests */,
+				6B80AC85216663E100A5E0C1 /* Queerlist */,
+				6B80ACA5216663E300A5E0C1 /* QueerlistUITests */,
 				6B80AC84216663E100A5E0C1 /* Products */,
 				F47DAE16B0F1417FBD70B67E /* Pods */,
-				5CA2DA62AFEBE0F7A73273A8 /* Frameworks */,
+				CEEF35D96B17FDF1D25A7181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,7 +128,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6B80AC85216663E100A5E0C1 /* SpellChecker */ = {
+		6B80AC85216663E100A5E0C1 /* Queerlist */ = {
 			isa = PBXGroup;
 			children = (
 				D97AFCDD245E851E008265CF /* Spell */,
@@ -149,14 +140,14 @@
 				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
 				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
 				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
-				D9D40D75235E99F40041DD12 /* SpellChecker-Bridging-Header.h */,
+				D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */,
 				6B80AC8D216663E300A5E0C1 /* Assets.xcassets */,
 				6B80AC92216663E300A5E0C1 /* Info.plist */,
 			);
-			path = SpellChecker;
+			path = Queerlist;
 			sourceTree = "<group>";
 		};
-		6B80ACA5216663E300A5E0C1 /* SpellCheckerUITests */ = {
+		6B80ACA5216663E300A5E0C1 /* QueerlistUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D9D40D76235E9CE10041DD12 /* UITestID.swift */,
@@ -167,7 +158,16 @@
 				D9D40D6E235E95DD0041DD12 /* Features */,
 				6B80ACA8216663E300A5E0C1 /* Info.plist */,
 			);
-			path = SpellCheckerUITests;
+			path = QueerlistUITests;
+			sourceTree = "<group>";
+		};
+		CEEF35D96B17FDF1D25A7181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */,
+				85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D97AFCD9245E8448008265CF /* Localization */ = {
@@ -245,10 +245,10 @@
 		F47DAE16B0F1417FBD70B67E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */,
-				8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */,
-				242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */,
-				3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */,
+				E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */,
+				84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */,
+				0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */,
+				42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -260,7 +260,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "Queerlist" */;
 			buildPhases = (
-				962D498403E256BC8A9204F4 /* [CP] Check Pods Manifest.lock */,
+				F5C15D9971CFA2BBB18DD37E /* [CP] Check Pods Manifest.lock */,
 				6B80AC7F216663E100A5E0C1 /* Sources */,
 				6B80AC80216663E100A5E0C1 /* Frameworks */,
 				6B80AC81216663E100A5E0C1 /* Resources */,
@@ -278,11 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "QueerlistUITests" */;
 			buildPhases = (
-				1FCF6E0C63C2F9F04D5B3B94 /* [CP] Check Pods Manifest.lock */,
+				E5AA53AA0F2E54B82AB9E59A /* [CP] Check Pods Manifest.lock */,
 				6B80AC9E216663E300A5E0C1 /* Sources */,
 				6B80AC9F216663E300A5E0C1 /* Frameworks */,
 				6B80ACA0216663E300A5E0C1 /* Resources */,
-				D900911DF0E69ED8BD124B5A /* [CP] Embed Pods Frameworks */,
+				371183FBE61C318F5A150D96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -358,65 +358,65 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1FCF6E0C63C2F9F04D5B3B94 /* [CP] Check Pods Manifest.lock */ = {
+		371183FBE61C318F5A150D96 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpellChecker-SpellCheckerUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		962D498403E256BC8A9204F4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SpellChecker-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D900911DF0E69ED8BD124B5A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpellChecker-SpellCheckerUITests/Pods-SpellChecker-SpellCheckerUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5AA53AA0F2E54B82AB9E59A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Queerlist-QueerlistUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5C15D9971CFA2BBB18DD37E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Queerlist-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -618,13 +618,13 @@
 		};
 		6B80ACAC216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 209CED937E7D68DD6A7E42B7 /* Pods-SpellChecker.debug.xcconfig */;
+			baseConfigurationReference = E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = SpellChecker/Info.plist;
+				INFOPLIST_FILE = Queerlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -640,13 +640,13 @@
 		};
 		6B80ACAD216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B3AD01480D661F3E25E47E9 /* Pods-SpellChecker.release.xcconfig */;
+			baseConfigurationReference = 84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = SpellChecker/Info.plist;
+				INFOPLIST_FILE = Queerlist/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -662,13 +662,13 @@
 		};
 		6B80ACB2216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 242794E23CED66627DBD2B56 /* Pods-SpellChecker-SpellCheckerUITests.debug.xcconfig */;
+			baseConfigurationReference = 0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = SpellCheckerUITests/Info.plist;
+				INFOPLIST_FILE = QueerlistUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +677,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellCheckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpellChecker/SpellChecker-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Queerlist/Queerlist-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -687,13 +687,13 @@
 		};
 		6B80ACB3216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E15D6933D4FF5235802583A /* Pods-SpellChecker-SpellCheckerUITests.release.xcconfig */;
+			baseConfigurationReference = 42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				INFOPLIST_FILE = SpellCheckerUITests/Info.plist;
+				INFOPLIST_FILE = QueerlistUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -702,7 +702,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.rafaelschmitt.SpellCheckerUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "SpellChecker/SpellChecker-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Queerlist/Queerlist-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Queerlist;
