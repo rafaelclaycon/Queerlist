@@ -1,6 +1,6 @@
 # Queerlist
 
-Ron Weasley decides to take his MacBook out and develop an app to impress Hermione Granger with his innate knowledge of spells. He wouldn't dare to develop it without automated tests, of course. Much less without BDD scenarios.
+This used to be a Harry Potter-themed project because I was a big fan of the series. In light of [the wizard's author endangering trans people's lives with her bigoted views](https://youtu.be/7gDKbT_l2us), what you're going to find here is a collection of notable LGBTQIA+ personalities from Brasil and the US.
 
 ![A picture of young Ron Weasley beside the iOS Simulator running SpellChecker.](Images/Ron.png)
 
