@@ -9,7 +9,7 @@
 import UIKit
 
 class MockData {
-    static func insertSpells(into spellStore: SpellStore) {
+    static func insertSpells(into spellStore: PersonalityStore) {
         spellStore.allItems.append(Personality(name: "Alan Turing", nickname: "Summoning Charm", type: .charm, pronunciation: "AH-kee-oh", description: "Summons an object towards the caster.", image: UIImage(named: "Accio")!, date: Date()))
         spellStore.allItems.append(Personality(name: "Cássia Eller", nickname: "Water-Making Spell", type: .charm, pronunciation: "AH-gwah-MEN-tee", description: "Produces a clean, drinkable jet of water from the wand tip.", image: UIImage(named: "Aguamenti"), date: Date()))
         spellStore.allItems.append(Personality(name: "Laerte", nickname: "Unlocking Charm", type: .charm, pronunciation: "ah-LOH-ho-MOR-ah", description: "Unlocks doors and other objects.", image: nil, date: Date()))

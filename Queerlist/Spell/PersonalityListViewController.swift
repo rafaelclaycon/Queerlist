@@ -4,8 +4,9 @@
 
 import UIKit
 
-class SpellListViewController: UITableViewController {
-    var spellStore: SpellStore!
+class PersonalityListViewController: UITableViewController {
+
+    var personalityStore: PersonalityStore!
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -17,7 +18,7 @@ class SpellListViewController: UITableViewController {
         super.viewWillAppear(animated)
 
         tableView.reloadData()
-        tableView.accessibilityIdentifier = UITestID.spellList
+        tableView.accessibilityIdentifier = UITestID.personalityList
     }
     
     @IBAction func sortSpells(_: UIBarButtonItem) {
@@ -51,12 +52,12 @@ class SpellListViewController: UITableViewController {
             guard let newItem = item else {
                 return false
             }
-            guard !self.spellStore.spellAlreadyExists(newItem.name) else {
+            guard !self.personalityStore.spellAlreadyExists(newItem.name) else {
                 return false
             }
 
-            self.spellStore.insertItem(newItem)
-            if let index = self.spellStore.allItems.index(of: newItem) {
+            self.personalityStore.insertItem(newItem)
+            if let index = self.personalityStore.allItems.index(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }
@@ -72,7 +73,7 @@ class SpellListViewController: UITableViewController {
             // Figure out which row was just tapped
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
-                let item = spellStore.allItems[row]
+                let item = personalityStore.allItems[row]
                 let detailViewController = segue.destination as! SpellDetailViewController
                 detailViewController.item = item
             }
@@ -85,7 +86,7 @@ class SpellListViewController: UITableViewController {
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         // Update the model
-        spellStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
+        personalityStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
 
     override func tableView(_: UITableView,
@@ -93,10 +94,10 @@ class SpellListViewController: UITableViewController {
                             forRowAt indexPath: IndexPath) {
         // If the table view is asking to commit a delete command...
         if editingStyle == .delete {
-            let item = spellStore.allItems[indexPath.row]
+            let item = personalityStore.allItems[indexPath.row]
 
             // Remove the item from the store
-            spellStore.removeItem(item)
+            personalityStore.removeItem(item)
 
             // Also remove that row from the table view with an animation
             tableView.deleteRows(at: [indexPath], with: .automatic)
@@ -104,7 +105,7 @@ class SpellListViewController: UITableViewController {
     }
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {
-        return spellStore.allItems.count
+        return personalityStore.allItems.count
     }
 
     override func tableView(_ tableView: UITableView,
@@ -116,7 +117,7 @@ class SpellListViewController: UITableViewController {
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell
         // will appear in on the tableview
-        let item = spellStore.allItems[indexPath.row]
+        let item = personalityStore.allItems[indexPath.row]
 
         if item.isFavorite {
             let imageAttachment = NSTextAttachment()

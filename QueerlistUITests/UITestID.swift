@@ -9,5 +9,5 @@
 import Foundation
 
 struct UITestID {
-    static let spellList = "list_of_spells"
+    static let personalityList = "personality_list"
 }

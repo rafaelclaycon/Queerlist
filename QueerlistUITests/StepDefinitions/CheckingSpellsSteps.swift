@@ -16,11 +16,11 @@ class CheckingSpellsSteps: CheckingSpellsScreen {
         }
         
         And("I see the list of spells") { _,_ in
-            XCTAssertTrue(self.app.tables[UITestID.spellList].exists)
+            XCTAssertTrue(self.app.tables[UITestID.personalityList].exists)
         }
         
         When("I tap on any given spell") { _,_ in
-            let firstCell = self.app.tables[UITestID.spellList].cells.element(boundBy: 0)
+            let firstCell = self.app.tables[UITestID.personalityList].cells.element(boundBy: 0)
             guard firstCell.waitForExistence(timeout: 2) else {
                 return XCTFail("First cell not found.")
             }

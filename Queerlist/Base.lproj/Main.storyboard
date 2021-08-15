@@ -12,7 +12,7 @@
         <!--Queerlist-->
         <scene sceneID="f2J-PF-79p">
             <objects>
-                <tableViewController id="Dq1-zB-R57" customClass="SpellListViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Dq1-zB-R57" customClass="PersonalityListViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MRE-Oy-n3x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
