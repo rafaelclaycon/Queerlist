@@ -5,7 +5,7 @@ target 'Queerlist' do
   
   use_frameworks!
   
-  # Pods for SpellChecker
+  # Pods for Queerlist
 
   target 'QueerlistUITests' do
     pod 'Cucumberish'

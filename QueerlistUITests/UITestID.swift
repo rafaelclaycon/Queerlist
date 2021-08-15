@@ -1,6 +1,6 @@
 //
 //  UITestID.swift
-//  SpellChecker
+//  Queerlist
 //
 //  Created by Rafael Schmitt on 21/10/19.
 //  Copyright © 2020 Rafael Claycon Schmitt. All rights reserved.
