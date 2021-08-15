@@ -2,7 +2,7 @@
 
 This used to be a Harry Potter-themed project because I was a big fan of the series. In light of [the wizard's author endangering trans people's lives with her bigoted views](https://youtu.be/7gDKbT_l2us), what you're going to find here is a collection of notable LGBTQIA+ personalities from Brasil and the US.
 
-![A picture of young Ron Weasley beside the iOS Simulator running SpellChecker.](Images/Ron.png)
+![The iOS Simulator running Queerlist beside a picture of Brazilian cartoonist Laerte and her quote "People must be able to live the identity that seems most appropriate to them".](Images/Banner.png)
 
 ## Getting started
 
