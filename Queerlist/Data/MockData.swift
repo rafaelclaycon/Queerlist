@@ -18,7 +18,6 @@ class MockData {
         spellStore.allItems.append(Personality(name: "Marta", nickname: "Spider repelling spell", type: .charm, pronunciation: "ah-RAHN-ee-a EKS-su-may", description: "Drives away spiders, including Acromantulas.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Miss Biá", nickname: "Slowing Charm", type: .charm, pronunciation: "ah-REST-oh mo-MEN-tum", description: "Decreases the velocity of a moving target.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Pabllo Vittar", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
-        spellStore.allItems.append(Personality(name: "Pabllo Vittar", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Paulo Iotti", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "RuPaul", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Thammy Miranda", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
