@@ -14,7 +14,7 @@ class SpellDetailViewController: UIViewController {
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
-    var item: Spell! {
+    var item: Personality! {
         didSet {
             navigationItem.title = item.name
             if item.isFavorite {

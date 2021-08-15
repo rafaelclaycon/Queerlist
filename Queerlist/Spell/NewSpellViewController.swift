@@ -15,8 +15,8 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
     @IBOutlet var addButton: UIButton!
     @IBOutlet var typeButton: UIButton!
 
-    var item: Spell?
-    var completionHandler: ((Bool, Spell?) -> Bool)?
+    var item: Personality?
+    var completionHandler: ((Bool, Personality?) -> Bool)?
     var pickerData = [SpellType.transfiguration.rawValue,
                       SpellType.charm.rawValue,
                       SpellType.jinx.rawValue,
@@ -99,7 +99,7 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
             return
         }
 
-        item = Spell(name: spellName, type: .charm, description: spellDescription)
+        item = Personality(name: spellName, type: .charm, description: spellDescription)
         let result = completionHandler?(true, item!)
 
         guard let saved = result else {

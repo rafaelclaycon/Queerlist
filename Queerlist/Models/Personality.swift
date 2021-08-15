@@ -4,7 +4,8 @@
 
 import UIKit
 
-class Spell: Equatable {
+class Personality: Equatable {
+
     var name: String
     var nickname: String?
     var type: SpellType
@@ -29,8 +30,9 @@ class Spell: Equatable {
         self.init(name: name, nickname: nil, type: type, pronunciation: nil, description: description, date: Date())
     }
 
-    static func == (lhs: Spell, rhs: Spell) -> Bool {
+    static func == (lhs: Personality, rhs: Personality) -> Bool {
         return lhs.name == rhs.name
             && lhs.description == rhs.description
     }
+
 }
