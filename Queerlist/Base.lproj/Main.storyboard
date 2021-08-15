@@ -9,16 +9,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Spells (Alphabetical)-->
+        <!--Queerlist-->
         <scene sceneID="f2J-PF-79p">
             <objects>
-                <tableViewController id="Dq1-zB-R57" customClass="SpellListViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Dq1-zB-R57" customClass="SpellListViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="MRE-Oy-n3x">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SpellCell" rowHeight="72" id="d0D-s0-3jK" customClass="SpellCell" customModule="SpellChecker" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SpellCell" rowHeight="72" id="d0D-s0-3jK" customClass="SpellCell" customModule="Queerlist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d0D-s0-3jK" id="QNd-2P-nns">
@@ -48,7 +48,7 @@
                             <outlet property="delegate" destination="Dq1-zB-R57" id="Jao-2v-dKC"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Spells (Alphabetical)" id="dS8-bt-QdA">
+                    <navigationItem key="navigationItem" title="Queerlist" id="dS8-bt-QdA">
                         <rightBarButtonItems>
                             <barButtonItem systemItem="add" id="gno-SD-tnq">
                                 <connections>
@@ -70,7 +70,7 @@
         <!--Spell Detail View Controller-->
         <scene sceneID="2uT-pV-M6C">
             <objects>
-                <viewController id="z32-gT-y2M" customClass="SpellDetailViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z32-gT-y2M" customClass="SpellDetailViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XRH-uT-Zt0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
                                             <constraint firstAttribute="height" constant="220" id="qkD-Qd-eqf"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-Qn-lrE" customClass="UITextViewFixed" customModule="SpellChecker" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hM5-Qn-lrE" customClass="UITextViewFixed" customModule="Queerlist" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="379.5" width="366" height="309.5"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -167,20 +167,17 @@
                     <connections>
                         <segue destination="hLS-Y2-pYr" kind="relationship" relationship="viewControllers" id="Z2h-WE-UGb"/>
                         <segue destination="EAt-NV-IDw" kind="relationship" relationship="viewControllers" id="Q8E-gp-0Vz"/>
-                        <segue destination="6jj-iZ-FLW" kind="relationship" relationship="viewControllers" id="uXh-u8-eXO"/>
-                        <segue destination="YSe-za-G7g" kind="relationship" relationship="viewControllers" id="mM2-aQ-qgY"/>
-                        <segue destination="Vai-2e-dtL" kind="relationship" relationship="viewControllers" id="MCq-rv-Z1k"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B8p-YY-fW3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2149" y="1644"/>
+            <point key="canvasLocation" x="-2141" y="574"/>
         </scene>
-        <!--Spells-->
+        <!--Personalities-->
         <scene sceneID="b64-QY-Sn5">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hLS-Y2-pYr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Spells" image="Spell 50" id="SZ2-hL-Zgz"/>
+                    <tabBarItem key="tabBarItem" title="Personalities" image="person.2.fill" catalog="system" id="SZ2-hL-Zgz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Rod-Tm-FcM">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -224,115 +221,6 @@
             </objects>
             <point key="canvasLocation" x="1062" y="885"/>
         </scene>
-        <!--Root View Controller-->
-        <scene sceneID="5pr-sI-szO">
-            <objects>
-                <tableViewController id="8tH-MY-pbP" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="z8D-Ge-T90">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="SOW-bh-sgj">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SOW-bh-sgj" id="hA3-b0-ac8">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="8tH-MY-pbP" id="sji-Fj-hNB"/>
-                            <outlet property="delegate" destination="8tH-MY-pbP" id="bW7-bj-g7g"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="10U-6z-ih2"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8kJ-bS-fKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="1644"/>
-        </scene>
-        <!--Root View Controller-->
-        <scene sceneID="TW5-b1-0ho">
-            <objects>
-                <tableViewController id="e6X-gs-MDW" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="qMs-op-Erd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="V8R-G4-Yeb">
-                                <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V8R-G4-Yeb" id="yox-FM-qCV">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="e6X-gs-MDW" id="shu-NA-saQ"/>
-                            <outlet property="delegate" destination="e6X-gs-MDW" id="9ar-T7-uf5"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="iry-0u-K36"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V04-4A-aff" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="2401"/>
-        </scene>
-        <!--Homework-->
-        <scene sceneID="LvY-mJ-zui">
-            <objects>
-                <navigationController id="YSe-za-G7g" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Homework" image="Parchment 60" id="2zG-Mq-D4H"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="OE0-uB-1rM">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="e6X-gs-MDW" kind="relationship" relationship="rootViewController" id="R18-nT-cxe"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QYN-XV-WID" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="119" y="2401"/>
-        </scene>
-        <!--Classes-->
-        <scene sceneID="DmV-Py-Qp8">
-            <objects>
-                <navigationController id="6jj-iZ-FLW" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Classes" image="Class 60" id="Ofe-rv-cAP"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3cK-tI-abj">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="8tH-MY-pbP" kind="relationship" relationship="rootViewController" id="SjQ-oa-zWQ"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kCT-dp-jSx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="120" y="1644"/>
-        </scene>
-        <!--Wizard-->
-        <scene sceneID="LeX-HZ-eG6">
-            <objects>
-                <navigationController id="Vai-2e-dtL" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Wizard" image="Wizard hat 60" id="ncl-TT-lOQ"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yW3-NB-TKV">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="eCe-sZ-PyO" kind="relationship" relationship="rootViewController" id="FeK-rp-7Pm"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fse-te-mOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="119" y="3182"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="rDY-oV-Txo">
             <objects>
@@ -353,7 +241,7 @@
         <!--New Spell View Controller-->
         <scene sceneID="viE-na-PeS">
             <objects>
-                <viewController storyboardIdentifier="NewSpellViewController" id="sbD-8C-ZoZ" customClass="NewSpellViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewSpellViewController" id="sbD-8C-ZoZ" customClass="NewSpellViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pt9-w9-ctV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -398,7 +286,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh" customClass="CustomButton" customModule="SpellChecker" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hk8-fl-1vh" customClass="CustomButton" customModule="Queerlist" customModuleProvider="target">
                                                 <rect key="frame" x="25" y="628.5" width="364" height="48"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="48" id="kfg-jf-szF"/>
@@ -525,39 +413,6 @@
             </objects>
             <point key="canvasLocation" x="1060.8695652173915" y="-558.48214285714278"/>
         </scene>
-        <!--Welcome back, Ron-->
-        <scene sceneID="hdU-4E-5se">
-            <objects>
-                <viewController id="eCe-sZ-PyO" customClass="WizardViewController" customModule="SpellChecker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s1E-Ua-HVZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wq1-RW-EqL">
-                                <rect key="frame" x="107" y="118" width="200" height="204"/>
-                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="Eao-GA-IZV"/>
-                                    <constraint firstAttribute="width" constant="200" id="x2n-Kv-KEZ"/>
-                                </constraints>
-                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="regular"/>
-                            </imageView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="2aH-6U-80k"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="wq1-RW-EqL" firstAttribute="top" secondItem="2aH-6U-80k" secondAttribute="top" constant="32" id="mDx-Rl-R1R"/>
-                            <constraint firstItem="wq1-RW-EqL" firstAttribute="centerX" secondItem="s1E-Ua-HVZ" secondAttribute="centerX" id="t1w-BV-E66"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Welcome back, Ron" id="5Nw-k8-QvA">
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="eyeglasses" catalog="system" id="ck2-zx-Vj7"/>
-                    </navigationItem>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zEB-U6-bgI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1061" y="3181"/>
-        </scene>
     </scenes>
     <designables>
         <designable name="hM5-Qn-lrE">
@@ -565,14 +420,9 @@
         </designable>
     </designables>
     <resources>
-        <image name="Class 60" width="30" height="30"/>
-        <image name="Parchment 60" width="30" height="30"/>
-        <image name="Spell 50" width="25" height="25"/>
         <image name="Spell magic wand" width="25" height="25"/>
-        <image name="Wizard hat 60" width="30" height="30"/>
         <image name="arrow.up.arrow.down.circle" catalog="system" width="128" height="121"/>
-        <image name="eyeglasses" catalog="system" width="128" height="54"/>
-        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.2.fill" catalog="system" width="128" height="80"/>
         <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
