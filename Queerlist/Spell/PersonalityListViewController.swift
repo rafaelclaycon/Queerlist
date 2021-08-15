@@ -74,7 +74,7 @@ class PersonalityListViewController: UITableViewController {
             if let row = tableView.indexPathForSelectedRow?.row {
                 // Get the item associated with this row and pass it along
                 let item = personalityStore.allItems[row]
-                let detailViewController = segue.destination as! SpellDetailViewController
+                let detailViewController = segue.destination as! PersonalityDetailViewController
                 detailViewController.item = item
             }
         default:
@@ -112,7 +112,7 @@ class PersonalityListViewController: UITableViewController {
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // Create an instance of UITableViewCell, with default appearance
         let cell = tableView.dequeueReusableCell(withIdentifier: "SpellCell",
-                                                 for: indexPath) as! SpellCell
+                                                 for: indexPath) as! PersonalityCell
 
         // Set the text on the cell with the description of the item
         // that is at the nth index of items, where n = row this cell

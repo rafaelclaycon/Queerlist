@@ -4,6 +4,8 @@
 
 import UIKit
 
-class SpellCell: UITableViewCell {
+class PersonalityCell: UITableViewCell {
+
     @IBOutlet var nameLabel: UILabel!
+
 }

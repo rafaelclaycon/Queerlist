@@ -4,7 +4,8 @@
 
 import UIKit
 
-class SpellDetailViewController: UIViewController {
+class PersonalityDetailViewController: UIViewController {
+
     @IBOutlet var favoriteButton: UIBarButtonItem!
     
     @IBOutlet var spellType: UILabel!
@@ -89,4 +90,5 @@ class SpellDetailViewController: UIViewController {
     private func setFavoriteIconIsFavorite() {
         favoriteButton.image = UIImage(systemName: "star.fill")
     }
+
 }

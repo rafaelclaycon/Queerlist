@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SpellCell" rowHeight="72" id="d0D-s0-3jK" customClass="SpellCell" customModule="Queerlist" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="SpellCell" rowHeight="72" id="d0D-s0-3jK" customClass="PersonalityCell" customModule="Queerlist" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="24.5" width="414" height="72"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="d0D-s0-3jK" id="QNd-2P-nns">
@@ -67,10 +67,10 @@
             </objects>
             <point key="canvasLocation" x="1063.2" y="163.30049261083744"/>
         </scene>
-        <!--Spell Detail View Controller-->
+        <!--Personality Detail View Controller-->
         <scene sceneID="2uT-pV-M6C">
             <objects>
-                <viewController id="z32-gT-y2M" customClass="SpellDetailViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="z32-gT-y2M" customClass="PersonalityDetailViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XRH-uT-Zt0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
