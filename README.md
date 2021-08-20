@@ -2,7 +2,9 @@
 
 This used to be a Harry Potter-themed project because I was a big fan of the series. In light of [the wizard's author endangering trans people's lives with her bigoted views](https://youtu.be/7gDKbT_l2us), what you're going to find here is a collection of notable LGBTQIA+ personalities from Brasil and the US.
 
-![The iOS Simulator running Queerlist beside a picture of Brazilian cartoonist Laerte and her quote "People must be able to live the identity that seems most appropriate to them".](Images/Banner.png)
+![The iOS Simulator running Queerlist beside a picture of Brazilian cartoonist Laerte and her quote "People must be able to live the identity that seems most appropriate to them".](Images/Banner1.png)
+
+![A picture of trans YouTuber Natalie Wynn wearing a red blouse and golden earrings over a pink background with the words Trans Liberation Now underneath.](Images/Banner2.png)
 
 ## Getting started
 

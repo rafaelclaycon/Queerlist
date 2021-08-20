@@ -17,6 +17,7 @@ class MockData {
         spellStore.allItems.append(Personality(name: "Marsha P. Johnson", nickname: "Revealing Charm", type: .charm, pronunciation: "AH-par-EE-see-um", description: "Reveals secret messages written in invisible ink, or any other hidden markings. Also works against Concealing charms.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Marta", nickname: "Spider repelling spell", type: .charm, pronunciation: "ah-RAHN-ee-a EKS-su-may", description: "Drives away spiders, including Acromantulas.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Miss Biá", nickname: "Slowing Charm", type: .charm, pronunciation: "ah-REST-oh mo-MEN-tum", description: "Decreases the velocity of a moving target.", image: nil, date: Date()))
+        spellStore.allItems.append(Personality(name: "Natalie Wynn", type: .charm, description: ""))
         spellStore.allItems.append(Personality(name: "Pabllo Vittar", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "Paulo Iotti", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
         spellStore.allItems.append(Personality(name: "RuPaul", nickname: nil, type: .transfiguration, pronunciation: "AH-vi-fors", description: "Transforms the target into a bird.", image: nil, date: Date()))
