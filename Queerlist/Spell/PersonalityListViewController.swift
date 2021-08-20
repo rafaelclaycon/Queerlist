@@ -57,7 +57,7 @@ class PersonalityListViewController: UITableViewController {
             }
 
             self.personalityStore.insertItem(newItem)
-            if let index = self.personalityStore.allItems.index(of: newItem) {
+            if let index = self.personalityStore.allItems.firstIndex(of: newItem) {
                 let indexPath = IndexPath(row: index, section: 0)
                 self.tableView.insertRows(at: [indexPath], with: .automatic)
             }

@@ -23,7 +23,7 @@ class PersonalityStore {
     }
 
     func removeItem(_ item: Personality) {
-        if let index = allItems.index(of: item) {
+        if let index = allItems.firstIndex(of: item) {
             allItems.remove(at: index)
         }
     }
