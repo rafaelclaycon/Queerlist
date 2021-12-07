@@ -17,13 +17,14 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
 
     var item: Personality?
     var completionHandler: ((Bool, Personality?) -> Bool)?
-    var pickerData = [SpellType.transfiguration.rawValue,
-                      SpellType.charm.rawValue,
-                      SpellType.jinx.rawValue,
-                      SpellType.hex.rawValue,
-                      SpellType.curse.rawValue,
-                      SpellType.counterSpell.rawValue,
-                      SpellType.healingSpell.rawValue]
+    var pickerData = [IdentityType.lesbian.rawValue,
+                      IdentityType.gay.rawValue,
+                      IdentityType.bisexual.rawValue,
+                      IdentityType.transgender.rawValue,
+                      IdentityType.queer.rawValue,
+                      IdentityType.intersex.rawValue,
+                      IdentityType.asexual.rawValue,
+                      IdentityType.transvestite.rawValue]
 
     @IBAction func closeModal(_: UIButton) {
         _ = completionHandler?(false, nil)
@@ -99,7 +100,7 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
             return
         }
 
-        item = Personality(name: spellName, type: .charm, description: spellDescription)
+        item = Personality(name: spellName, type: .lesbian, description: spellDescription)
         let result = completionHandler?(true, item!)
 
         guard let saved = result else {

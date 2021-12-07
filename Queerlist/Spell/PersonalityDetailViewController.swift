@@ -27,10 +27,10 @@ class PersonalityDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        spellType.text = SpellType.getTypeNameForTinyHeader(item.type)
+        spellType.text = IdentityType.getTypeNameForTinyHeader(item.type)
         spellName.text = item.name
-        spellNickname.text = item.nickname
-        spellPronunciation.text = item.pronunciation
+        spellNickname.text = item.famousQuote
+        spellPronunciation.text = "REMOVE ME"
         spellDescription.text = item.description
         
         spellName.accessibilityIdentifier = "spell_title"

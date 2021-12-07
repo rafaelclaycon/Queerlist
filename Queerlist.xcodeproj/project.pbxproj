@@ -31,7 +31,7 @@
 		D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
 		D9D40D78235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
 		D9D8DCE3245F47590013104C /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE2245F47590013104C /* WizardViewController.swift */; };
-		D9D8DCE5245F73170013104C /* SpellType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE4245F73170013104C /* SpellType.swift */; };
+		D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE4245F73170013104C /* IdentityType.swift */; };
 		D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */; };
 		D9F2BA9824282EDA00668889 /* NewSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */; };
 /* End PBXBuildFile section */
@@ -82,7 +82,7 @@
 		D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Queerlist-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9D40D76235E9CE10041DD12 /* UITestID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestID.swift; sourceTree = "<group>"; };
 		D9D8DCE2245F47590013104C /* WizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardViewController.swift; sourceTree = "<group>"; };
-		D9D8DCE4245F73170013104C /* SpellType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpellType.swift; sourceTree = "<group>"; };
+		D9D8DCE4245F73170013104C /* IdentityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityType.swift; sourceTree = "<group>"; };
 		D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
 		D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellViewController.swift; sourceTree = "<group>"; };
 		E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				6B80ACB6216664F100A5E0C1 /* Personality.swift */,
-				D9D8DCE4245F73170013104C /* SpellType.swift */,
+				D9D8DCE4245F73170013104C /* IdentityType.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -427,7 +427,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D8DCE5245F73170013104C /* SpellType.swift in Sources */,
+				D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */,
 				D9F2BA9824282EDA00668889 /* NewSpellViewController.swift in Sources */,
 				D97AFCD8245E61E2008265CF /* MockData.swift in Sources */,
 				D987E595245DDB4F006FE232 /* Strings.swift in Sources */,
