@@ -11,7 +11,6 @@ class PersonalityDetailViewController: UIViewController {
     @IBOutlet var spellType: UILabel!
     @IBOutlet var spellName: UILabel!
     @IBOutlet var spellNickname: UILabel!
-    @IBOutlet var spellPronunciation: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
@@ -26,11 +25,14 @@ class PersonalityDetailViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
-        spellType.text = IdentityType.getTypeNameForTinyHeader(item.type)
+        
         spellName.text = item.name
-        spellNickname.text = item.famousQuote
-        spellPronunciation.text = "REMOVE ME"
+        spellType.text = IdentityType.getTypeNameForTinyHeader(item.type)
+        if let quote = item.famousQuote {
+            spellNickname.text = "\"\(quote)\""
+        } else {
+            spellNickname.text = ""
+        }
         spellDescription.text = item.description
         
         spellName.accessibilityIdentifier = "spell_title"
