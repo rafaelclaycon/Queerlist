@@ -1,6 +1,8 @@
 import UIKit
 
 class MockData {
+    
+    static let placeholder = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
     static func insertSpells(into spellStore: PersonalityStore) {
         let alan = Personality(name: "Alan Turing",
@@ -13,77 +15,77 @@ class MockData {
         let cassia = Personality(name: "Cássia Eller",
                                  type: .lesbian,
                                  famousQuote: "I walk around, wanting to meet you on every corner I stop at every look, I leave the sadness and I bring hope in its place.",
-                                 description: "Lorem ipsum",
+                                 description: placeholder,
                                  image: UIImage(named: "cassia"),
                                  date: Date())
             
         let laerte = Personality(name: "Laerte",
                                  type: .transgender,
                                  famousQuote: "People must be able to live the identity that seems most appropriate to them.",
-                                 description: "Unlocks doors and other objects.",
+                                 description: placeholder,
                                  image: UIImage(named: "laerte"),
                                  date: Date())
             
         let ludmilla = Personality(name: "Ludmilla",
                                    type: .bisexual,
                                    famousQuote: nil,
-                                   description: "Clears the target's airway if they are choking on something.",
+                                   description: placeholder,
                                    image: UIImage(named: "ludmilla"),
                                    date: Date())
             
         let marsha = Personality(name: "Marsha P. Johnson",
                                  type: .transvestite,
-                                 famousQuote: "Revealing Charm",
-                                 description: "Reveals secret messages written in invisible ink, or any other hidden markings. Also works against Concealing charms.",
+                                 famousQuote: nil,
+                                 description: placeholder,
                                  image: UIImage(named: "marsha"),
                                  date: Date())
             
         let marta = Personality(name: "Marta",
                                 type: .lesbian,
-                                famousQuote: "Spider repelling spell",
-                                description: "Drives away spiders, including Acromantulas.",
+                                famousQuote: nil,
+                                description: placeholder,
                                 image: UIImage(named: "marta"),
                                 date: Date())
             
         let missBia = Personality(name: "Miss Biá",
                                   type: .gay,
-                                  famousQuote: "Slowing Charm",
-                                  description: "Decreases the velocity of a moving target.",
+                                  famousQuote: nil,
+                                  description: placeholder,
                                   image: UIImage(named: "missBia"),
                                   date: Date())
             
         let natalie = Personality(name: "Natalie Wynn",
                                   type: .transgender,
                                   famousQuote: "Trans liberation now!",
-                                  description: "Decreases the velocity of a moving target.",
+                                  description: placeholder,
                                   image: UIImage(named: "natalie"),
                                   date: Date())
         
         let pabllo = Personality(name: "Pabllo Vittar",
                                  type: .gay,
                                  famousQuote: nil,
-                                 description: "Transforms the target into a bird.",
+                                 description: placeholder,
                                  image: UIImage(named: "pabllo"),
                                  date: Date())
         
         let paulo = Personality(name: "Paulo Iotti",
                                 type: .gay,
                                 famousQuote: nil,
-                                description: "Transforms the target into a bird.",
+                                description: placeholder,
                                 image: UIImage(named: "paulo"),
                                 date: Date())
             
         let rupaul = Personality(name: "RuPaul",
                                  type: .gay,
                                  famousQuote: nil,
-                                 description: "Transforms the target into a bird.",
+                                 description: placeholder,
                                  image: UIImage(named: "rupaul"),
                                  date: Date())
             
         let thammy = Personality(name: "Thammy Miranda",
                                  type: .transgender,
                                  famousQuote: nil,
-                                 description: "Transforms the target into a bird.",
+                                 description: placeholder,
                                  image: UIImage(named: "thammy"),
                                  date: Date())
         
