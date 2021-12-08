@@ -136,12 +136,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="famouseQuote" destination="tL4-Yr-ZFX" id="XWX-Fv-sxn"/>
                         <outlet property="favoriteButton" destination="ciu-iw-bOg" id="cFD-bn-abQ"/>
                         <outlet property="imageView" destination="O8V-jX-hvL" id="sx8-Vu-kI6"/>
-                        <outlet property="spellDescription" destination="hM5-Qn-lrE" id="J9G-yP-uW7"/>
-                        <outlet property="spellName" destination="Hg6-8w-UJc" id="00P-Og-Cd5"/>
-                        <outlet property="spellNickname" destination="tL4-Yr-ZFX" id="XWX-Fv-sxn"/>
-                        <outlet property="spellType" destination="YhJ-qM-KgF" id="fjY-F0-Kkp"/>
+                        <outlet property="name" destination="Hg6-8w-UJc" id="00P-Og-Cd5"/>
+                        <outlet property="spellDescription" destination="hM5-Qn-lrE" id="ZwU-rE-6M1"/>
+                        <outlet property="type" destination="YhJ-qM-KgF" id="fjY-F0-Kkp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4k-UJ-8DD" userLabel="First Responder" sceneMemberID="firstResponder"/>

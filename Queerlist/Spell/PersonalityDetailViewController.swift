@@ -8,9 +8,9 @@ class PersonalityDetailViewController: UIViewController {
 
     @IBOutlet var favoriteButton: UIBarButtonItem!
     
-    @IBOutlet var spellType: UILabel!
-    @IBOutlet var spellName: UILabel!
-    @IBOutlet var spellNickname: UILabel!
+    @IBOutlet var name: UILabel!
+    @IBOutlet var type: UILabel!
+    @IBOutlet var famouseQuote: UILabel!
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var spellDescription: UITextView!
 
@@ -26,16 +26,16 @@ class PersonalityDetailViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        spellName.text = item.name
-        spellType.text = IdentityType.getTypeNameForTinyHeader(item.type)
+        name.text = item.name
+        type.text = IdentityType.getTypeNameForTinyHeader(item.type)
         if let quote = item.famousQuote {
-            spellNickname.text = "\"\(quote)\""
+            famouseQuote.text = "\"\(quote)\""
         } else {
-            spellNickname.text = ""
+            famouseQuote.text = ""
         }
         spellDescription.text = item.description
         
-        spellName.accessibilityIdentifier = "spell_title"
+        name.accessibilityIdentifier = "spell_title"
         spellDescription.accessibilityIdentifier = "spell_description"
         
         // If there's an image for the spell, assign it.
