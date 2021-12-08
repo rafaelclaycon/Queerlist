@@ -1,7 +1,7 @@
 import UIKit
 
 class MockData {
-    
+
     static let placeholder = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
     static func insertData(into store: PersonalityStore) {

@@ -1,11 +1,3 @@
-//
-//  LoaderOverlay.swift
-//  Queerlist
-//
-//  Created by Rafael Schmitt on 02/05/20.
-//  Copyright © 2020 Rafael Claycon Schmitt. All rights reserved.
-//
-
 import UIKit
 
 public class ToastOverlay {
@@ -64,4 +56,5 @@ public class ToastOverlay {
 
         loaderOverlayView.removeFromSuperview()
     }
+
 }
