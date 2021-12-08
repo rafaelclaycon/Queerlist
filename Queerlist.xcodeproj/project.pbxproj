@@ -129,7 +129,9 @@
 		6B80AC85216663E100A5E0C1 /* Queerlist */ = {
 			isa = PBXGroup;
 			children = (
-				D97AFCDD245E851E008265CF /* Spell */,
+				D97AFCDD245E851E008265CF /* PersonalityList */,
+				D903575A2761592400B612D4 /* PersonalityDetail */,
+				D9035757276158EC00B612D4 /* CreatePersonality */,
 				D97AFCDC245E84C0008265CF /* Models */,
 				D97AFCDB245E849B008265CF /* Custom UI Components */,
 				D97AFCDA245E8480008265CF /* Data */,
@@ -165,6 +167,22 @@
 				85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9035757276158EC00B612D4 /* CreatePersonality */ = {
+			isa = PBXGroup;
+			children = (
+				D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */,
+			);
+			path = CreatePersonality;
+			sourceTree = "<group>";
+		};
+		D903575A2761592400B612D4 /* PersonalityDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6B45112A216D097B0030F276 /* PersonalityDetailViewController.swift */,
+			);
+			path = PersonalityDetail;
 			sourceTree = "<group>";
 		};
 		D97AFCD9245E8448008265CF /* Localization */ = {
@@ -203,16 +221,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		D97AFCDD245E851E008265CF /* Spell */ = {
+		D97AFCDD245E851E008265CF /* PersonalityList */ = {
 			isa = PBXGroup;
 			children = (
 				6B45112E216E5F940030F276 /* PersonalityCell.swift */,
 				6B80ACB82166650000A5E0C1 /* PersonalityStore.swift */,
 				6B80ACB42166644700A5E0C1 /* PersonalityListViewController.swift */,
-				6B45112A216D097B0030F276 /* PersonalityDetailViewController.swift */,
-				D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */,
 			);
-			path = Spell;
+			path = PersonalityList;
 			sourceTree = "<group>";
 		};
 		D9D40D6A235E95AC0041DD12 /* Screens */ = {
