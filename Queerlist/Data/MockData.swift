@@ -4,7 +4,7 @@ class MockData {
     
     static let placeholder = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-    static func insertSpells(into spellStore: PersonalityStore) {
+    static func insertData(into store: PersonalityStore) {
         let alan = Personality(name: "Alan Turing",
                                type: .gay,
                                famousQuote: nil,
@@ -89,18 +89,18 @@ class MockData {
                                  image: UIImage(named: "thammy"),
                                  date: Date())
         
-        spellStore.allItems.append(alan)
-        spellStore.allItems.append(cassia)
-        spellStore.allItems.append(laerte)
-        spellStore.allItems.append(ludmilla)
-        spellStore.allItems.append(marsha)
-        spellStore.allItems.append(marta)
-        spellStore.allItems.append(missBia)
-        spellStore.allItems.append(natalie)
-        spellStore.allItems.append(pabllo)
-        spellStore.allItems.append(paulo)
-        spellStore.allItems.append(rupaul)
-        spellStore.allItems.append(thammy)
+        store.allItems.append(alan)
+        store.allItems.append(cassia)
+        store.allItems.append(laerte)
+        store.allItems.append(ludmilla)
+        store.allItems.append(marsha)
+        store.allItems.append(marta)
+        store.allItems.append(missBia)
+        store.allItems.append(natalie)
+        store.allItems.append(pabllo)
+        store.allItems.append(paulo)
+        store.allItems.append(rupaul)
+        store.allItems.append(thammy)
     }
 
 }

@@ -1,7 +1,3 @@
-//
-//  Copyright © 2020 Rafael Claycon Schmitt
-//
-
 import UIKit
 
 class PersonalityListViewController: UITableViewController {
@@ -21,7 +17,7 @@ class PersonalityListViewController: UITableViewController {
         tableView.accessibilityIdentifier = UITestID.personalityList
     }
     
-    @IBAction func sortSpells(_: UIBarButtonItem) {
+    @IBAction func sortPersonalities(_: UIBarButtonItem) {
         let alert = UIAlertController(title: LocalizableStrings.sortByPopupTitle, message: nil, preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: LocalizableStrings.aToZSortOption, style: .default, handler: { _ in
             NSLog("The \"A to Z\" option was picked.")
@@ -43,7 +39,7 @@ class PersonalityListViewController: UITableViewController {
 
     @IBAction func addNewItem(_: UIBarButtonItem) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let secondVC = storyboard.instantiateViewController(identifier: "NewSpellViewController") as! NewSpellViewController
+        let secondVC = storyboard.instantiateViewController(identifier: "NewPersonalityViewController") as! NewPersonalityViewController
         secondVC.modalPresentationStyle = .formSheet
         secondVC.completionHandler = { add, item in
             guard add else {
@@ -52,7 +48,7 @@ class PersonalityListViewController: UITableViewController {
             guard let newItem = item else {
                 return false
             }
-            guard !self.personalityStore.spellAlreadyExists(newItem.name) else {
+            guard !self.personalityStore.personalityAlreadyExists(newItem.name) else {
                 return false
             }
 

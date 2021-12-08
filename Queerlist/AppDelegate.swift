@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let itemsController = navController.topViewController as! PersonalityListViewController
         itemsController.personalityStore = spellStore
 
-        MockData.insertSpells(into: itemsController.personalityStore)
+        MockData.insertData(into: itemsController.personalityStore)
 
         return true
     }

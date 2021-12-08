@@ -1,14 +1,7 @@
-//
-//  NewSpellViewController.swift
-//  Queerlist
-//
-//  Created by Rafael Schmitt on 22/03/20.
-//  Copyright © 2020 Rafael Claycon Schmitt. All rights reserved.
-//
-
 import UIKit
 
-class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class NewPersonalityViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+
     @IBOutlet var cancelButton: UIButton!
     @IBOutlet var nameTextField: UITextField!
     @IBOutlet var descriptionTextView: UITextView!
@@ -136,4 +129,5 @@ class NewSpellViewController: UIViewController, UIPickerViewDataSource, UIPicker
         }))
         present(alert, animated: true, completion: nil)
     }
+
 }

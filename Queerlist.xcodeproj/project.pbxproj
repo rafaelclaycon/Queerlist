@@ -33,7 +33,7 @@
 		D9D8DCE3245F47590013104C /* WizardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE2245F47590013104C /* WizardViewController.swift */; };
 		D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE4245F73170013104C /* IdentityType.swift */; };
 		D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */; };
-		D9F2BA9824282EDA00668889 /* NewSpellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */; };
+		D9F2BA9824282EDA00668889 /* NewPersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 		D9D8DCE2245F47590013104C /* WizardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WizardViewController.swift; sourceTree = "<group>"; };
 		D9D8DCE4245F73170013104C /* IdentityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityType.swift; sourceTree = "<group>"; };
 		D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
-		D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSpellViewController.swift; sourceTree = "<group>"; };
+		D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonalityViewController.swift; sourceTree = "<group>"; };
 		E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -213,7 +213,7 @@
 				6B80ACB82166650000A5E0C1 /* PersonalityStore.swift */,
 				6B80ACB42166644700A5E0C1 /* PersonalityListViewController.swift */,
 				6B45112A216D097B0030F276 /* PersonalityDetailViewController.swift */,
-				D9F2BA9724282EDA00668889 /* NewSpellViewController.swift */,
+				D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */,
 			);
 			path = Spell;
 			sourceTree = "<group>";
@@ -428,7 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */,
-				D9F2BA9824282EDA00668889 /* NewSpellViewController.swift in Sources */,
+				D9F2BA9824282EDA00668889 /* NewPersonalityViewController.swift in Sources */,
 				D97AFCD8245E61E2008265CF /* MockData.swift in Sources */,
 				D987E595245DDB4F006FE232 /* Strings.swift in Sources */,
 				6B80ACB7216664F100A5E0C1 /* Personality.swift in Sources */,

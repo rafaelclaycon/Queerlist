@@ -57,7 +57,7 @@
                             </barButtonItem>
                             <barButtonItem title="Sort" image="arrow.up.arrow.down.circle" catalog="system" id="9AU-gW-kHU">
                                 <connections>
-                                    <action selector="sortSpells:" destination="Dq1-zB-R57" id="JuN-e6-D19"/>
+                                    <action selector="sortPersonalities:" destination="Dq1-zB-R57" id="JuN-e6-D19"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
@@ -140,7 +140,7 @@
                         <outlet property="favoriteButton" destination="ciu-iw-bOg" id="cFD-bn-abQ"/>
                         <outlet property="imageView" destination="O8V-jX-hvL" id="sx8-Vu-kI6"/>
                         <outlet property="name" destination="Hg6-8w-UJc" id="00P-Og-Cd5"/>
-                        <outlet property="spellDescription" destination="hM5-Qn-lrE" id="ZwU-rE-6M1"/>
+                        <outlet property="personalityDescription" destination="hM5-Qn-lrE" id="ZwU-rE-6M1"/>
                         <outlet property="type" destination="YhJ-qM-KgF" id="fjY-F0-Kkp"/>
                     </connections>
                 </viewController>
@@ -231,10 +231,10 @@
             </objects>
             <point key="canvasLocation" x="120" y="885"/>
         </scene>
-        <!--New Spell View Controller-->
+        <!--New Personality View Controller-->
         <scene sceneID="viE-na-PeS">
             <objects>
-                <viewController storyboardIdentifier="NewSpellViewController" id="sbD-8C-ZoZ" customClass="NewSpellViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewSpellViewController" id="sbD-8C-ZoZ" customClass="NewPersonalityViewController" customModule="Queerlist" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pt9-w9-ctV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

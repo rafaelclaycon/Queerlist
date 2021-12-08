@@ -1,7 +1,3 @@
-//
-//  Copyright © 2020 Rafael Claycon Schmitt
-//
-
 import UIKit
 
 class PersonalityDetailViewController: UIViewController {
@@ -12,7 +8,7 @@ class PersonalityDetailViewController: UIViewController {
     @IBOutlet var type: UILabel!
     @IBOutlet var famouseQuote: UILabel!
     @IBOutlet var imageView: UIImageView!
-    @IBOutlet var spellDescription: UITextView!
+    @IBOutlet var personalityDescription: UITextView!
 
     var item: Personality! {
         didSet {
@@ -33,10 +29,10 @@ class PersonalityDetailViewController: UIViewController {
         } else {
             famouseQuote.text = ""
         }
-        spellDescription.text = item.description
+        personalityDescription.text = item.description
         
         name.accessibilityIdentifier = "spell_title"
-        spellDescription.accessibilityIdentifier = "spell_description"
+        personalityDescription.accessibilityIdentifier = "spell_description"
         
         // If there's an image for the spell, assign it.
         if item.image != nil {

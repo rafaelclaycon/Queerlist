@@ -1,10 +1,7 @@
-//
-//  Copyright © 2020 Rafael Claycon Schmitt
-//
-
 import Foundation
 
 class PersonalityStore {
+
     var allItems: [Personality] = []
 
     func moveItem(from fromIndex: Int, to toIndex: Int) {
@@ -32,7 +29,7 @@ class PersonalityStore {
         allItems.append(item)
     }
 
-    func spellAlreadyExists(_ spellName: String) -> Bool {
+    func personalityAlreadyExists(_ spellName: String) -> Bool {
         for spell in allItems {
             if spell.name == spellName {
                 return true
@@ -40,4 +37,5 @@ class PersonalityStore {
         }
         return false
     }
+
 }
