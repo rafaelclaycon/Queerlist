@@ -36,6 +36,7 @@
 #import "CCILoggingManager.h"
 #import "CCIHock.h"
 #import "CCIAroundHock.h"
+#import "XCTestCase+RecordFailure.h"
 
 #import "CCIJSONDumper.h"
 
@@ -103,12 +104,21 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
 
 - (Cucumberish *)parserFeaturesInDirectory:(NSString *)directory fromBundle:(NSBundle *)bundle includeTags:(NSArray<NSString *> *)includeTags excludeTags:(NSArray<NSString *> *)excludeTags
 {
-    NSArray * featureFiles = [self recursivelyFindFeatureFilesInBundle:bundle subDirectory:directory];
+    NSString * subDirectory = [self pathForBundleContents:bundle directory:directory];
+    NSArray * featureFiles = [self recursivelyFindFeatureFilesInBundle:bundle subDirectory:subDirectory];
     self.containerBundle = bundle;
 
     [[CCIFeaturesManager instance] parseFeatureFiles:featureFiles bundle:bundle withTags:includeTags execludeFeaturesWithTags:excludeTags];
 
     return self;
+}
+
+-(NSString *)pathForBundleContents:(NSBundle *)bundle directory:(NSString *)directory {
+  #if !TARGET_OS_IPHONE
+    return [@"Contents/Resources" stringByAppendingPathComponent:directory];
+  #else
+    return directory;
+  #endif
 }
 
 -(NSArray *)recursivelyFindFeatureFilesInBundle:(NSBundle *)bundle subDirectory:(NSString *)subdirectory
@@ -429,10 +439,10 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
     if(featureClass == nil){
         featureClass = NSClassFromString(className);
         NSUInteger availableClassesWithTheSameName = 1;
-        while (featureClass == nil) {
+        do {
             className = [className stringByAppendingFormat:@"%lu", (long unsigned)availableClassesWithTheSameName];
             featureClass = objc_allocateClassPair([XCTestCase class], [className UTF8String], 0);
-        }
+        } while (featureClass == nil);
     }
     objc_registerClassPair(featureClass);
     return featureClass;
@@ -474,7 +484,11 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
 
     for(CCIScenarioDefinition * s in feature.scenarioDefinitions){
         NSString * scenarioName = NSStringFromSelector(selector);
-        if ([s.name isEqualToString:scenarioName]){
+        NSString * comparedName = s.name;
+        if(![[Cucumberish instance] prettyNamesAllowed] && ![[Cucumberish instance] prettyScenarioNamesAllowed]){
+            comparedName = [comparedName camleCaseStringWithFirstUppercaseCharacter:NO];
+        }
+        if ([comparedName isEqualToString:scenarioName]){
             [Cucumberish instance].scenarioCount++;
             NSInvocation * inv = [Cucumberish invocationForScenario:s feature:feature featureClass:[self class]];
             invocationTest =  [[XCTestCase alloc] initWithInvocation:inv];
@@ -483,6 +497,9 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
           NSRange range = [scenarioName rangeOfCharacterFromSet:[NSCharacterSet decimalDigitCharacterSet] options:NSBackwardsSearch];
             NSInteger exampleIndex = [[scenarioName substringWithRange:range] integerValue] - 1;
             NSString * scenarioOutlineName = [Cucumberish exampleScenarioNameForScenarioName:s.name exampleAtIndex:exampleIndex example:s.examples.firstObject];
+            if(![[Cucumberish instance] prettyNamesAllowed] && ![[Cucumberish instance] prettyScenarioNamesAllowed]){
+                scenarioOutlineName = [scenarioOutlineName camleCaseStringWithFirstUppercaseCharacter:NO];
+            }
             if([scenarioName isEqualToString:scenarioOutlineName]){
                 CCIExample * example = s.examples.firstObject;
                 NSInvocation * inv = [Cucumberish invocationForScenarioOutline:s example:example exampleIndex:exampleIndex feature:feature featureClass:[self class]];
@@ -515,7 +532,6 @@ OBJC_EXTERN NSString * stepDefinitionLineForStep(CCIStep * step);
         //Throw the exception so proper error report takes place.
         throwCucumberishException(description);
     }
-
 }
 
 + (NSArray <NSInvocation *> *)cucumberish_testInvocations
@@ -608,8 +624,7 @@ void executeScenario(XCTestCase * self, SEL _cmd, CCIScenarioDefinition * scenar
     if([Cucumberish instance].beforeStartFailureReason){
         // If we failed our before start we should auto-fail all scenarios
         NSString * reason = [Cucumberish instance].beforeStartFailureReason;
-        NSString * filePath = [NSString stringWithFormat:@"%@%@", filePathPrefix, scenario.location.filePath];
-        [self recordFailureWithDescription:reason inFile:filePath atLine:scenario.location.line expected:YES];
+        [self recordFailureWithDescription:reason atLocation:scenario.location expected:YES];
         scenario.success = NO;
         scenario.failureReason = reason;
         [Cucumberish instance].scenariosRun++;
@@ -642,8 +657,7 @@ void executeScenario(XCTestCase * self, SEL _cmd, CCIScenarioDefinition * scenar
     }
     @catch (CCIExeption *exception) {
         // This catches assert failures in scenario before/around/after hooks
-        NSString * filePath = [NSString stringWithFormat:@"%@%@", filePathPrefix, scenario.location.filePath];
-        [self recordFailureWithDescription:exception.reason inFile:filePath atLine:scenario.location.line expected:YES];
+        [self recordFailureWithDescription:exception.reason atLocation:scenario.location expected:YES];
         scenario.success = NO;
         scenario.failureReason = exception.reason;
     }
@@ -701,13 +715,13 @@ void executeScenario(XCTestCase * self, SEL _cmd, CCIScenarioDefinition * scenar
 void executeSteps(XCTestCase * testCase, NSArray * steps, id parentScenario, NSString * filePathPrefix)
 {
     for (CCIStep * step in steps) {
-
         @try {
+            step.isSubstep = NO;
             [[CCIStepsManager instance] executeStep:step inTestCase:testCase];
         }
         @catch (CCIExeption *exception) {
-            NSString * filePath = [NSString stringWithFormat:@"%@%@", filePathPrefix, step.location.filePath];
-            [testCase recordFailureWithDescription:exception.reason inFile:filePath atLine:step.location.line expected:YES];
+
+            [testCase recordFailureWithDescription:exception.reason atLocation:step.location expected:YES];
             if([parentScenario isKindOfClass:[CCIScenarioDefinition class]]){
                 CCIScenarioDefinition * scenario = (CCIScenarioDefinition *)parentScenario;
                 if(step.keyword.length > 0){
@@ -752,6 +766,17 @@ void SThrowCucumberishException(NSString * reason)
 {
     throwCucumberishException(reason);
 }
+
+void CCIEmbed(NSString * mimeType, NSString * dataString)
+{
+    if ([CCIStepsManager instance].currentStep != nil) {
+        if ([CCIStepsManager instance].currentStep.embeddings == nil) {
+            [CCIStepsManager instance].currentStep.embeddings = [[NSMutableArray alloc] init];
+        }
+        [[CCIStepsManager instance].currentStep.embeddings addObject:@{@"mime_type":mimeType, @"data":dataString}];
+    }
+}
+
 #pragma mark - Hooks
 void beforeStart(void(^beforeStartBlock)(void))
 {

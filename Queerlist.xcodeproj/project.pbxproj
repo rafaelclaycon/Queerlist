@@ -16,8 +16,7 @@
 		6B80ACB52166644700A5E0C1 /* PersonalityListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB42166644700A5E0C1 /* PersonalityListViewController.swift */; };
 		6B80ACB7216664F100A5E0C1 /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB6216664F100A5E0C1 /* Personality.swift */; };
 		6B80ACB92166650000A5E0C1 /* PersonalityStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B80ACB82166650000A5E0C1 /* PersonalityStore.swift */; };
-		8D2B798AFDBB294E40C3478C /* Pods_Queerlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */; };
-		BDE0362BC8AD643F19651C7E /* Pods_Queerlist_QueerlistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */; };
+		A0B2698CEB2C1A08D9DBBA54 /* Pods_QueerlistUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C3BFBE16EBB0E32FB068B27 /* Pods_QueerlistUITests.framework */; };
 		D903576127615C0D00B612D4 /* NewPersonalityDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903576027615C0D00B612D4 /* NewPersonalityDetailView.swift */; };
 		D903576527615C1E00B612D4 /* NewPersonalityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903576427615C1E00B612D4 /* NewPersonalityDetailViewController.swift */; };
 		D903576927615C4C00B612D4 /* NewPersonalityDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D903576827615C4C00B612D4 /* NewPersonalityDetailProtocols.swift */; };
@@ -36,6 +35,7 @@
 		D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE4245F73170013104C /* IdentityType.swift */; };
 		D9DAF36D245E4D030029EF22 /* ToastOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */; };
 		D9F2BA9824282EDA00668889 /* NewPersonalityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */; };
+		EE864564E31BE2D08EC1B857 /* Pods_Queerlist.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6A2C4A775644020005CECA4 /* Pods_Queerlist.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist-QueerlistUITests.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist-QueerlistUITests.release.xcconfig"; path = "Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		03BAF640889EE5DFF2C9F830 /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
 		6B45112A216D097B0030F276 /* PersonalityDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityDetailViewController.swift; sourceTree = "<group>"; };
 		6B45112E216E5F940030F276 /* PersonalityCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityCell.swift; sourceTree = "<group>"; };
 		6B80AC83216663E100A5E0C1 /* Queerlist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Queerlist.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,9 +63,10 @@
 		6B80ACB42166644700A5E0C1 /* PersonalityListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityListViewController.swift; sourceTree = "<group>"; };
 		6B80ACB6216664F100A5E0C1 /* Personality.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
 		6B80ACB82166650000A5E0C1 /* PersonalityStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityStore.swift; sourceTree = "<group>"; };
-		6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queerlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.release.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.release.xcconfig"; sourceTree = "<group>"; };
-		85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queerlist_QueerlistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C3BFBE16EBB0E32FB068B27 /* Pods_QueerlistUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QueerlistUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94A7F5684DCE879B8F4DD21F /* Pods-QueerlistUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueerlistUITests.release.xcconfig"; path = "Target Support Files/Pods-QueerlistUITests/Pods-QueerlistUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A5265F959B24FF47146C21FE /* Pods-QueerlistUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QueerlistUITests.debug.xcconfig"; path = "Target Support Files/Pods-QueerlistUITests/Pods-QueerlistUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A2C4A775644020005CECA4 /* Pods_Queerlist.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Queerlist.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D903576027615C0D00B612D4 /* NewPersonalityDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonalityDetailView.swift; sourceTree = "<group>"; };
 		D903576427615C1E00B612D4 /* NewPersonalityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonalityDetailViewController.swift; sourceTree = "<group>"; };
 		D903576827615C4C00B612D4 /* NewPersonalityDetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonalityDetailProtocols.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		D9D8DCE4245F73170013104C /* IdentityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityType.swift; sourceTree = "<group>"; };
 		D9DAF36C245E4D030029EF22 /* ToastOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastOverlay.swift; sourceTree = "<group>"; };
 		D9F2BA9724282EDA00668889 /* NewPersonalityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPersonalityViewController.swift; sourceTree = "<group>"; };
-		E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.debug.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.debug.xcconfig"; sourceTree = "<group>"; };
+		FE26AB5C3B3115E7271259C0 /* Pods-Queerlist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Queerlist.release.xcconfig"; path = "Target Support Files/Pods-Queerlist/Pods-Queerlist.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D2B798AFDBB294E40C3478C /* Pods_Queerlist.framework in Frameworks */,
+				EE864564E31BE2D08EC1B857 /* Pods_Queerlist.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE0362BC8AD643F19651C7E /* Pods_Queerlist_QueerlistUITests.framework in Frameworks */,
+				A0B2698CEB2C1A08D9DBBA54 /* Pods_QueerlistUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +119,7 @@
 				6B80ACA5216663E300A5E0C1 /* QueerlistUITests */,
 				6B80AC84216663E100A5E0C1 /* Products */,
 				F47DAE16B0F1417FBD70B67E /* Pods */,
-				CEEF35D96B17FDF1D25A7181 /* Frameworks */,
+				6D9F947A3AB93092529A2519 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,11 +167,11 @@
 			path = QueerlistUITests;
 			sourceTree = "<group>";
 		};
-		CEEF35D96B17FDF1D25A7181 /* Frameworks */ = {
+		6D9F947A3AB93092529A2519 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6DCA3D7511B2EACD049D6D4A /* Pods_Queerlist.framework */,
-				85A579575708260435420164 /* Pods_Queerlist_QueerlistUITests.framework */,
+				B6A2C4A775644020005CECA4 /* Pods_Queerlist.framework */,
+				8C3BFBE16EBB0E32FB068B27 /* Pods_QueerlistUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +267,10 @@
 		F47DAE16B0F1417FBD70B67E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */,
-				84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */,
-				0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */,
-				42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */,
+				03BAF640889EE5DFF2C9F830 /* Pods-Queerlist.debug.xcconfig */,
+				FE26AB5C3B3115E7271259C0 /* Pods-Queerlist.release.xcconfig */,
+				A5265F959B24FF47146C21FE /* Pods-QueerlistUITests.debug.xcconfig */,
+				94A7F5684DCE879B8F4DD21F /* Pods-QueerlistUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -282,10 +282,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACAB216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "Queerlist" */;
 			buildPhases = (
-				F5C15D9971CFA2BBB18DD37E /* [CP] Check Pods Manifest.lock */,
+				4344C23CC9D8D6C3B1F71F70 /* [CP] Check Pods Manifest.lock */,
 				6B80AC7F216663E100A5E0C1 /* Sources */,
 				6B80AC80216663E100A5E0C1 /* Frameworks */,
 				6B80AC81216663E100A5E0C1 /* Resources */,
+				BDAFD2B5A42E8432263A6645 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -300,11 +301,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6B80ACB1216663E300A5E0C1 /* Build configuration list for PBXNativeTarget "QueerlistUITests" */;
 			buildPhases = (
-				E5AA53AA0F2E54B82AB9E59A /* [CP] Check Pods Manifest.lock */,
+				7CE25F331C06A913BD8E3716 /* [CP] Check Pods Manifest.lock */,
 				6B80AC9E216663E300A5E0C1 /* Sources */,
 				6B80AC9F216663E300A5E0C1 /* Frameworks */,
 				6B80ACA0216663E300A5E0C1 /* Resources */,
-				371183FBE61C318F5A150D96 /* [CP] Embed Pods Frameworks */,
+				DE79E2BCFD2C37645AD54137 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -381,46 +382,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		371183FBE61C318F5A150D96 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Queerlist-QueerlistUITests/Pods-Queerlist-QueerlistUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5AA53AA0F2E54B82AB9E59A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Queerlist-QueerlistUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F5C15D9971CFA2BBB18DD37E /* [CP] Check Pods Manifest.lock */ = {
+		4344C23CC9D8D6C3B1F71F70 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -440,6 +402,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7CE25F331C06A913BD8E3716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QueerlistUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDAFD2B5A42E8432263A6645 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Queerlist/Pods-Queerlist-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Queerlist/Pods-Queerlist-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Queerlist/Pods-Queerlist-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE79E2BCFD2C37645AD54137 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueerlistUITests/Pods-QueerlistUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-QueerlistUITests/Pods-QueerlistUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-QueerlistUITests/Pods-QueerlistUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -645,7 +663,7 @@
 		};
 		6B80ACAC216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E92669B75C58C4E81899AFAF /* Pods-Queerlist.debug.xcconfig */;
+			baseConfigurationReference = 03BAF640889EE5DFF2C9F830 /* Pods-Queerlist.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -667,7 +685,7 @@
 		};
 		6B80ACAD216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84431791D3CA3C9C3A12D7A1 /* Pods-Queerlist.release.xcconfig */;
+			baseConfigurationReference = FE26AB5C3B3115E7271259C0 /* Pods-Queerlist.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -689,7 +707,7 @@
 		};
 		6B80ACB2216663E300A5E0C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0D6B550BB891F9A76D4F9863 /* Pods-Queerlist-QueerlistUITests.debug.xcconfig */;
+			baseConfigurationReference = A5265F959B24FF47146C21FE /* Pods-QueerlistUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -714,7 +732,7 @@
 		};
 		6B80ACB3216663E300A5E0C1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42BD54292CEC5BAB1D43BAE1 /* Pods-Queerlist-QueerlistUITests.release.xcconfig */;
+			baseConfigurationReference = 94A7F5684DCE879B8F4DD21F /* Pods-QueerlistUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;

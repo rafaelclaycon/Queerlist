@@ -1,16 +1,20 @@
 PODS:
-  - Cucumberish (1.3.0)
+  - Cucumberish (1.4.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Cucumberish
+  - Cucumberish (~> 1.4.0)
+  - SnapKit (~> 5.0.1)
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Cucumberish
+    - SnapKit
 
 SPEC CHECKSUMS:
-  Cucumberish: 76f542be7b62b1a01ebc6f968be3e002f9403931
+  Cucumberish: 6cbd0c1f50306b369acebfe7d9f514c9c287d26c
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: afb2534c00c24d8c0f23bf6c0e7d98383a80b774
+PODFILE CHECKSUM: 53c10af2dcd4fc3b045fc3ae3a2af5b84e808f24
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2

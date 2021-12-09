@@ -1,16 +1,15 @@
-# Uncomment the next line to define a global platform for your project
-# platform :ios, '9.0'
+platform :ios, '13.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+use_frameworks!
 
 target 'Queerlist' do
-  
-  use_frameworks!
-  
-  # Pods for Queerlist
+  pod 'SnapKit', '~> 5.0.1'
+end
 
-  target 'QueerlistUITests' do
-    pod 'Cucumberish'
-  end
-  
+target 'QueerlistUITests' do
+  pod 'Cucumberish', '~> 1.4.0'
 end
 
 post_install do |installer|
