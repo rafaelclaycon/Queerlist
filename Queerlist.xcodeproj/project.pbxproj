@@ -24,6 +24,7 @@
 		D987E590245DD8B6006FE232 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D987E592245DD8B6006FE232 /* Localizable.strings */; };
 		D987E595245DDB4F006FE232 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E594245DDB4F006FE232 /* Strings.swift */; };
 		D987E599245DFCD7006FE232 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D987E598245DFCD7006FE232 /* CustomButton.swift */; };
+		D9CC34C927627159004FCA7E /* CodableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CC34C827627159004FCA7E /* CodableView.swift */; };
 		D9CFB5BE24A93C9600C7603A /* UITextViewFixed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9CFB5BD24A93C9600C7603A /* UITextViewFixed.swift */; };
 		D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D66235E95510041DD12 /* CucumberishTests.m */; };
 		D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */; };
@@ -78,6 +79,7 @@
 		D987E596245DDD1E006FE232 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Main.strings"; sourceTree = "<group>"; };
 		D987E597245DDD1E006FE232 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D987E598245DFCD7006FE232 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		D9CC34C827627159004FCA7E /* CodableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableView.swift; sourceTree = "<group>"; };
 		D9CFB5BD24A93C9600C7603A /* UITextViewFixed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextViewFixed.swift; sourceTree = "<group>"; };
 		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
 		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		6B80AC85216663E100A5E0C1 /* Queerlist */ = {
 			isa = PBXGroup;
 			children = (
+				D9CC34C727627136004FCA7E /* Support */,
 				D97AFCDD245E851E008265CF /* PersonalityList */,
 				D903575D27615AB000B612D4 /* NewPersonalityDetail */,
 				D903575A2761592400B612D4 /* PersonalityDetail */,
@@ -246,6 +249,14 @@
 				6B80ACB42166644700A5E0C1 /* PersonalityListViewController.swift */,
 			);
 			path = PersonalityList;
+			sourceTree = "<group>";
+		};
+		D9CC34C727627136004FCA7E /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				D9CC34C827627159004FCA7E /* CodableView.swift */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		D9D40D6A235E95AC0041DD12 /* Screens */ = {
@@ -480,6 +491,7 @@
 				6B45112F216E5F940030F276 /* PersonalityCell.swift in Sources */,
 				D9CFB5BE24A93C9600C7603A /* UITextViewFixed.swift in Sources */,
 				6B80ACB92166650000A5E0C1 /* PersonalityStore.swift in Sources */,
+				D9CC34C927627159004FCA7E /* CodableView.swift in Sources */,
 				D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */,
 				D903576127615C0D00B612D4 /* NewPersonalityDetailView.swift in Sources */,
 				6B80AC87216663E100A5E0C1 /* AppDelegate.swift in Sources */,
