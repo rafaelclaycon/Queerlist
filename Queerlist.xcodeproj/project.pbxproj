@@ -137,7 +137,6 @@
 		6B80AC85216663E100A5E0C1 /* Queerlist */ = {
 			isa = PBXGroup;
 			children = (
-				D9CC34C727627136004FCA7E /* Support */,
 				D97AFCDD245E851E008265CF /* PersonalityList */,
 				D903575D27615AB000B612D4 /* NewPersonalityDetail */,
 				D903575A2761592400B612D4 /* PersonalityDetail */,
@@ -146,12 +145,7 @@
 				D97AFCDB245E849B008265CF /* Custom UI Components */,
 				D97AFCDA245E8480008265CF /* Data */,
 				D97AFCD9245E8448008265CF /* Localization */,
-				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
-				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
-				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
-				D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */,
-				6B80AC8D216663E300A5E0C1 /* Assets.xcassets */,
-				6B80AC92216663E300A5E0C1 /* Info.plist */,
+				D9CC34C727627136004FCA7E /* Application Support */,
 			);
 			path = Queerlist;
 			sourceTree = "<group>";
@@ -251,12 +245,18 @@
 			path = PersonalityList;
 			sourceTree = "<group>";
 		};
-		D9CC34C727627136004FCA7E /* Support */ = {
+		D9CC34C727627136004FCA7E /* Application Support */ = {
 			isa = PBXGroup;
 			children = (
+				6B80AC8F216663E300A5E0C1 /* LaunchScreen.storyboard */,
+				6B80AC8A216663E200A5E0C1 /* Main.storyboard */,
+				6B80AC86216663E100A5E0C1 /* AppDelegate.swift */,
 				D9CC34C827627159004FCA7E /* CodableView.swift */,
+				D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */,
+				6B80AC92216663E300A5E0C1 /* Info.plist */,
+				6B80AC8D216663E300A5E0C1 /* Assets.xcassets */,
 			);
-			path = Support;
+			path = "Application Support";
 			sourceTree = "<group>";
 		};
 		D9D40D6A235E95AC0041DD12 /* Screens */ = {
@@ -681,7 +681,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = Queerlist/Info.plist;
+				INFOPLIST_FILE = "Queerlist/Application Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -703,7 +703,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = L8X3H5XA82;
-				INFOPLIST_FILE = Queerlist/Info.plist;
+				INFOPLIST_FILE = "Queerlist/Application Support/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
