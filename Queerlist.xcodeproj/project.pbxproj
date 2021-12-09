@@ -28,8 +28,8 @@
 		D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D66235E95510041DD12 /* CucumberishTests.m */; };
 		D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */; };
 		D9D40D6F235E95DD0041DD12 /* Features in Resources */ = {isa = PBXBuildFile; fileRef = D9D40D6E235E95DD0041DD12 /* Features */; };
-		D9D40D72235E96C60041DD12 /* CheckingSpellsSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */; };
-		D9D40D74235E97220041DD12 /* CheckingSpellsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */; };
+		D9D40D72235E96C60041DD12 /* ReadingDetailsSteps.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D71235E96C60041DD12 /* ReadingDetailsSteps.swift */; };
+		D9D40D74235E97220041DD12 /* ReadingDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D73235E97220041DD12 /* ReadingDetailsScreen.swift */; };
 		D9D40D77235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
 		D9D40D78235E9CE10041DD12 /* UITestID.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D40D76235E9CE10041DD12 /* UITestID.swift */; };
 		D9D8DCE5245F73170013104C /* IdentityType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D8DCE4245F73170013104C /* IdentityType.swift */; };
@@ -82,8 +82,8 @@
 		D9D40D66235E95510041DD12 /* CucumberishTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CucumberishTests.m; sourceTree = "<group>"; };
 		D9D40D67235E95510041DD12 /* CucumberishInitializer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CucumberishInitializer.swift; sourceTree = "<group>"; };
 		D9D40D6E235E95DD0041DD12 /* Features */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Features; sourceTree = "<group>"; };
-		D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsSteps.swift; sourceTree = "<group>"; };
-		D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckingSpellsScreen.swift; sourceTree = "<group>"; };
+		D9D40D71235E96C60041DD12 /* ReadingDetailsSteps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingDetailsSteps.swift; sourceTree = "<group>"; };
+		D9D40D73235E97220041DD12 /* ReadingDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingDetailsScreen.swift; sourceTree = "<group>"; };
 		D9D40D75235E99F40041DD12 /* Queerlist-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Queerlist-Bridging-Header.h"; sourceTree = "<group>"; };
 		D9D40D76235E9CE10041DD12 /* UITestID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITestID.swift; sourceTree = "<group>"; };
 		D9D8DCE4245F73170013104C /* IdentityType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentityType.swift; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 		D9D40D6A235E95AC0041DD12 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				D9D40D73235E97220041DD12 /* CheckingSpellsScreen.swift */,
+				D9D40D73235E97220041DD12 /* ReadingDetailsScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -259,7 +259,7 @@
 		D9D40D70235E96A30041DD12 /* StepDefinitions */ = {
 			isa = PBXGroup;
 			children = (
-				D9D40D71235E96C60041DD12 /* CheckingSpellsSteps.swift */,
+				D9D40D71235E96C60041DD12 /* ReadingDetailsSteps.swift */,
 			);
 			path = StepDefinitions;
 			sourceTree = "<group>";
@@ -491,8 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D9D40D74235E97220041DD12 /* CheckingSpellsScreen.swift in Sources */,
-				D9D40D72235E96C60041DD12 /* CheckingSpellsSteps.swift in Sources */,
+				D9D40D74235E97220041DD12 /* ReadingDetailsScreen.swift in Sources */,
+				D9D40D72235E96C60041DD12 /* ReadingDetailsSteps.swift in Sources */,
 				D9D40D68235E95510041DD12 /* CucumberishTests.m in Sources */,
 				D9D40D69235E95510041DD12 /* CucumberishInitializer.swift in Sources */,
 				D9D40D78235E9CE10041DD12 /* UITestID.swift in Sources */,

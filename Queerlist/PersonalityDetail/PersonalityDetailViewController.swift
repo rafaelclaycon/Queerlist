@@ -31,8 +31,8 @@ class PersonalityDetailViewController: UIViewController {
         }
         personalityDescription.text = item.description
         
-        name.accessibilityIdentifier = "spell_title"
-        personalityDescription.accessibilityIdentifier = "spell_description"
+        name.accessibilityIdentifier = UITestID.personalityTitle
+        personalityDescription.accessibilityIdentifier = UITestID.personalityDescription
         
         // If there's an image for the spell, assign it.
         if item.image != nil {
