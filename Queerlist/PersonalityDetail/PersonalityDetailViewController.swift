@@ -24,6 +24,7 @@ class PersonalityDetailViewController: UIViewController {
         
         name.text = item.name
         type.text = IdentityType.getTypeNameForTinyHeader(item.type)
+        type.textColor = IdentityType.getColorForTinyHeader(item.type)
         if let quote = item.famousQuote {
             famouseQuote.text = "\"\(quote)\""
         } else {

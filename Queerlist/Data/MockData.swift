@@ -74,6 +74,13 @@ class MockData {
                                 description: placeholder,
                                 image: UIImage(named: "paulo"),
                                 date: Date())
+        
+        let river = Personality(name: "River Gallo",
+                                type: .intersex,
+                                famousQuote: nil,
+                                description: "River Gallo is a Salvadoran-American filmmaker, actor, model, and intersex rights activist. They wrote, directed, and acted in the 2019 short film Ponyboi, which is the first film to feature an openly intersex actor playing an intersex person.",
+                                image: UIImage(named: "river"),
+                                date: Date())
             
         let rupaul = Personality(name: "RuPaul",
                                  type: .gay,
@@ -89,6 +96,20 @@ class MockData {
                                  image: UIImage(named: "thammy"),
                                  date: Date())
         
+        let timCook = Personality(name: "Tim Cook",
+                                  type: .gay,
+                                  famousQuote: nil,
+                                  description: "Timothy Donald Cook is an American business executive who has been the chief executive officer of Apple Inc. since 2011. Cook previously served as the company's chief operating officer under its co-founder Steve Jobs. In 2014, Cook became the first chief executive of a Fortune 500 company to publicly come out as gay. Cook also serves on the boards of directors of Nike, Inc. and the National Football Foundation, and is a trustee of Duke University. Outside of Apple, Cook engages in philanthropy, and in March 2015, he said he planned to donate his fortune to charity.",
+                                  image: UIImage(named: "tim_cook"),
+                                  date: Date())
+        
+        let timGunn = Personality(name: "Tim Gunn",
+                                  type: .asexual,
+                                  famousQuote: nil,
+                                  description: "Timothy MacKenzie Gunn is an American author, actor, and television personality. He served on the faculty of Parsons School of Design from 1982 to 2007 and was chair of fashion design at the school from August 2000 to March 2007, after which he joined Liz Claiborne (now Kate Spade & Company) as its chief creative officer. Over 16 seasons Gunn has become well known as the on-air mentor to designers on the reality television program Project Runway.",
+                                  image: UIImage(named: "tim_gunn"),
+                                  date: Date())
+        
         store.allItems.append(alan)
         store.allItems.append(cassia)
         store.allItems.append(laerte)
@@ -99,8 +120,11 @@ class MockData {
         store.allItems.append(natalie)
         store.allItems.append(pabllo)
         store.allItems.append(paulo)
+        store.allItems.append(river)
         store.allItems.append(rupaul)
         store.allItems.append(thammy)
+        store.allItems.append(timCook)
+        store.allItems.append(timGunn)
     }
 
 }
